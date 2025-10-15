@@ -45,7 +45,8 @@ website:
             href: chapters/chapter1/chapter1.qmd
           - text: Chapter 2
             href: chapters/chapter2/chapter2.qmd
-
+          - text: Chapter 3
+            href: chapters/chapter3/chapter3.qmd
       - text: Materials
         href: materials/readings.md
 

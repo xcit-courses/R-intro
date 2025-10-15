@@ -1,0 +1,15 @@
+---
+title: "Chapter 3: Getting started using R"
+---
+
+In this chapter we will see how to install R, RStudio as well as packages. 
+
+We will set up our computers to start programming in R. 
+
+
+
+# Materials
+
+## Slides
+
+- [Gettning sarted using R](slides/getting_started_using_R.qmd)

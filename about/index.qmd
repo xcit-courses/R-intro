@@ -12,5 +12,7 @@ In this course we will cover the following content:
 
 - [Chapter 1: Course introduction](../chapters/chapter1/chapter1.qmd)
 - [Chapter 2: Introduction to R](../chapters/chapter2/chapter2.qmd)
+- [Chapter 3: Getting started using R](../chapters/chapter3/chapter3.qmd)
+
 
 Each chapter contains links slides and possibly other resources.

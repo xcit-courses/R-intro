@@ -1,0 +1,247 @@
+---
+title: "Getting started using R"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    width: 1600
+    height: 900
+    mainfont: "IBM Plex Sans"
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+## How to use R?
+
+There are several options:
+
+-   install R on your computer
+
+-   use R+RStudio via [posit.clout](https://posit.cloud/plans)
+
+-   use R+RStudio via [Binder](https://mybinder.org/)
+
+         
+[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
+
+
+
+# Installing R
+
+## Install R
+
+Visit <https://cloud.r-project.org/>
+
+You can find instructions to install R on your specific OS online.
+
+[Here](https://www.geeksforgeeks.org/r-language/how-to-install-r-studio-on-windows-and-linux/) for example.
+
+
+# Install R now!
+
+
+
+## The R console
+
+![](../images/R-console.png){fig-align="center"}
+
+
+
+
+
+## Using R like a calculator
+
+::::: columns
+::: {.column width="50%"}
+![](../images/R-console.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+### Example
+
+``` r        
+>        # How can I help?
+> 1 + 2  # Press Enter: I want to know the answer
+         # Please evaluate this expression
+[1] 3    # Here's the result
+>        # Anything else?
+```
+:::
+:::::
+
+## Try it out!
+
+-   12 / 5.5
+-   2 \> 1
+-   (5-2) \<= (8 %% 3)
+-   2\^5
+-   sqrt(9)
+-   log2(32)
+
+## Key concepts
+
+Example 1:
+
+``` r        
+log2(32)
+```
+
+Example 2:
+
+``` r        
+1 + 2
+```
+
+What are these symbols? Are there different kinds of things?
+
+## Code is text
+
+
+
+``` r
+age <- c(18, 23, 43)
+mean_age <- mean(age)
+print(paste0("The mean age is ", round(mean_age, 1), " years."))
+```
+
+
+
+# What is RStudio?
+
+## Install RStudio!
+
+![https://posit.co/download/rstudio-desktop/](../images/install-RStudio.png)
+
+
+## IDE: Integrated development environments
+
+The R GUI is bare bones.
+
+Programmers use IDEs to work effectively.
+
+IDEs provide tons of features that make programming easier and more fun.
+
+
+## RStudio
+
+![https://docs.posit.co/ide/user/ide/guide/ui/images/rstudio-panes-labeled.jpeg](../images/rstudio-panes-labeled.jpeg){fig-align="center"}
+
+
+
+## Some key benefits of RStudio
+
+- see and work on more files at the same time
+- see the current state of your environment
+- inspect data
+- code completion, syntax highlighting
+- help
+- package management
+- data import wizzard
+- ...and much more.
+
+
+
+
+
+# Packages
+
+
+
+## Install packages
+
+Packages offer you additional functionality (functions, code, data not included in base R).
+
+You will almost always use additional packages, but depending on your specific needs you might use different ones. 
+
+
+## To use a package involves two simple steps:
+
+### Step 1: download the package
+
+This is done only once (but you may need to redownload if there is a newer version of package). 
+
+To download a package, you need to "install" the package (e.g., using `install.packages("package_name")`)
+
+
+### Step 2: load the package
+A package is not automatically available; you need to activate it before you can use it. 
+
+To activate a package, first you must have installed it. Second you need to call `library("package_name")`. 
+
+
+
+<br>
+Beginners often mix this up this two steps. 
+
+You can do those steps either using code (e.g., typed in the console) or by using RStudio package panel.
+
+
+
+
+## Example: installing the "swirl" package (using code)
+
+### Step 1:
+In the console type
+
+``` r
+install.packages("swirl")
+```
+
+"swirl" is the name of the package we want to download on our computer.
+
+This command will download the code from that package from CRAN and put in on your computer.
+
+
+
+
+
+## Example: installing the "swirl" package (using code)
+
+### Step 2:
+
+
+Each time you want to use that package, you need to load it into R.
+
+In the console, type:
+
+``` r
+library("swirl")
+```
+
+Now the code from the swirl package is aviable for use. 
+
+
+
+
+# Exercise: Install the `ggplot2` package
+
+
+# Exercise: Install the `tidyverse` package
+
+
+
+## Tidyvserse
+
+Tidyverse is a set of well-designed packaged that work very well together to effectively accomplish 90% of the data science tasks.
+
+![](../images/tidyverse_workflow_packages.png){fig-align="center"}
+
+
+
+
+## Conclusion
+
+We've installed R and RStudio and we've seen how to install packages.
+
+We are now ready to start programming. 
