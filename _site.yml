@@ -26,7 +26,7 @@ website:
           - text: Module 2
             href: modules/module2/module2.qmd
   page-footer:
-    left: "© 2025 University Name"
+    left: "2025 University of Luxembourg"
     right: "Built with [Quarto](https://quarto.org/)"
 theme:
   - lux

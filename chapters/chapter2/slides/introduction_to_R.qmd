@@ -23,18 +23,15 @@ format:
 editor: visual
 ---
 
-
 # What is "R"?
 
 ## What is "R"?
 
--> Ask [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))!
-
-
+-\> Ask [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))!
 
 ## What is "R"?
 
->  ... a programming language for statistical computing ...
+> ... a programming language for statistical computing ...
 
 ## What is "R"?
 
@@ -44,41 +41,33 @@ editor: visual
 
 -   what is a statistical programming language?
 
-
 ## History of R
-
-
-
 
 ## Why use programming for data analysis?
 
- 1. flexibility
- 2. efficiency
- 3. reproducibility
- 4. NEW: AI-support
-
+1.  flexibility
+2.  efficiency
+3.  reproducibility
+4.  NEW: AI-support
 
 ## R-Related terms
 
- - base R
- - packages, CRAN, GitHub
- - scripts
- - RStudio
- - tidyverse
- - other?
- 
+-   base R
+-   packages, CRAN, GitHub
+-   scripts
+-   RStudio
+-   tidyverse
+-   other?
+
 ::: notes
 Are there other terms you have heard before that are not listed here?
 :::
 
-
-
-
 ## base R
 
-When you install R, it comes with a set of core functionality. 
+When you install R, it comes with a set of core functionality.
 
-This core functionality is sometimes referred to as base R. 
+This core functionality is sometimes referred to as base R.
 
 Note that across successive updates of R (i.e., "versions"), that core functionality changes; usually quite slowly and in a "back-compatible way"--a main goal is **stability**.
 
@@ -86,20 +75,14 @@ Note that across successive updates of R (i.e., "versions"), that core functiona
 
 Base R includes for example functions to compute the mean and standar deviation of a vector of numbers.
 
-
 ## packages (for R)
 
-Base R is limited and highly controlled. You can however extend the cababilities of R by 
+Base R is limited and highly controlled. You can however extend the cababilities of R by
 
- - using code written by others
-    - code snippets shared by others
-    - packages that you can download and install
- - write your own code 
-
-
-
-
-
+-   using code written by others
+    -   code snippets shared by others
+    -   packages that you can download and install
+-   write your own code
 
 # R, RStudio and the tidyverse
 

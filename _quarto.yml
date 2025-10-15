@@ -21,7 +21,7 @@ website:
     search: true
     tools:
       - icon: github
-        href: https://github.com/your-org/your-repo
+        href: https://github.com/xcit-courses/R-intro
         text: "GitHub"
       - icon: cloud-fill
         href: https://posit.cloud/
