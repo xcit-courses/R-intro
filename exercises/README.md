@@ -13,20 +13,15 @@ Click the button below to launch an interactive RStudio environment in your brow
 This will open RStudio in your browser with all the necessary R packages pre-installed. 
 
 
-### Launch Directly to Exercises Folder
+### How RStudio Opens
 
-Open RStudio with the exercises folder as your working directory:
+**Important**: RStudio always opens at the repository root in Binder. However:
+- Your **working directory is automatically set to `exercises/`** via the `.Rprofile` file
+- When you run R commands like `getwd()`, you'll see you're in the exercises folder
+- File operations (reading/writing) default to the exercises folder
+- You can navigate the full repository in the Files panel, but your R session works in exercises/
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro/main?urlpath=rstudio&filepath=exercises)
-
-This URL parameter (`filepath=exercises`) will navigate directly to the exercises folder when RStudio opens.
-
-### Launch with Specific File Open
-
-Open directly in RStudio with a specific file:
-```
-https://mybinder.org/v2/gh/xcit-courses/R-intro/main?urlpath=rstudio&filepath=exercises/exercise_01.R
-```
+The `filepath` parameter only works with Jupyter notebooks, not RStudio.
 
 ### Important Notes
 - **Sessions are temporary** - Download your work before closing the browser
