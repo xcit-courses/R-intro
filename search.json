@@ -1,5 +1,300 @@
 [
   {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
+    "title": "Getting started using R",
+    "section": "How to use R?",
+    "text": "How to use R?\nThere are several options:\n\ninstall R on your computer\nuse R+RStudio via posit.clout\nuse R+RStudio via Binder\n\n\n\n\nBinder"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-r",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#install-r",
+    "title": "Getting started using R",
+    "section": "Install R",
+    "text": "Install R\nVisit https://cloud.r-project.org/\nYou can find instructions to install R on your specific OS online.\nHere for example."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#the-r-console",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#the-r-console",
+    "title": "Getting started using R",
+    "section": "The R console",
+    "text": "The R console"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#using-r-like-a-calculator",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#using-r-like-a-calculator",
+    "title": "Getting started using R",
+    "section": "Using R like a calculator",
+    "text": "Using R like a calculator\n\n\n\n\n\n\n\n\nExample\n&gt;        # How can I help?\n&gt; 1 + 2  # Press Enter: I want to know the answer\n         # Please evaluate this expression\n[1] 3    # Here's the result\n&gt;        # Anything else?"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#try-it-out",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#try-it-out",
+    "title": "Getting started using R",
+    "section": "Try it out!",
+    "text": "Try it out!\n\n12 / 5.5\n2 &gt; 1\n(5-2) &lt;= (8 %% 3)\n2^5\nsqrt(9)\nlog2(32)"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#key-concepts",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#key-concepts",
+    "title": "Getting started using R",
+    "section": "Key concepts",
+    "text": "Key concepts\nExample 1:\nlog2(32)\nExample 2:\n1 + 2\nWhat are these symbols? Are there different kinds of things?"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#code-is-text",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#code-is-text",
+    "title": "Getting started using R",
+    "section": "Code is text",
+    "text": "Code is text\nage &lt;- c(18, 23, 43)\nmean_age &lt;- mean(age)\nprint(paste0(\"The mean age is \", round(mean_age, 1), \" years.\"))"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-rstudio",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#install-rstudio",
+    "title": "Getting started using R",
+    "section": "Install RStudio!",
+    "text": "Install RStudio!\n\nhttps://posit.co/download/rstudio-desktop/"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#ide-integrated-development-environments",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#ide-integrated-development-environments",
+    "title": "Getting started using R",
+    "section": "IDE: Integrated development environments",
+    "text": "IDE: Integrated development environments\nThe R GUI is bare bones.\nProgrammers use IDEs to work effectively.\nIDEs provide tons of features that make programming easier and more fun."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#rstudio",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#rstudio",
+    "title": "Getting started using R",
+    "section": "RStudio",
+    "text": "RStudio\n\nhttps://docs.posit.co/ide/user/ide/guide/ui/images/rstudio-panes-labeled.jpeg"
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#some-key-benefits-of-rstudio",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#some-key-benefits-of-rstudio",
+    "title": "Getting started using R",
+    "section": "Some key benefits of RStudio",
+    "text": "Some key benefits of RStudio\n\nsee and work on more files at the same time\nsee the current state of your environment\ninspect data\ncode completion, syntax highlighting\nhelp\npackage management\ndata import wizzard\n…and much more."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-packages",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#install-packages",
+    "title": "Getting started using R",
+    "section": "Install packages",
+    "text": "Install packages\nPackages offer you additional functionality (functions, code, data not included in base R).\nYou will almost always use additional packages, but depending on your specific needs you might use different ones."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#to-use-a-package-involves-two-simple-steps",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#to-use-a-package-involves-two-simple-steps",
+    "title": "Getting started using R",
+    "section": "To use a package involves two simple steps:",
+    "text": "To use a package involves two simple steps:\nStep 1: download the package\nThis is done only once (but you may need to redownload if there is a newer version of package).\nTo download a package, you need to “install” the package (e.g., using install.packages(\"package_name\"))\nStep 2: load the package\nA package is not automatically available; you need to activate it before you can use it.\nTo activate a package, first you must have installed it. Second you need to call library(\"package_name\").\n Beginners often mix this up this two steps.\nYou can do those steps either using code (e.g., typed in the console) or by using RStudio package panel."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code",
+    "title": "Getting started using R",
+    "section": "Example: installing the “swirl” package (using code)",
+    "text": "Example: installing the “swirl” package (using code)\nStep 1:\nIn the console type\ninstall.packages(\"swirl\")\n“swirl” is the name of the package we want to download on our computer.\nThis command will download the code from that package from CRAN and put in on your computer."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code-1",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code-1",
+    "title": "Getting started using R",
+    "section": "Example: installing the “swirl” package (using code)",
+    "text": "Example: installing the “swirl” package (using code)\nStep 2:\nEach time you want to use that package, you need to load it into R.\nIn the console, type:\nlibrary(\"swirl\")\nNow the code from the swirl package is aviable for use."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#tidyvserse",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#tidyvserse",
+    "title": "Getting started using R",
+    "section": "Tidyvserse",
+    "text": "Tidyvserse\nTidyverse is a set of well-designed packaged that work very well together to effectively accomplish 90% of the data science tasks."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#conclusion",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#conclusion",
+    "title": "Getting started using R",
+    "section": "Conclusion",
+    "text": "Conclusion\nWe’ve installed R and RStudio and we’ve seen how to install packages.\nWe are now ready to start programming."
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#about-this-course",
+    "href": "chapters/chapter1/slides/course_introduction.html#about-this-course",
+    "title": "Introduction to R",
+    "section": "About this course",
+    "text": "About this course"
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#schedule",
+    "href": "chapters/chapter1/slides/course_introduction.html#schedule",
+    "title": "Introduction to R",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir"
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
+    "href": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
+    "title": "Introduction to R",
+    "section": "What is this course about?",
+    "text": "What is this course about?\n\n\nGetting started (background and setup)\nProgramming, in R\nImporting data into R\nStatistics\nData visualization\nWorkflows & best practices\nPreparation for future courses\n\n\n\nIn 1: - install R - install packages - run script - intro to the ecosystem - getting help - useful resources (cheatsheet, online resources)"
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#why-this-course",
+    "href": "chapters/chapter1/slides/course_introduction.html#why-this-course",
+    "title": "Introduction to R",
+    "section": "Why this course?",
+    "text": "Why this course?\n\n\n\n\n\n\n\nWikipedia\n\n\nStudents are often not well prepared to integrate all the steps of this loop. They lack practical skills to implement the data analysis and reporting efficiently and in a way that can be reproduced."
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#data-science-workflow",
+    "href": "chapters/chapter1/slides/course_introduction.html#data-science-workflow",
+    "title": "Introduction to R",
+    "section": "Data science workflow",
+    "text": "Data science workflow\n\n\n\n\n\n\n\nhttps://r4ds.hadley.nz/\n\n\nProgramming is the “glue” that binds all of these steps."
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#freedom-and-empowerment",
+    "href": "chapters/chapter1/slides/course_introduction.html#freedom-and-empowerment",
+    "title": "Introduction to R",
+    "section": "Freedom and empowerment",
+    "text": "Freedom and empowerment\n\nYou are restricted when using “tools” developed by others;\nIf you learn to create your own “tools”, the possibilities become endless.\nYou will gain in efficiency and freedom (you can delegate work to computers).\nYou will better understand the digital world."
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#learning-by-doing",
+    "href": "chapters/chapter1/slides/course_introduction.html#learning-by-doing",
+    "title": "Introduction to R",
+    "section": "Learning by doing",
+    "text": "Learning by doing\nThis is a hands-on course!\nNo homework, no grading."
+  },
+  {
+    "objectID": "chapters/chapter1/slides/course_introduction.html#resources",
+    "href": "chapters/chapter1/slides/course_introduction.html#resources",
+    "title": "Introduction to R",
+    "section": "Resources",
+    "text": "Resources\n\nHands-On Programming with R\nR for Data Science (2e)\nR for Psychological Science\nLearning Statistics with R\nR for Psych"
+  },
+  {
+    "objectID": "chapters/chapter2/chapter2.html",
+    "href": "chapters/chapter2/chapter2.html",
+    "title": "Chapter 2: Introduction to R",
+    "section": "",
+    "text": "In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, Rstudio and the tidyverse that you may have heard of before.\nWe will discuss why doing data analysis using code is a good idea. We will also highlight some of the key features that make R particularly interesting for data analysis.",
+    "crumbs": [
+      "Chapters",
+      "Chapter 2"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter2/chapter2.html#slides",
+    "href": "chapters/chapter2/chapter2.html#slides",
+    "title": "Chapter 2: Introduction to R",
+    "section": "Slides",
+    "text": "Slides\n\nIntroduction to R",
+    "crumbs": [
+      "Chapters",
+      "Chapter 2"
+    ]
+  },
+  {
+    "objectID": "about/syllabus.html",
+    "href": "about/syllabus.html",
+    "title": "Syllabus",
+    "section": "",
+    "text": "Syllabus\nAdd your syllabus content here.",
+    "crumbs": [
+      "Course Information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "about/index.html",
+    "href": "about/index.html",
+    "title": "Introduction to Programming in R",
+    "section": "",
+    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\nIn this course we will cover the following content:\n\nSlides\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\nChapter 3: Getting started using R\n\nEach chapter contains links slides and possibly other resources.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about/overview.html",
+    "href": "about/overview.html",
+    "title": "Course Overview",
+    "section": "",
+    "text": "This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the Master in Psychology–Evaluation and Assessment program.\nAll course materials will be posted on this site.",
+    "crumbs": [
+      "Course Information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "about/overview.html#what",
+    "href": "about/overview.html#what",
+    "title": "Course Overview",
+    "section": "What?",
+    "text": "What?\nThis course is an introduction to programming in R. Programming is an essential skill that is at the heart of modern technologies, including generative AI systems like ChatGPT. In today’s digital age, understanding the core principles of programming is not just an academic pursuit; it’s an essential skill that empowers you to navigate and act in the modern world. As a student of psychology, acquiring programming skills will greatly benefit you, be it for analyzing data for research or practice, for developing new digital products like websites, or for better understanding and using software developed by others.\nIn this course we will focus on R–a powerful, open-source programming language that excels in statistical computing and graphics. It’s widely used in academia and industry for its flexibility and rich ecosystem of packages tailored for data analysis, visualization, and modeling. By learning R, you’ll equip yourself with tools to handle complex datasets, perform robust analyses, and present your findings compellingly. While our focus is on R, the programming concepts that you will learn are common to most programming languages.\nThis course is very much hands-on: the “lecture” part aims to be minimal and offer instead many guided activities for “learning-by-doing”. By the end of this course, students should be familiar with the main programming concepts (e.g., variables, for loops) and they should be able to write simple R programs. Most importantly, we hope this course will empower students to confidently embark on their programming journey.",
+    "crumbs": [
+      "Course Information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "about/overview.html#when-and-where",
+    "href": "about/overview.html#when-and-where",
+    "title": "Course Overview",
+    "section": "When and where",
+    "text": "When and where\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir",
+    "crumbs": [
+      "Course Information",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter1/chapter1.html",
+    "href": "chapters/chapter1/chapter1.html",
+    "title": "Chapter 1: Introduction",
+    "section": "",
+    "text": "This first chapter presents a broad overview of this course and explains why learning to program in R matters. We will cover some of logistics of the course and present key references that are useful to learn about R.",
+    "crumbs": [
+      "Chapters",
+      "Chapter 1"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter1/chapter1.html#material",
+    "href": "chapters/chapter1/chapter1.html#material",
+    "title": "Chapter 1: Introduction",
+    "section": "Material",
+    "text": "Material\n\nSlides\n\nCourse Introduction",
+    "crumbs": [
+      "Chapters",
+      "Chapter 1"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter3/chapter3.html",
+    "href": "chapters/chapter3/chapter3.html",
+    "title": "Chapter 3: Getting started using R",
+    "section": "",
+    "text": "In this chapter we will see how to install R, RStudio as well as packages.\nWe will set up our computers to start programming in R.",
+    "crumbs": [
+      "Chapters",
+      "Chapter 3"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter3/chapter3.html#slides",
+    "href": "chapters/chapter3/chapter3.html#slides",
+    "title": "Chapter 3: Getting started using R",
+    "section": "Slides",
+    "text": "Slides\n\nGettning sarted using R",
+    "crumbs": [
+      "Chapters",
+      "Chapter 3"
+    ]
+  },
+  {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-1",
     "href": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-1",
     "title": "Introduction to R",
@@ -145,159 +440,5 @@
     "title": "Introduction to R",
     "section": "Programming brings great power…",
     "text": "Programming brings great power…\n…with great power comes great precision:\n\nComputers will do everything you ask them to do!\nBut you must tell them very precisely what you want."
-  },
-  {
-    "objectID": "chapters/chapter2/chapter2.html",
-    "href": "chapters/chapter2/chapter2.html",
-    "title": "Chapter 2: Introduction to R",
-    "section": "",
-    "text": "In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, Rstudio and the tidyverse that you may have heard of before.\nWe will discuss why doing data analysis using code is a good idea. We will also highlight some of the key features that make R particularly interesting for data analysis.",
-    "crumbs": [
-      "Chapters",
-      "Chapter 2"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter2/chapter2.html#slides",
-    "href": "chapters/chapter2/chapter2.html#slides",
-    "title": "Chapter 2: Introduction to R",
-    "section": "Slides",
-    "text": "Slides\n\nIntroduction to R",
-    "crumbs": [
-      "Chapters",
-      "Chapter 2"
-    ]
-  },
-  {
-    "objectID": "about/syllabus.html",
-    "href": "about/syllabus.html",
-    "title": "Syllabus",
-    "section": "",
-    "text": "Syllabus\nAdd your syllabus content here.",
-    "crumbs": [
-      "Course Information",
-      "Syllabus"
-    ]
-  },
-  {
-    "objectID": "about/index.html",
-    "href": "about/index.html",
-    "title": "Introduction to Programming in R",
-    "section": "",
-    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\nIn this course we will cover the following content:\n\nSlides\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\n\nEach chapter contains links slides and possibly other resources.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "about/overview.html",
-    "href": "about/overview.html",
-    "title": "Course Overview",
-    "section": "",
-    "text": "This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the Master in Psychology–Evaluation and Assessment program.\nAll course materials will be posted on this site.",
-    "crumbs": [
-      "Course Information",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "about/overview.html#what",
-    "href": "about/overview.html#what",
-    "title": "Course Overview",
-    "section": "What?",
-    "text": "What?\nThis course is an introduction to programming in R. Programming is an essential skill that is at the heart of modern technologies, including generative AI systems like ChatGPT. In today’s digital age, understanding the core principles of programming is not just an academic pursuit; it’s an essential skill that empowers you to navigate and act in the modern world. As a student of psychology, acquiring programming skills will greatly benefit you, be it for analyzing data for research or practice, for developing new digital products like websites, or for better understanding and using software developed by others.\nIn this course we will focus on R–a powerful, open-source programming language that excels in statistical computing and graphics. It’s widely used in academia and industry for its flexibility and rich ecosystem of packages tailored for data analysis, visualization, and modeling. By learning R, you’ll equip yourself with tools to handle complex datasets, perform robust analyses, and present your findings compellingly. While our focus is on R, the programming concepts that you will learn are common to most programming languages.\nThis course is very much hands-on: the “lecture” part aims to be minimal and offer instead many guided activities for “learning-by-doing”. By the end of this course, students should be familiar with the main programming concepts (e.g., variables, for loops) and they should be able to write simple R programs. Most importantly, we hope this course will empower students to confidently embark on their programming journey.",
-    "crumbs": [
-      "Course Information",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "about/overview.html#when-and-where",
-    "href": "about/overview.html#when-and-where",
-    "title": "Course Overview",
-    "section": "When and where",
-    "text": "When and where\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir",
-    "crumbs": [
-      "Course Information",
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter1/chapter1.html",
-    "href": "chapters/chapter1/chapter1.html",
-    "title": "Chapter 1: Introduction",
-    "section": "",
-    "text": "This first chapter presents a broad overview of this course and explains why learning to program in R matters. We will cover some of logistics of the course and present key references that are useful to learn about R.",
-    "crumbs": [
-      "Chapters",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter1/chapter1.html#material",
-    "href": "chapters/chapter1/chapter1.html#material",
-    "title": "Chapter 1: Introduction",
-    "section": "Material",
-    "text": "Material\n\nSlides\n\nCourse Introduction",
-    "crumbs": [
-      "Chapters",
-      "Chapter 1"
-    ]
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#about-this-course",
-    "href": "chapters/chapter1/slides/course_introduction.html#about-this-course",
-    "title": "Introduction to R",
-    "section": "About this course",
-    "text": "About this course"
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#schedule",
-    "href": "chapters/chapter1/slides/course_introduction.html#schedule",
-    "title": "Introduction to R",
-    "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir"
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
-    "href": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
-    "title": "Introduction to R",
-    "section": "What is this course about?",
-    "text": "What is this course about?\n\n\nGetting started (background and setup)\nProgramming, in R\nImporting data into R\nStatistics\nData visualization\nWorkflows & best practices\nPreparation for future courses\n\n\n\nIn 1: - install R - install packages - run script - intro to the ecosystem - getting help - useful resources (cheatsheet, online resources)"
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#why-this-course",
-    "href": "chapters/chapter1/slides/course_introduction.html#why-this-course",
-    "title": "Introduction to R",
-    "section": "Why this course?",
-    "text": "Why this course?\n\n\n\n\n\n\n\nWikipedia\n\n\nStudents are often not well prepared to integrate all the steps of this loop. They lack practical skills to implement the data analysis and reporting efficiently and in a way that can be reproduced."
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#data-science-workflow",
-    "href": "chapters/chapter1/slides/course_introduction.html#data-science-workflow",
-    "title": "Introduction to R",
-    "section": "Data science workflow",
-    "text": "Data science workflow\n\n\n\n\n\n\n\nhttps://r4ds.hadley.nz/\n\n\nProgramming is the “glue” that binds all of these steps."
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#freedom-and-empowerment",
-    "href": "chapters/chapter1/slides/course_introduction.html#freedom-and-empowerment",
-    "title": "Introduction to R",
-    "section": "Freedom and empowerment",
-    "text": "Freedom and empowerment\n\nYou are restricted when using “tools” developed by others;\nIf you learn to create your own “tools”, the possibilities become endless.\nYou will gain in efficiency and freedom (you can delegate work to computers).\nYou will better understand the digital world."
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#learning-by-doing",
-    "href": "chapters/chapter1/slides/course_introduction.html#learning-by-doing",
-    "title": "Introduction to R",
-    "section": "Learning by doing",
-    "text": "Learning by doing\nThis is a hands-on course!\nNo homework, no grading."
-  },
-  {
-    "objectID": "chapters/chapter1/slides/course_introduction.html#resources",
-    "href": "chapters/chapter1/slides/course_introduction.html#resources",
-    "title": "Introduction to R",
-    "section": "Resources",
-    "text": "Resources\n\nHands-On Programming with R\nR for Data Science (2e)\nR for Psychological Science\nLearning Statistics with R\nR for Psych"
   }
 ]
