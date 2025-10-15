@@ -270,7 +270,7 @@
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://xcit.org/images/xcit/logofinaline.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>pedro.cardosoleite@uni.lu</p>
+
 </div>
 </div></div>
 
@@ -573,7 +573,7 @@
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
+          var filterRegex = new RegExp("https:\/\/xcit-courses\.github\.io\/R-intro\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }

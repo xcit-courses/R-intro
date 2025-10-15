@@ -214,7 +214,7 @@
 </section>
 <section id="what-is-r-1" class="slide level2">
 <h2>What is “R”?</h2>
-<p>-&gt; Ask <a href="https://en.wikipedia.org/wiki/R_(programming_language)">Wikipedia</a>!</p>
+<p>→ Ask <a href="https://en.wikipedia.org/wiki/R_(programming_language)">Wikipedia</a>!</p>
 </section>
 <section id="what-is-r-2" class="slide level2">
 <h2>What is “R”?</h2>
@@ -230,8 +230,18 @@
 <li class="fragment"><p>what is a statistical programming language?</p></li>
 </ul>
 </section>
+<section id="the-r-language" class="slide level2">
+<h2>The R language</h2>
+<ul>
+<li class="fragment"><a href="https://rstudio.github.io/cheatsheets/base-r.pdf">Base R Cheatsheet</a></li>
+</ul>
+<p><a href="https://posit.co/resources/cheatsheets/">Cheatsheets</a> are a great way to learn about specific topics/packages; we will use them quite a bit!</p>
+</section>
 <section id="history-of-r" class="slide level2">
 <h2>History of R</h2>
+<ul>
+<li class="fragment"><a href="https://en.wikipedia.org/wiki/R_(programming_language)">Wikipedia</a></li>
+</ul>
 </section>
 <section id="why-use-programming-for-data-analysis" class="slide level2">
 <h2>Why use programming for data analysis?</h2>
@@ -269,14 +279,15 @@
 <section id="base-r" class="slide level2">
 <h2>base R</h2>
 <p>When you install R, it comes with a set of core functionality.</p>
-<p>This core functionality is sometimes referred to as base R.</p>
+<p>This core functionality is sometimes referred to as base R (even though there are other packages included by defaul, e.g., <code>stats</code>, <code>datasets</code>)</p>
 <p>Note that across successive updates of R (i.e., “versions”), that core functionality changes; usually quite slowly and in a “back-compatible way”–a main goal is <strong>stability</strong>.</p>
-<h3 id="examples">Examples:</h3>
+<p><em>Examples:</em></p>
 <p>Base R includes for example functions to compute the mean and standar deviation of a vector of numbers.</p>
 </section>
 <section id="packages-for-r" class="slide level2">
 <h2>packages (for R)</h2>
-<p>Base R is limited and highly controlled. You can however extend the cababilities of R by</p>
+<p>Base R is limited and highly controlled.</p>
+<p>You can however extend the cababilities of R by</p>
 <ul>
 <li class="fragment">using code written by others
 <ul>
@@ -285,23 +296,23 @@
 </ul></li>
 <li class="fragment">write your own code</li>
 </ul>
-</section></section>
-<section>
-<section id="r-rstudio-and-the-tidyverse" class="title-slide slide level1 center">
-<h1>R, RStudio and the tidyverse</h1>
-
-</section>
-<section id="base-r-and-r-packages" class="slide level2">
-<h2>base R and R packages</h2>
-<p>R comes with a core set of functionality.</p>
-<p>These can be extended by</p>
+<p><em>Examples:</em></p>
 <ul>
-<li class="fragment"><p>installing code written by others (in particular packages)</p></li>
-<li class="fragment"><p>writing your own code</p></li>
+<li class="fragment">ggplot2</li>
+<li class="fragment">dplyr</li>
+<li class="fragment">tidyverse</li>
 </ul>
 </section>
-<section id="installing-packages" class="slide level2">
-<h2>Installing packages</h2>
+<section id="base-r-packages" class="slide level2">
+<h2>base R + packages</h2>
+<p>This is a powerful and widely used pattern:</p>
+<ul>
+<li class="fragment">have the core be very stable and reliable</li>
+<li class="fragment">encourage creativity and diversity</li>
+</ul>
+</section>
+<section id="how-to-install-packages" class="slide level2">
+<h2>How to install packages?</h2>
 <p>Its super easy to install and use packages!</p>
 <p><strong>Step 1: download the package on your computer</strong></p>
 <div class="cell">
@@ -311,98 +322,113 @@
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a><span class="fu">library</span>(<span class="st">"package_name"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<aside class="notes">
+<p>We will see and do this many times during this course.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="why-use-r" class="slide level2">
-<h2>Why use R?</h2>
-
-<img data-src="../../../images/why-R.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="why-r" class="slide level2">
-<h2>Why R?</h2>
-<p>There’s an exponential increase in packages for R</p>
-
-<img data-src="introduction_to_R_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
-<section id="why-r-1" class="slide level2">
-<h2>Why R?</h2>
+<section id="r-rstudio" class="slide level2">
+<h2>R &amp; RStudio</h2>
+<ul>
+<li class="fragment">R is a programming language</li>
+<li class="fragment">R is a piece of software that understands the R language</li>
+<li class="fragment">RStudio is a separate piece of software that makes it easier and nicer to user R;</li>
+<li class="fragment">RStudio is one of many IDE that you can use for coding</li>
+</ul>
+</section>
+<section id="r-rstudio-1" class="slide level2">
+<h2>R &amp; RStudio</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../images/package-increase.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="../images/R-console.png"></p>
+<figcaption>https://www.r-project.org/</figcaption>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="../../../images/tidyverse-sticker.png"></p>
-<figcaption>https://www.tidyverse.org</figcaption>
+<p><img data-src="../images/rstudio-panes-labeled.jpeg"></p>
+<figcaption>https://posit.co/downloads/</figcaption>
 </figure>
 </div>
 </div></div>
+</section></section>
+<section>
+<section id="why-use-r" class="title-slide slide level1 center">
+<h1>Why use R?</h1>
+
 </section>
-<section id="why-use-r-1" class="slide level2">
-<h2>Why use R?</h2>
-<h3 id="top-10-reasons-to-use-r">Top 10 reasons to use R</h3>
-<p>programming is better than click and point; - reproducible - flexible and rich (fewer limits) - supported by AI agents</p>
+<section id="top-10-reasons-to-use-r" class="slide level2">
+<h2>Top 10 reasons to use R</h2>
 <ol type="1">
-<li class="fragment"><p>designed for data analysis (comprehensive)</p></li>
-<li class="fragment"><p>highly effective and elegant (e.g., ggplot2)</p></li>
-<li class="fragment"><p>state-of-the-art methods</p></li>
+<li class="fragment"><p>elegantly designed for modern data science (tidyverse)</p></li>
+<li class="fragment"><p>highly effective in integrating the full data science workflow (e.g., quarto)</p></li>
+<li class="fragment"><p>comprehensive, state-of-the-art methods (e.g., packages)</p></li>
+<li class="fragment"><p>exceptional data visualization tools (i.e., ggplot2)</p></li>
 <li class="fragment"><p>free and open</p></li>
-<li class="fragment"><p>runs on Linux, Mac, Window, etc.</p></li>
+<li class="fragment"><p>runs on Linux, Mac, and Window</p></li>
 <li class="fragment"><p>active development</p></li>
 <li class="fragment"><p>strong community</p></li>
 <li class="fragment"><p>great resources</p></li>
-<li class="fragment"><p>modern approach to data science</p></li>
 <li class="fragment"><p>great value on the job market</p></li>
 </ol>
 </section>
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<h3 id="the-good">The Good</h3>
+<section id="the-tidyverse" class="slide level2">
+<h2>The tidyverse</h2>
+<p>This is a collection of well-designed packages that work well together.</p>
+<p>If you learn how to use it, you will likely never go back to anything else.</p>
+
+<img data-src="../images/tidyverse-sticker.png" class="r-stretch quarto-figure-center"><p class="caption">https://www.tidyverse.org</p></section>
+<section id="your-needs-are-most-likely-already-covered" class="slide level2">
+<h2>Your needs are most likely already covered</h2>
+
+<img data-src="introduction_to_R_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="the-r-ecosystem" class="slide level2">
+<h2>The R ecosystem</h2>
+
+<img data-src="../../../chapters/chapter2/images/tidyverse_workflow_packages.png" class="r-stretch quarto-figure-center"><p class="caption">https://wec.wur.nl/dse/11-tidyverse.html</p></section>
+<section id="the-r-ecosystem-1" class="slide level2">
+<h2>The R ecosystem</h2>
 <ul>
-<li class="fragment">many great packages</li>
-<li class="fragment">your problem has most likely already been solved</li>
-<li class="fragment">variety and freedom</li>
+<li class="fragment"><p><a href="https://quarto.org/">quarto</a> (websites, presentations, books, articles)</p></li>
+<li class="fragment"><p><a href="https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/">shiny</a> (interactive web applications)</p></li>
+<li class="fragment"><p>and much more.</p></li>
 </ul>
-</div><div class="column" style="width:50%;">
-<h3 id="the-bad">The Bad</h3>
+</section>
+<section id="why-not-use-r" class="slide level2">
+<h2>Why NOT use R?</h2>
+<p>There are some common arguments againts R.</p>
 <ul>
-<li class="fragment">organic, complex ecosystem</li>
-<li class="fragment">inconsistencies in style</li>
-<li class="fragment">variable quality code</li>
-<li class="fragment">the paradox of choice</li>
+<li class="fragment">R is hard to learn.</li>
+<li class="fragment">not sure which packages to use.</li>
+<li class="fragment">the different packages are inconsistent.</li>
 </ul>
-</div></div>
 </section>
-<section id="what-is-r-4" class="slide level2">
-<h2>What is “R”?</h2>
-<ol type="1">
-<li class="fragment">a programming language for statistical computing</li>
-<li class="fragment"><strong>software that understands the R language and runs its instructions</strong></li>
-</ol>
+<section id="should-you-learn-r" class="slide level2">
+<h2>Should you learn R?</h2>
+<ul>
+<li class="fragment"><p><a href="https://www.psychologicalscience.org/observer/why-you-should-become-a-user-a-brief-introduction-to-r">APS</a></p></li>
+<li class="fragment"><p><a href="https://www.guru99.com/r-programming-introduction-basics.html">Overview</a></p></li>
+</ul>
 </section>
-<section id="what-is-r-5" class="slide level2">
-<h2>What is R?</h2>
-<p>Programming language vs Software (GUI/WYSIWYG)</p>
-<p><a href="https://www.guru99.com/r-programming-introduction-basics.html">link</a></p>
-<p><a href="https://www.psychologicalscience.org/observer/why-you-should-become-a-user-a-brief-introduction-to-r">APS</a></p>
-</section>
-<section id="with-great-power-comes-great-great-precision" class="slide level2">
-<h2>With great power comes great great precision…</h2>
-<p>Computers will do everything you ask them to do!</p>
-<p>But you must tell them very precisely what you want.</p>
-</section>
-<section id="popularity-of-r" class="slide level2">
-<h2>Popularity of R</h2>
-<p>Below code does not really fit.</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>Google Trends data temporarily unavailable due to rate limiting.
-Please try rendering again later or check the online version.</code></pre>
-</div>
-</div>
+<section id="programming-brings-great-power" class="slide level2">
+<h2>Programming brings great power…</h2>
+<p>…with great power comes great precision:</p>
+<ul>
+<li class="fragment"><p>Computers will do everything you ask them to do!</p></li>
+<li class="fragment"><p>But you must tell them very precisely what you want.</p></li>
+</ul>
 
 
 </section></section>
@@ -410,7 +436,7 @@ Please try rendering again later or check the online version.</code></pre>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="https://xcit.org/images/xcit/logofinaline.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p>pedro.cardosoleite@uni.lu</p>
+
 </div>
 </div></div>
 
@@ -751,7 +777,7 @@ Please try rendering again later or check the online version.</code></pre>
       }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
+          var filterRegex = new RegExp("https:\/\/xcit-courses\.github\.io\/R-intro\/");
         var isInternal = (href) => {
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }

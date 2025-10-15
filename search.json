@@ -4,7 +4,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-1",
     "title": "Introduction to R",
     "section": "What is “R”?",
-    "text": "What is “R”?\n-&gt; Ask Wikipedia!"
+    "text": "What is “R”?\n→ Ask Wikipedia!"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-2",
@@ -21,11 +21,18 @@
     "text": "What is “R”?\n\nwhat is a language?\nwhat is a programming language?\nwhat is a statistical programming language?"
   },
   {
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-r-language",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#the-r-language",
+    "title": "Introduction to R",
+    "section": "The R language",
+    "text": "The R language\n\nBase R Cheatsheet\n\nCheatsheets are a great way to learn about specific topics/packages; we will use them quite a bit!"
+  },
+  {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#history-of-r",
     "href": "chapters/chapter2/slides/introduction_to_R.html#history-of-r",
     "title": "Introduction to R",
     "section": "History of R",
-    "text": "History of R"
+    "text": "History of R\n\nWikipedia"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-use-programming-for-data-analysis",
@@ -46,91 +53,98 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#base-r",
     "title": "Introduction to R",
     "section": "base R",
-    "text": "base R\nWhen you install R, it comes with a set of core functionality.\nThis core functionality is sometimes referred to as base R.\nNote that across successive updates of R (i.e., “versions”), that core functionality changes; usually quite slowly and in a “back-compatible way”–a main goal is stability.\nExamples:\nBase R includes for example functions to compute the mean and standar deviation of a vector of numbers."
+    "text": "base R\nWhen you install R, it comes with a set of core functionality.\nThis core functionality is sometimes referred to as base R (even though there are other packages included by defaul, e.g., stats, datasets)\nNote that across successive updates of R (i.e., “versions”), that core functionality changes; usually quite slowly and in a “back-compatible way”–a main goal is stability.\nExamples:\nBase R includes for example functions to compute the mean and standar deviation of a vector of numbers."
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#packages-for-r",
     "href": "chapters/chapter2/slides/introduction_to_R.html#packages-for-r",
     "title": "Introduction to R",
     "section": "packages (for R)",
-    "text": "packages (for R)\nBase R is limited and highly controlled. You can however extend the cababilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code"
+    "text": "packages (for R)\nBase R is limited and highly controlled.\nYou can however extend the cababilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code\n\nExamples:\n\nggplot2\ndplyr\ntidyverse"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#base-r-and-r-packages",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#base-r-and-r-packages",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#base-r-packages",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#base-r-packages",
     "title": "Introduction to R",
-    "section": "base R and R packages",
-    "text": "base R and R packages\nR comes with a core set of functionality.\nThese can be extended by\n\ninstalling code written by others (in particular packages)\nwriting your own code"
+    "section": "base R + packages",
+    "text": "base R + packages\nThis is a powerful and widely used pattern:\n\nhave the core be very stable and reliable\nencourage creativity and diversity"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#installing-packages",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#installing-packages",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#how-to-install-packages",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#how-to-install-packages",
     "title": "Introduction to R",
-    "section": "Installing packages",
-    "text": "Installing packages\nIts super easy to install and use packages!\nStep 1: download the package on your computer\n\ninstall.packages(\"package_name\")\n\nStep 2: load the package when you needed (so you can use it)r\n\nlibrary(\"package_name\")"
+    "section": "How to install packages?",
+    "text": "How to install packages?\nIts super easy to install and use packages!\nStep 1: download the package on your computer\n\ninstall.packages(\"package_name\")\n\nStep 2: load the package when you needed (so you can use it)r\n\nlibrary(\"package_name\")\n\n\nWe will see and do this many times during this course."
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-use-r",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#why-use-r",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio",
     "title": "Introduction to R",
-    "section": "Why use R?",
-    "text": "Why use R?"
+    "section": "R & RStudio",
+    "text": "R & RStudio\n\nR is a programming language\nR is a piece of software that understands the R language\nRStudio is a separate piece of software that makes it easier and nicer to user R;\nRStudio is one of many IDE that you can use for coding"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-r",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#why-r",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio-1",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio-1",
     "title": "Introduction to R",
-    "section": "Why R?",
-    "text": "Why R?\nThere’s an exponential increase in packages for R"
+    "section": "R & RStudio",
+    "text": "R & RStudio\n\n\n\n\n\nhttps://www.r-project.org/\n\n\n\n\n\n\nhttps://posit.co/downloads/"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-r-1",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#why-r-1",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#top-10-reasons-to-use-r",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#top-10-reasons-to-use-r",
     "title": "Introduction to R",
-    "section": "Why R?",
-    "text": "Why R?\n\n\n\n\n\n\n\n\n\n\n\nhttps://www.tidyverse.org"
+    "section": "Top 10 reasons to use R",
+    "text": "Top 10 reasons to use R\n\nelegantly designed for modern data science (tidyverse)\nhighly effective in integrating the full data science workflow (e.g., quarto)\ncomprehensive, state-of-the-art methods (e.g., packages)\nexceptional data visualization tools (i.e., ggplot2)\nfree and open\nruns on Linux, Mac, and Window\nactive development\nstrong community\ngreat resources\ngreat value on the job market"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-use-r-1",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#why-use-r-1",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-tidyverse",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#the-tidyverse",
     "title": "Introduction to R",
-    "section": "Why use R?",
-    "text": "Why use R?\nTop 10 reasons to use R\nprogramming is better than click and point; - reproducible - flexible and rich (fewer limits) - supported by AI agents\n\ndesigned for data analysis (comprehensive)\nhighly effective and elegant (e.g., ggplot2)\nstate-of-the-art methods\nfree and open\nruns on Linux, Mac, Window, etc.\nactive development\nstrong community\ngreat resources\nmodern approach to data science\ngreat value on the job market"
+    "section": "The tidyverse",
+    "text": "The tidyverse\nThis is a collection of well-designed packages that work well together.\nIf you learn how to use it, you will likely never go back to anything else.\n\nhttps://www.tidyverse.org"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#section",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#section",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#your-needs-are-most-likely-already-covered",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#your-needs-are-most-likely-already-covered",
     "title": "Introduction to R",
-    "section": "",
-    "text": "The Good\n\nmany great packages\nyour problem has most likely already been solved\nvariety and freedom\n\n\nThe Bad\n\norganic, complex ecosystem\ninconsistencies in style\nvariable quality code\nthe paradox of choice"
+    "section": "Your needs are most likely already covered",
+    "text": "Your needs are most likely already covered"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-4",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-4",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-r-ecosystem",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#the-r-ecosystem",
     "title": "Introduction to R",
-    "section": "What is “R”?",
-    "text": "What is “R”?\n\na programming language for statistical computing\nsoftware that understands the R language and runs its instructions"
+    "section": "The R ecosystem",
+    "text": "The R ecosystem\n\nhttps://wec.wur.nl/dse/11-tidyverse.html"
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-5",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-5",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-r-ecosystem-1",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#the-r-ecosystem-1",
     "title": "Introduction to R",
-    "section": "What is R?",
-    "text": "What is R?\nProgramming language vs Software (GUI/WYSIWYG)\nlink\nAPS"
+    "section": "The R ecosystem",
+    "text": "The R ecosystem\n\nquarto (websites, presentations, books, articles)\nshiny (interactive web applications)\nand much more."
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#with-great-power-comes-great-great-precision",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#with-great-power-comes-great-great-precision",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#why-not-use-r",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#why-not-use-r",
     "title": "Introduction to R",
-    "section": "With great power comes great great precision…",
-    "text": "With great power comes great great precision…\nComputers will do everything you ask them to do!\nBut you must tell them very precisely what you want."
+    "section": "Why NOT use R?",
+    "text": "Why NOT use R?\nThere are some common arguments againts R.\n\nR is hard to learn.\nnot sure which packages to use.\nthe different packages are inconsistent."
   },
   {
-    "objectID": "chapters/chapter2/slides/introduction_to_R.html#popularity-of-r",
-    "href": "chapters/chapter2/slides/introduction_to_R.html#popularity-of-r",
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#should-you-learn-r",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#should-you-learn-r",
     "title": "Introduction to R",
-    "section": "Popularity of R",
-    "text": "Popularity of R\nBelow code does not really fit.\n\n\nGoogle Trends data temporarily unavailable due to rate limiting.\nPlease try rendering again later or check the online version."
+    "section": "Should you learn R?",
+    "text": "Should you learn R?\n\nAPS\nOverview"
+  },
+  {
+    "objectID": "chapters/chapter2/slides/introduction_to_R.html#programming-brings-great-power",
+    "href": "chapters/chapter2/slides/introduction_to_R.html#programming-brings-great-power",
+    "title": "Introduction to R",
+    "section": "Programming brings great power…",
+    "text": "Programming brings great power…\n…with great power comes great precision:\n\nComputers will do everything you ask them to do!\nBut you must tell them very precisely what you want."
   },
   {
     "objectID": "chapters/chapter2/chapter2.html",
