@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Create RStudio session configuration directory
+mkdir -p ~/.rstudio/monitored/user-settings
+
+# Configure RStudio to use exercises as default working directory
+cat > ~/.rstudio/monitored/user-settings/user-settings <<EOF
+restoreLastProject="0"
+initialWorkingDirectory="~/exercises"
+EOF
+
+echo "RStudio configured to use exercises/ as default working directory"
