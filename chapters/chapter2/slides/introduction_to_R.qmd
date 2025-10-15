@@ -11,7 +11,6 @@ format:
     incremental: true
     chalkboard: true
     logo: "https://xcit.org/images/xcit/logofinaline.png"
-    footer: "pedro.cardosoleite@uni.lu"
     width: 1600
     height: 900
     mainfont: "IBM Plex Sans"
@@ -27,7 +26,7 @@ editor: visual
 
 ## What is "R"?
 
--\> Ask [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))!
+→ Ask [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))!
 
 ## What is "R"?
 
@@ -41,7 +40,24 @@ editor: visual
 
 -   what is a statistical programming language?
 
+
+## The R language
+
+ - [Base R Cheatsheet](https://rstudio.github.io/cheatsheets/base-r.pdf)
+
+
+
+[Cheatsheets](https://posit.co/resources/cheatsheets/) are a great way to learn about specific topics/packages; we will use them quite a bit!
+ 
+
+
+
+
+
+
 ## History of R
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))
 
 ## Why use programming for data analysis?
 
@@ -67,36 +83,39 @@ Are there other terms you have heard before that are not listed here?
 
 When you install R, it comes with a set of core functionality.
 
-This core functionality is sometimes referred to as base R.
+This core functionality is sometimes referred to as base R (even though there are other packages included by defaul, e.g., `stats`, `datasets`)
 
 Note that across successive updates of R (i.e., "versions"), that core functionality changes; usually quite slowly and in a "back-compatible way"--a main goal is **stability**.
 
-### Examples:
+*Examples:*
 
 Base R includes for example functions to compute the mean and standar deviation of a vector of numbers.
 
 ## packages (for R)
 
-Base R is limited and highly controlled. You can however extend the cababilities of R by
+Base R is limited and highly controlled.
+
+You can however extend the cababilities of R by
 
 -   using code written by others
     -   code snippets shared by others
     -   packages that you can download and install
 -   write your own code
 
-# R, RStudio and the tidyverse
+*Examples:*
 
-## base R and R packages
+-   ggplot2
+-   dplyr
+-   tidyverse
 
-R comes with a core set of functionality.
+## base R + packages
 
-These can be extended by
+This is a powerful and widely used pattern:
 
--   installing code written by others (in particular packages)
+-   have the core be very stable and reliable
+-   encourage creativity and diversity
 
--   writing your own code
-
-## Installing packages
+## How to install packages?
 
 Its super easy to install and use packages!
 
@@ -116,13 +135,62 @@ install.packages("package_name")
 library("package_name")
 ```
 
-## Why use R?
+::: notes
+We will see and do this many times during this course.
+:::
 
-![](/images/why-R.png){fig-align="center"}
+## R & RStudio
 
-## Why R?
+-   R is a programming language
+-   R is a piece of software that understands the R language
+-   RStudio is a separate piece of software that makes it easier and nicer to user R;
+-   RStudio is one of many IDE that you can use for coding
 
-There's an exponential increase in packages for R
+## R & RStudio
+
+::::: columns
+::: {.column width="50%"}
+![https://www.r-project.org/](../images/R-console.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![https://posit.co/downloads/](../images/rstudio-panes-labeled.jpeg){fig-align="center"}
+:::
+:::::
+
+# Why use R?
+
+## Top 10 reasons to use R
+
+1.  elegantly designed for modern data science (tidyverse)
+
+2.  highly effective in integrating the full data science workflow (e.g., quarto)
+
+3.  comprehensive, state-of-the-art methods (e.g., packages)
+
+4.  exceptional data visualization tools (i.e., ggplot2)
+
+5.  free and open
+
+6.  runs on Linux, Mac, and Window
+
+7.  active development
+
+8.  strong community
+
+9.  great resources
+
+10. great value on the job market
+
+## The tidyverse
+
+This is a collection of well-designed packages that work well together.
+
+If you learn how to use it, you will likely never go back to anything else.
+
+![https://www.tidyverse.org](../images/tidyverse-sticker.png){fig-align="center"}
+
+## Your needs are most likely already covered
 
 ```{r}
 #| echo: false
@@ -130,6 +198,8 @@ There's an exponential increase in packages for R
 #| message: false
 #| fig-width: 10
 #| fig-height: 6
+#| fig-align: center
+
 
 library(tidyverse)
 library(rvest)
@@ -187,181 +257,40 @@ packages_yearly |>
   )
 ```
 
-## Why R?
+## The R ecosystem
 
-::::: columns
-::: {.column width="50%"}
-![](/images/package-increase.png){fig-align="center"}
-:::
+![https://wec.wur.nl/dse/11-tidyverse.html](/chapters/chapter2/images/tidyverse_workflow_packages.png)
 
-::: {.column width="50%"}
-![https://www.tidyverse.org](/images/tidyverse-sticker.png)
-:::
-:::::
+## The R ecosystem
 
-## Why use R?
+-   [quarto](https://quarto.org/) (websites, presentations, books, articles)
 
-### Top 10 reasons to use R
+-   [shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/) (interactive web applications)
 
-programming is better than click and point; - reproducible - flexible and rich (fewer limits) - supported by AI agents
+-   and much more.
 
-1.  designed for data analysis (comprehensive)
+## Why NOT use R?
 
-2.  highly effective and elegant (e.g., ggplot2)
+There are some common arguments againts R. 
 
-3.  state-of-the-art methods
+ - R is hard to learn.
+ - not sure which packages to use.
+ - the different packages are inconsistent.
 
-4.  free and open
 
-5.  runs on Linux, Mac, Window, etc.
+## Should you learn R?
 
-6.  active development
+- [APS](https://www.psychologicalscience.org/observer/why-you-should-become-a-user-a-brief-introduction-to-r)
 
-7.  strong community
+- [Overview](https://www.guru99.com/r-programming-introduction-basics.html)
 
-8.  great resources
 
-9.  modern approach to data science
 
-10. great value on the job market
 
-## 
+## Programming brings great power...
 
-::::: columns
-::: {.column width="50%"}
-### The Good
+...with great power comes great precision:
 
--   many great packages
--   your problem has most likely already been solved
--   variety and freedom
-:::
+ - Computers will do everything you ask them to do!
 
-::: {.column width="50%"}
-### The Bad
-
--   organic, complex ecosystem
--   inconsistencies in style
--   variable quality code
--   the paradox of choice
-:::
-:::::
-
-## What is "R"?
-
-1.  a programming language for statistical computing
-2.  **software that understands the R language and runs its instructions**
-
-## What is R?
-
-Programming language vs Software (GUI/WYSIWYG)
-
-[link](https://www.guru99.com/r-programming-introduction-basics.html)
-
-[APS](https://www.psychologicalscience.org/observer/why-you-should-become-a-user-a-brief-introduction-to-r)
-
-## With great power comes great great precision...
-
-Computers will do everything you ask them to do!
-
-But you must tell them very precisely what you want.
-
-## Popularity of R
-
-Below code does not really fit.
-
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-#| fig-width: 10
-#| fig-height: 6
-
-library(tidyverse)
-library(gtrendsR)
-
-# Fetch Google Trends data with error handling and retry
-fetch_gtrends <- function() {
-  tryCatch({
-    # Add a small delay to avoid rate limiting
-    Sys.sleep(2)
-    
-    # Fetch Google Trends data for R, Python, and SPSS
-    trends_data <- gtrends(
-      keyword = c("R language", "Python language", "SPSS software"),
-      time = "2015-01-01 2025-10-08",
-      onlyInterest = TRUE
-    )
-    
-    return(trends_data)
-  }, error = function(e) {
-    message("Error fetching Google Trends data: ", e$message)
-    message("Note: Google Trends may rate-limit requests. Try again later or use cached data.")
-    return(NULL)
-  })
-}
-
-# Try to fetch the data
-trends_data <- fetch_gtrends()
-
-if (!is.null(trends_data) && !is.null(trends_data$interest_over_time)) {
-  # Extract and process the interest over time data
-  trends_df <- trends_data$interest_over_time |>
-    as_tibble() |>
-    mutate(
-      date = as.Date(date),
-      year = year(date),
-      tool = case_when(
-        str_detect(keyword, "R") ~ "R",
-        str_detect(keyword, "Python") ~ "Python",
-        str_detect(keyword, "SPSS") ~ "SPSS",
-        TRUE ~ keyword
-      ),
-      hits = as.numeric(ifelse(hits == "<1", "0.5", hits))
-    ) |>
-    # Aggregate by year to smooth out monthly fluctuations
-    group_by(year, tool) |>
-    summarize(
-      interest = mean(hits, na.rm = TRUE),
-      .groups = "drop"
-    ) |>
-    mutate(date = as.Date(paste0(year, "-01-01")))
-  
-  # Create the plot
-  p <- trends_df |>
-    ggplot(aes(x = date, y = interest, color = tool)) +
-    geom_line(linewidth = 1.5, alpha = 0.9) +
-    geom_point(size = 2, alpha = 0.7) +
-    scale_color_manual(
-      values = c("R" = "#1da7e0", "Python" = "#306998", "SPSS" = "#db0d23"),
-      name = "Tool"
-    ) +
-    labs(
-      title = "Programming Languages for Data Analysis: Google Trends",
-      subtitle = "Search interest over time (2015-2025)",
-      x = "Year",
-      y = "Relative Search Interest (0-100)",
-      caption = paste0(
-        "Data: Google Trends (trends.google.com) | ",
-        "Retrieved: ", format(Sys.Date(), "%B %d, %Y")
-      )
-    ) +
-    scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
-    scale_y_continuous(limits = c(0, 100)) +
-    theme_minimal(base_size = 16) +
-    theme(
-      plot.title = element_text(face = "bold", hjust = 0.5),
-      plot.subtitle = element_text(hjust = 0.5, size = 12),
-      panel.grid.minor = element_blank(),
-      legend.position = "top",
-      legend.title = element_text(face = "bold"),
-      plot.caption = element_text(size = 9, hjust = 1),
-      axis.text.x = element_text(angle = 45, hjust = 1)
-    )
-  
-  print(p)
-} else {
-  # Fallback message if data cannot be fetched
-  cat("Google Trends data temporarily unavailable due to rate limiting.\n")
-  cat("Please try rendering again later or check the online version.\n")
-}
-```
+ - But you must tell them very precisely what you want.
