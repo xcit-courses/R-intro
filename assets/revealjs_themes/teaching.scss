@@ -1,0 +1,83 @@
+/*-- scss:defaults --*/
+
+// ==============================================================================
+// Teaching Theme for Reveal.js Presentations
+// ==============================================================================
+// Default themes reference: 
+// https://github.com/quarto-dev/quarto-cli/tree/main/src/resources/formats/revealjs/themes
+// ==============================================================================
+
+// ------------------------------------------------------------------------------
+// Font Imports
+// ------------------------------------------------------------------------------
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// Hack font (for code) - self-hosted or CDN
+@import url('https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css');
+
+// ------------------------------------------------------------------------------
+// Font Variables
+// ------------------------------------------------------------------------------
+// Choose your font combination by commenting/uncommenting options below
+
+// Option 1: Barlow for body text (UL brand font - ACTIVE)
+$font-family-sans-serif: "Barlow", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+
+// Option 2: IBM Plex Sans for body text
+// $font-family-sans-serif: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !default;
+
+// Option 3: Space Mono for body text (monospace aesthetic)
+// $font-family-sans-serif: "Space Mono", monospace !default;
+
+// Heading font (can be different from body)
+$presentation-heading-font: "Barlow", sans-serif !default;
+// $presentation-heading-font: "IBM Plex Sans", sans-serif !default;
+// $presentation-heading-font: "Space Mono", monospace !default;
+
+// Code font
+$font-family-monospace: "Hack", "Space Mono", "Courier New", monospace !default;
+
+// ------------------------------------------------------------------------------
+// University of Luxembourg Brand Colors
+// ------------------------------------------------------------------------------
+$ul-blue: #1da7e0;
+$ul-red: #db0d23;
+$ul-gray: #5c5c5c;
+
+// ------------------------------------------------------------------------------
+// Theme Colors
+// ------------------------------------------------------------------------------
+// Body
+$body-bg: #f0f0f0 !default;
+$body-color: #333333 !default;
+
+// Links
+$link-color: $ul-blue !default;
+$link-color-hover: darken($ul-blue, 15%) !default;
+
+// Selection
+$selection-bg: rgba($ul-blue, 0.3) !default;
+
+// Code blocks
+$code-block-bg: #f5f5f5 !default;
+$code-block-border-color: rgba(0, 0, 0, 0.1) !default;
+
+// Input panels
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+// ------------------------------------------------------------------------------
+// Heading Styles
+// ------------------------------------------------------------------------------
+$presentation-heading-color: $body-color !default;
+$presentation-heading-font-weight: 400 !default;
+// $presentation-heading-letter-spacing: -0.03em !default;
+
+// ------------------------------------------------------------------------------
+// Additional Customizations
+// ------------------------------------------------------------------------------
+// Add any custom SCSS variables here
+
+

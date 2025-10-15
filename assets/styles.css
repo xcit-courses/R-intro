@@ -1,0 +1,51 @@
+/* Custom Quarto Lux theme overrides */
+
+/*-- scss:defaults --*/
+:root {
+  --bs-primary: #2d2d2d;
+  --bs-secondary: #6c757d;
+  --bs-font-sans-serif: 'IBM Plex Sans', 'Space Mono', 'Hack', Arial, sans-serif;
+}
+
+/*-- scss:rules --*/
+body {
+  font-family: 'IBM Plex Sans', 'Space Mono', 'Hack', Arial, sans-serif;
+  color: #2d2d2d;
+  font-weight: 400;
+}
+
+/* Make main content text darker and more readable */
+.content p, .content li, .content td {
+  color: #383838;
+  font-weight: 350;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', 'Space Mono', 'Hack', Arial, sans-serif;
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+code, pre {
+  font-family: 'Hack', 'Space Mono', monospace;
+}
+
+/* Prevent all-caps in sidebar title */
+.sidebar-title, .sidebar-header .title {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* Center sidebar tools (icons) below the logo */
+.sidebar-tools-main.tools-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Optional: ensure each icon has some spacing */
+.sidebar-tools-main .quarto-navigation-tool {
+  margin: 0 0.25em;
+}

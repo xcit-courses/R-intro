@@ -1,0 +1,384 @@
+---
+title: "Introduction to R"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    footer: "pedro.cardosoleite@uni.lu"
+    width: 1600
+    height: 900
+    mainfont: "IBM Plex Sans"
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+
+# What is "R"?
+
+## What is "R"?
+
+-> Ask [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))!
+
+
+
+## What is "R"?
+
+>  ... a programming language for statistical computing ...
+
+## What is "R"?
+
+-   what is a language?
+
+-   what is a programming language?
+
+-   what is a statistical programming language?
+
+
+## History of R
+
+
+
+
+## Why use programming for data analysis?
+
+ 1. flexibility
+ 2. efficiency
+ 3. reproducibility
+ 4. NEW: AI-support
+
+
+## R-Related terms
+
+ - base R
+ - packages, CRAN, GitHub
+ - scripts
+ - RStudio
+ - tidyverse
+ - other?
+ 
+::: notes
+Are there other terms you have heard before that are not listed here?
+:::
+
+
+
+
+## base R
+
+When you install R, it comes with a set of core functionality. 
+
+This core functionality is sometimes referred to as base R. 
+
+Note that across successive updates of R (i.e., "versions"), that core functionality changes; usually quite slowly and in a "back-compatible way"--a main goal is **stability**.
+
+### Examples:
+
+Base R includes for example functions to compute the mean and standar deviation of a vector of numbers.
+
+
+## packages (for R)
+
+Base R is limited and highly controlled. You can however extend the cababilities of R by 
+
+ - using code written by others
+    - code snippets shared by others
+    - packages that you can download and install
+ - write your own code 
+
+
+
+
+
+
+# R, RStudio and the tidyverse
+
+## base R and R packages
+
+R comes with a core set of functionality.
+
+These can be extended by
+
+-   installing code written by others (in particular packages)
+
+-   writing your own code
+
+## Installing packages
+
+Its super easy to install and use packages!
+
+**Step 1: download the package on your computer**
+
+```{r}
+#| eval: false
+#| echo: true
+install.packages("package_name")
+```
+
+**Step 2: load the package when you needed (so you can use it)r**
+
+```{r}
+#| eval: false
+#| echo: true
+library("package_name")
+```
+
+## Why use R?
+
+![](/images/why-R.png){fig-align="center"}
+
+## Why R?
+
+There's an exponential increase in packages for R
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 6
+
+library(tidyverse)
+library(rvest)
+
+# Fetch real CRAN package data from the official available packages page
+packages <- read_html("https://cran.r-project.org/web/packages/available_packages_by_date.html") |>
+  html_table() |>
+  pluck(1) |>
+  # Count packages per date
+  group_by(Date) |>
+  tally() |>
+  mutate(
+    total = cumsum(n),
+    Date = as.Date(Date)
+  ) |>
+  ungroup()
+
+# Aggregate by year for cleaner visualization
+packages_yearly <- packages |>
+  mutate(year = lubridate::year(Date)) |>
+  group_by(year) |>
+  slice_max(Date, n = 1) |>  # Get last entry of each year
+  ungroup() |>
+  select(year, packages = total)
+
+# Get current info
+current_year <- lubridate::year(Sys.Date())
+current_count <- packages |> slice_max(Date, n = 1) |> pull(total)
+
+# Create the plot
+packages_yearly |>
+  ggplot(aes(x = year, y = packages)) +
+  geom_line(color = "#1da7e0", linewidth = 1.5) +
+  geom_text(
+    data = \(x) filter(x, year == current_year),
+    aes(label = scales::comma(packages)),
+    vjust = -1.5, 
+    hjust = 0.5, 
+    size = 5, 
+    fontface = "bold"
+  ) +
+  labs(
+    title = "There is an exponential growth of R packages!",
+    x = "Year",
+    y = "Number of packages on CRAN",
+    caption = "Data: CRAN (cran.r-project.org/web/packages/available_packages_by_date.html)"
+  ) +
+  scale_y_continuous(labels = scales::comma) +
+  scale_x_continuous(breaks = seq(min(packages_yearly$year), current_year, by = 2)) +
+  theme_minimal(base_size = 16) +
+  theme(
+    plot.title = element_text(face = "bold", hjust = 0.5),
+    panel.grid.minor = element_blank(),
+    plot.caption = element_text(size = 10, hjust = 1)
+  )
+```
+
+## Why R?
+
+::::: columns
+::: {.column width="50%"}
+![](/images/package-increase.png){fig-align="center"}
+:::
+
+::: {.column width="50%"}
+![https://www.tidyverse.org](/images/tidyverse-sticker.png)
+:::
+:::::
+
+## Why use R?
+
+### Top 10 reasons to use R
+
+programming is better than click and point; - reproducible - flexible and rich (fewer limits) - supported by AI agents
+
+1.  designed for data analysis (comprehensive)
+
+2.  highly effective and elegant (e.g., ggplot2)
+
+3.  state-of-the-art methods
+
+4.  free and open
+
+5.  runs on Linux, Mac, Window, etc.
+
+6.  active development
+
+7.  strong community
+
+8.  great resources
+
+9.  modern approach to data science
+
+10. great value on the job market
+
+## 
+
+::::: columns
+::: {.column width="50%"}
+### The Good
+
+-   many great packages
+-   your problem has most likely already been solved
+-   variety and freedom
+:::
+
+::: {.column width="50%"}
+### The Bad
+
+-   organic, complex ecosystem
+-   inconsistencies in style
+-   variable quality code
+-   the paradox of choice
+:::
+:::::
+
+## What is "R"?
+
+1.  a programming language for statistical computing
+2.  **software that understands the R language and runs its instructions**
+
+## What is R?
+
+Programming language vs Software (GUI/WYSIWYG)
+
+[link](https://www.guru99.com/r-programming-introduction-basics.html)
+
+[APS](https://www.psychologicalscience.org/observer/why-you-should-become-a-user-a-brief-introduction-to-r)
+
+## With great power comes great great precision...
+
+Computers will do everything you ask them to do!
+
+But you must tell them very precisely what you want.
+
+## Popularity of R
+
+Below code does not really fit.
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-width: 10
+#| fig-height: 6
+
+library(tidyverse)
+library(gtrendsR)
+
+# Fetch Google Trends data with error handling and retry
+fetch_gtrends <- function() {
+  tryCatch({
+    # Add a small delay to avoid rate limiting
+    Sys.sleep(2)
+    
+    # Fetch Google Trends data for R, Python, and SPSS
+    trends_data <- gtrends(
+      keyword = c("R language", "Python language", "SPSS software"),
+      time = "2015-01-01 2025-10-08",
+      onlyInterest = TRUE
+    )
+    
+    return(trends_data)
+  }, error = function(e) {
+    message("Error fetching Google Trends data: ", e$message)
+    message("Note: Google Trends may rate-limit requests. Try again later or use cached data.")
+    return(NULL)
+  })
+}
+
+# Try to fetch the data
+trends_data <- fetch_gtrends()
+
+if (!is.null(trends_data) && !is.null(trends_data$interest_over_time)) {
+  # Extract and process the interest over time data
+  trends_df <- trends_data$interest_over_time |>
+    as_tibble() |>
+    mutate(
+      date = as.Date(date),
+      year = year(date),
+      tool = case_when(
+        str_detect(keyword, "R") ~ "R",
+        str_detect(keyword, "Python") ~ "Python",
+        str_detect(keyword, "SPSS") ~ "SPSS",
+        TRUE ~ keyword
+      ),
+      hits = as.numeric(ifelse(hits == "<1", "0.5", hits))
+    ) |>
+    # Aggregate by year to smooth out monthly fluctuations
+    group_by(year, tool) |>
+    summarize(
+      interest = mean(hits, na.rm = TRUE),
+      .groups = "drop"
+    ) |>
+    mutate(date = as.Date(paste0(year, "-01-01")))
+  
+  # Create the plot
+  p <- trends_df |>
+    ggplot(aes(x = date, y = interest, color = tool)) +
+    geom_line(linewidth = 1.5, alpha = 0.9) +
+    geom_point(size = 2, alpha = 0.7) +
+    scale_color_manual(
+      values = c("R" = "#1da7e0", "Python" = "#306998", "SPSS" = "#db0d23"),
+      name = "Tool"
+    ) +
+    labs(
+      title = "Programming Languages for Data Analysis: Google Trends",
+      subtitle = "Search interest over time (2015-2025)",
+      x = "Year",
+      y = "Relative Search Interest (0-100)",
+      caption = paste0(
+        "Data: Google Trends (trends.google.com) | ",
+        "Retrieved: ", format(Sys.Date(), "%B %d, %Y")
+      )
+    ) +
+    scale_x_date(date_breaks = "1 year", date_labels = "%Y") +
+    scale_y_continuous(limits = c(0, 100)) +
+    theme_minimal(base_size = 16) +
+    theme(
+      plot.title = element_text(face = "bold", hjust = 0.5),
+      plot.subtitle = element_text(hjust = 0.5, size = 12),
+      panel.grid.minor = element_blank(),
+      legend.position = "top",
+      legend.title = element_text(face = "bold"),
+      plot.caption = element_text(size = 9, hjust = 1),
+      axis.text.x = element_text(angle = 45, hjust = 1)
+    )
+  
+  print(p)
+} else {
+  # Fallback message if data cannot be fetched
+  cat("Google Trends data temporarily unavailable due to rate limiting.\n")
+  cat("Please try rendering again later or check the online version.\n")
+}
+```

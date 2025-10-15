@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - about/index.qmd
+    - about/info.qmd
+    - about/overview.qmd
+    - about/syllabus.qmd
+    - about/team.qmd
+    - about/access.qmd
+    - chapters/*/chapter*.qmd
+    - chapters/*/slides/*.qmd
+    - chapters/*/slides/*.Rmd
+    - materials/*
+    - assets/styles.css
+website:
+  title: "Course Title"  # Use mixed case
+  sidebar:
+    logo: assets/images/course_logo.png
+    style: "docked"
+    search: true
+    tools:
+      - icon: github
+        href: https://github.com/your-org/your-repo
+        text: "GitHub"
+      - icon: cloud-fill
+        href: https://posit.cloud/
+        text: "RStudio Cloud"
+      - icon: person-fill
+        href: https://uni.lu
+        text: "UniLu"
+    contents:
+      - text: Home
+        href: about/index.qmd
+      - section: Course Information
+        contents:
+          - text: Overview
+            href: about/overview.qmd
+          - text: Syllabus
+            href: about/syllabus.qmd
+
+      - section: Chapters
+        contents:
+          - text: Chapter 1
+            href: chapters/chapter1/chapter1.qmd
+          - text: Chapter 2
+            href: chapters/chapter2/chapter2.qmd
+
+      - text: Materials
+        href: materials/readings.md
+
+  page-footer:
+    left: "© 2025 University Name"
+    right: "Built with [Quarto](https://quarto.org/)"
+  page-navigation: true
+
+book:
+  chapters:
+    - about/index.qmd
+    - part: "Course Information"
+      chapters:
+        - about/overview.qmd
+        - about/syllabus.qmd
+    - part: "Chapters"
+      chapters:
+        - chapters/chapter1/chapter1.qmd
+        - chapters/chapter2/chapter2.qmd
+    - materials/readings.md
+
+format:
+  html:
+    theme:
+      - lux
+      - assets/styles.css
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    link-external-newwindow: true
+    color-scheme: auto

@@ -1,0 +1,82 @@
+---
+title: "Introduction to R"
+subtitle: "MAPEA-85 2025-2026"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    footer: "pedro.cardosoleite@uni.lu"
+    width: 1600
+    height: 900
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+## About this course
+
+## Schedule
+
+{{< include ../../../about/schedule_table.md >}}
+
+## What is this course about?
+
+::: incremental
+1.  Getting started (background and setup)
+2.  Programming, in R
+3.  Importing data into R
+4.  Statistics
+5.  Data visualization
+6.  Workflows & best practices
+7.  Preparation for future courses
+:::
+
+::: notes
+In 1: - install R - install packages - run script - intro to the ecosystem - getting help - useful resources (cheatsheet, online resources)
+:::
+
+## Why this course?
+
+[![Wikipedia](/chapters/chapter1/images/the_scientific_method.png){fig-alt="https://en.wikipedia.org/wiki/Scientific_method" fig-align="center" width="600"}](https://en.wikipedia.org/wiki/Scientific_method)
+
+Students are often not well prepared to integrate all the steps of this loop. They lack practical skills to implement the data analysis and reporting efficiently and in a way that can be reproduced.
+
+## Data science workflow
+
+[![https://r4ds.hadley.nz/](/chapters/chapter1/images/data_science_workflow.png){fig-alt="https://r4ds.hadley.nz/" fig-align="center"}](https://r4ds.hadley.nz/)
+
+Programming is the "glue" that binds all of these steps.
+
+## Freedom and empowerment
+
+-   You are restricted when using "tools" developed by others;
+
+-   If you learn to create your own "tools", the possibilities become endless.
+
+-   You will gain in efficiency and freedom (you can delegate work to computers).
+
+-   You will better understand the digital world.
+
+## Learning by doing
+
+This is a hands-on course!
+
+No homework, no grading.
+
+## Resources
+
+-   [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+-   [R for Data Science (2e)](https://r4ds.hadley.nz/)
+-   [R for Psychological Science](https://psyr.djnavarro.net/)
+-   [Learning Statistics with R](https://learningstatisticswithr.com/)
+-   [R for Psych](https://glennwilliams.me/r4psych/)

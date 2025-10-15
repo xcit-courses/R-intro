@@ -1,0 +1,33 @@
+---
+title: "Course Overview"
+---
+
+
+This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the [Master in Psychology--Evaluation and Assessment](https://www.uni.lu/fhse-en/study-programs/master-in-psychology-evaluation-and-assessment/programme/) program. 
+
+All course materials will be posted on this site.
+
+
+
+
+## What?
+
+This course is an introduction to programming in R. Programming is an essential skill that is at the heart of modern technologies, including generative AI systems like ChatGPT. In today's digital age, understanding the core principles of programming is not just an academic pursuit; it’s an essential skill that empowers you to navigate and act in the modern world. As a student of psychology, acquiring programming skills will greatly benefit you, be it for analyzing data for research or practice, for developing new digital products like websites, or for better understanding and using software developed by others.
+
+In this course we will focus on [R](https://www.r-project.org/)--a powerful, open-source programming language that excels in statistical computing and graphics. It's widely used in academia and industry for its flexibility and rich ecosystem of packages tailored for data analysis, visualization, and modeling. By learning R, you'll equip yourself with tools to handle complex datasets, perform robust analyses, and present your findings compellingly. While our focus is on R, the programming concepts that you will learn are common to most programming languages.  
+
+
+This course is very much hands-on: the "lecture" part aims to be minimal and offer instead many guided activities for "learning-by-doing". By the end of this course, students should be familiar with the main programming concepts (e.g., variables, for loops) and they should be able to write simple R programs. Most importantly, we hope this course will empower students to confidently embark on their programming journey. 
+
+
+## When and where
+
+
+
+
+{{< include schedule_table.md >}}
+
+
+
+
+
