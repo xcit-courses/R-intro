@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
+    "href": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
+    "title": "Introduction to Programming in R",
+    "section": "The Monty Hall Problem",
+    "text": "The Monty Hall Problem\nhttps://en.wikipedia.org/wiki/Monty_Hall_problem"
+  },
+  {
+    "objectID": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-chose",
+    "href": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-chose",
+    "title": "Introduction to Programming in R",
+    "section": "What would you chose?",
+    "text": "What would you chose?"
+  },
+  {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
     "href": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
     "title": "Getting started using R",
@@ -175,6 +189,28 @@
     "text": "Resources\n\nHands-On Programming with R\nR for Data Science (2e)\nR for Psychological Science\nLearning Statistics with R\nR for Psych"
   },
   {
+    "objectID": "chapters/chapter4/chapter4.html",
+    "href": "chapters/chapter4/chapter4.html",
+    "title": "Chapter 4: Introduction to programming",
+    "section": "",
+    "text": "In this chapter we will cover the main programming concepts.\nThere will be several exercises to start practicing your programming skills.",
+    "crumbs": [
+      "Chapters",
+      "Chapter 4"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter4/chapter4.html#slides",
+    "href": "chapters/chapter4/chapter4.html#slides",
+    "title": "Chapter 4: Introduction to programming",
+    "section": "Slides",
+    "text": "Slides\n\nIntroduction to prorgramming",
+    "crumbs": [
+      "Chapters",
+      "Chapter 4"
+    ]
+  },
+  {
     "objectID": "chapters/chapter2/chapter2.html",
     "href": "chapters/chapter2/chapter2.html",
     "title": "Chapter 2: Introduction to R",
@@ -212,7 +248,7 @@
     "href": "about/index.html",
     "title": "Introduction to Programming in R",
     "section": "",
-    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\nIn this course we will cover the following content:\n\nSlides\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\nChapter 3: Getting started using R\n\nEach chapter contains links slides and possibly other resources.",
+    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\nIn this course we will cover the following content:\n\nSlides\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\nChapter 3: Getting started using R\nChapter 4: Introduction to programming\nChapter 5: Coding project 1: The Monty Hall problem\n\nEach chapter contains links slides and possibly other resources.",
     "crumbs": [
       "Home"
     ]
@@ -292,6 +328,28 @@
     "crumbs": [
       "Chapters",
       "Chapter 3"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter5/chapter5.html",
+    "href": "chapters/chapter5/chapter5.html",
+    "title": "Chapter 5: (Project) The Monty Hall Problem",
+    "section": "",
+    "text": "In this chapter we will bring together all the programming concepts we have seen sofar.\nThe goal is to use simulations to answer the Monty Hall problem: should you switch doors and stay with your original choice?",
+    "crumbs": [
+      "Chapters",
+      "Chapter 5"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter5/chapter5.html#slides",
+    "href": "chapters/chapter5/chapter5.html#slides",
+    "title": "Chapter 5: (Project) The Monty Hall Problem",
+    "section": "Slides",
+    "text": "Slides\n\nThe Monty Hall problem",
+    "crumbs": [
+      "Chapters",
+      "Chapter 5"
     ]
   },
   {
@@ -440,5 +498,159 @@
     "title": "Introduction to R",
     "section": "Programming brings great power…",
     "text": "Programming brings great power…\n…with great power comes great precision:\n\nComputers will do everything you ask them to do!\nBut you must tell them very precisely what you want."
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#abc-vs-writing-a-book",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#abc-vs-writing-a-book",
+    "title": "Introduction to Programming in R",
+    "section": "ABC vs Writing a book",
+    "text": "ABC vs Writing a book\n\nFundamental skills\nSpecialized skills\nWorkflow, methodologies, tools"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#key-concepts",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#key-concepts",
+    "title": "Introduction to Programming in R",
+    "section": "Key concepts",
+    "text": "Key concepts\n\nvalues / data (i.e., the content, e.g., \"hello\")\nvariables (data containers, e.g., x &lt;- 5)\nloops (e.g., “repeat operation 1000 times”)\ncontrol flow (e.g., “if x then y else z”)\nfunctions (i.e., encapsulate transformations)"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#this-is-similar-to-math",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#this-is-similar-to-math",
+    "title": "Introduction to Programming in R",
+    "section": "This is similar to Math!",
+    "text": "This is similar to Math!\n\nf(x): 2*x + 1\nf(5)\nz = 3; f(z)\ng(x): x if x &gt; 0, else 0"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping-for-coders",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping-for-coders",
+    "title": "Introduction to Programming in R",
+    "section": "Touchtyping for coders",
+    "text": "Touchtyping for coders\nCoding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:\n\n\n\n\n( ) [] { } round, square and curly brackets\n” ’ double and single quote\n- _ hyphen and underscore\n&lt; &gt; smaller and greater than\n| pipe\n\n\n\n` back tick\n\\ / backward and forward slash\n$ dollar sign\n~ tilde\n# pound\n& and operator"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
+    "title": "Introduction to Programming in R",
+    "section": "Touchtyping",
+    "text": "Touchtyping\nIt is worth learning to touch type!\nThere are many free online resources:\n\nhttps://www.typingclub.com/\nhttps://www.keybr.com/\nhttps://monkeytype.com/\nhttps://www.speedcoder.net/\nhttps://typing.io/\n\n\nTry"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types",
+    "title": "Introduction to Programming in R",
+    "section": "Values / data types",
+    "text": "Values / data types\nAtomic values\n\nLogical (boolean)\nInteger\nNumeric (double)\nCharacter / String\n…\n\nExercise: find examples of values for each of these types."
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types-1",
+    "title": "Introduction to Programming in R",
+    "section": "Values / data types",
+    "text": "Values / data types\nData structures\nAtomic values can be organized into more complex data structures:\n\nData structures\n\n\ndimensions\nhomogenous\nheterogenous\n\n\n\n\n1\natomic vector\nlist\n\n\n2\nmatrix\ndata frame\n\n\nn\narray"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: what data structures are these?",
+    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n     [,1]  [,2]  [,3]\n[1,] 1.14 -3.15 -1.12\n[2,] 1.14 -0.06 -1.16\n[3,] 1.26 -1.16  0.63\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
+    "title": "Introduction to Programming in R",
+    "section": "Variables / containers",
+    "text": "Variables / containers\nWe can store values (and functions and other stuff) in labeled containers called variables!\nExample:\nx &lt;- 5\nThis is read as:\n\n“x gets 5”\n“we assign the value 5 to variable x”\n\nNote: most programming languages use “=” instead."
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers-1",
+    "title": "Introduction to Programming in R",
+    "section": "Variables / containers",
+    "text": "Variables / containers\nWe can store more complex data structures:\nmy_vector &lt;- c(1,3,5,7)\nas well as transformations (more on this later):\nmy_function &lt;- function(x){2*x+1}"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables",
+    "title": "Introduction to Programming in R",
+    "section": "How to name variables?",
+    "text": "How to name variables?\nRequirements\n\nmust start with a letter or a period (followed by letter)\nreserved words (e.g., TRUE, if, function) are forbidden\ncan’t contain spaces (e.g., my variable vs my_variable)\n\nRecommendations\n\nonly use lower case letters, digits and underscore\nuse meaningful names\nclarity beats brevity"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables-1",
+    "title": "Introduction to Programming in R",
+    "section": "How to name variables?",
+    "text": "How to name variables?\nExercise: Find a good name for the variable ___?\n___ &lt;- \"John\"\n\nif ( ___ == \"John\"){\n  print(\"Hi John! Nice to see you again.)\n} else {\n  print(paste(\"Hi\", ___, \". It looks like you are new to this course. Welcome!\"))\n}"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#lets-try-swirl",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#lets-try-swirl",
+    "title": "Introduction to Programming in R",
+    "section": "Let’s try swirl!",
+    "text": "Let’s try swirl!\ncourse: R Programming Basic Building Blocks\nchapter: Basic Building Blocks"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#working-on-a-project",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#working-on-a-project",
+    "title": "Introduction to Programming in R",
+    "section": "Working on a project",
+    "text": "Working on a project\n\nR console\nR scripts (*.R)\nR + quarto files (*.qmd)\nR projects (*.Rproj)"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#functions",
+    "title": "Introduction to Programming in R",
+    "section": "Functions",
+    "text": "Functions"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
+    "title": "Introduction to Programming in R",
+    "section": "Functions: Example 1",
+    "text": "Functions: Example 1\nCalculate the mean of the following values:\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\n\nNote: - getting help - argument, parameters - different functions expect different types of input - function outputs\nFunctions: Example 2\ncalculate the correlation between age and weight\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\nweight &lt;- c(70, 64, 80, 63, 92, 102, 77)"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#create-your-own-functions",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#create-your-own-functions",
+    "title": "Introduction to Programming in R",
+    "section": "Create your own functions",
+    "text": "Create your own functions\nTo create your own functions use the following template:\n\nmy_function_name &lt;- function(input_1, input_2) {\n  \n  # --- write your code here --\n  # example:\n  output &lt;- input_1 + input_2\n  \n  # return the output\n  output\n  \n}"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-1",
+    "title": "Introduction to Programming in R",
+    "section": "Functions",
+    "text": "Functions\n\nNaming functions\nnamespace (e.g., mean() vs base::mean())"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-1",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: BMI calculator (part 1)",
+    "text": "Exercise: BMI calculator (part 1)\nWrite a function that computes the body mass index (in an R script!)\n\\[ bmi = \\frac{weight}{height²} \\]\n\\(weight\\) in kg and \\(height\\) in m"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-2",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-2",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: BMI calculator (part 2)",
+    "text": "Exercise: BMI calculator (part 2)\nChange your function so it prints the text:\n\n“Your height is ___ m and your weight is ___ kg:\n\n\nYour BMI is ___.”"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-3",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-3",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: BMI calculator (part 3)",
+    "text": "Exercise: BMI calculator (part 3)\nChange your function so it prints the text:\n\n“Your height is ___ m and your weight is ___ kg:\n\n\nYour BMI is ___.”\n\n\nYour BMI-category is ___.”"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#sourcing-code",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#sourcing-code",
+    "title": "Introduction to Programming in R",
+    "section": "“Sourcing” code",
+    "text": "“Sourcing” code"
   }
 ]
