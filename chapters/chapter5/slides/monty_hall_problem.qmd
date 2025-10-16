@@ -1,0 +1,41 @@
+---
+title: "Introduction to Programming in R"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    width: 1600
+    height: 900
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+
+
+# Programming Challenge: the Monty Hall problem
+
+## The Monty Hall Problem
+
+https://en.wikipedia.org/wiki/Monty_Hall_problem
+
+
+## What would you chose? 
+
+
+
+
+
+
+
+

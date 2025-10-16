@@ -1,0 +1,14 @@
+---
+title: "Chapter 4: Introduction to programming"
+---
+
+In this chapter we will cover the main programming concepts. 
+
+There will be several exercises to start practicing your programming skills.
+
+
+# Materials
+
+## Slides
+
+- [Introduction to prorgramming](slides/introduction_to_programming.qmd)

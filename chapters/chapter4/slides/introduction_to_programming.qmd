@@ -1,0 +1,308 @@
+---
+title: "Introduction to Programming in R"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    width: 1600
+    height: 900
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+# The basics of programming (in R) {#color-slide background-image="../../../assets/background_images/eniac-programming.png"}
+
+```{css, echo=FALSE}
+#color-slide, 
+#color-slide h1,h2 {
+ color: white;
+}
+```
+
+## ABC vs Writing a book
+
+-   Fundamental skills
+
+-   Specialized skills
+
+-   Workflow, methodologies, tools
+
+## Key concepts
+
+1.  values / data (i.e., the content, e.g., `"hello"`)
+2.  variables (data containers, e.g., `x <- 5`)
+3.  loops (e.g., "repeat operation 1000 times")
+4.  control flow (e.g., "if x then y else z")
+5.  functions (i.e., encapsulate transformations)
+
+## This is similar to Math!
+
+-   f(x): 2\*x + 1
+-   f(5)
+-   z = 3; f(z)
+-   g(x): x if x \> 0, else 0
+
+## Touchtyping for coders
+
+Coding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:
+
+
+::::: {.columns}
+::: incremental
+
+:::: {.column width='50%'}
+1.  ( ) \[\] { } round, square and curly brackets
+2.  " ' double and single quote
+3.  \- \_ hyphen and underscore
+4.  \< \> smaller and greater than
+5.  \| pipe
+:::: 
+
+:::: {.column width='50%'}
+6.  \` back tick
+7.  \\ / backward and forward slash
+8.  \$ dollar sign
+9.  \~ tilde
+10. \# pound
+11. & and operator
+:::: 
+:::
+:::::
+
+
+
+## Touchtyping
+
+It is worth learning to touch type! 
+
+There are many free online resources:
+
+ - https://www.typingclub.com/
+ - https://www.keybr.com/
+ - https://monkeytype.com/
+ - https://www.speedcoder.net/
+ - https://typing.io/
+
+::: incremental
+Try
+:::
+
+
+
+## Values / data types
+
+### Atomic values
+
+-   Logical (boolean)
+-   Integer
+-   Numeric (double)
+-   Character / String
+-   ...
+
+Exercise: find examples of values for each of these types.
+
+## Values / data types
+
+### Data structures
+
+Atomic values can be organized into more complex data structures:
+
+| dimensions | homogenous    | heterogenous |
+|------------|---------------|--------------|
+| 1          | atomic vector | list         |
+| 2          | matrix        | data frame   |
+| n          | array         |              |
+
+: Data structures
+
+## Exercise: what data structures are these?
+
+Example 1:
+
+```{r}
+head(mtcars)
+```
+
+Example 2:
+
+`("a", 12, TRUE)`
+
+Example 3:
+
+```{r}
+round(matrix(data = rnorm(9), nrow = 3),2)
+```
+
+Example 4:
+
+```{r}
+"hello world!"
+
+```
+
+## Variables / containers
+
+We can store values (and functions and other stuff) in labeled containers called variables!
+
+Example:
+
+`x <- 5`
+
+This is read as:
+
+-   "x gets 5"
+-   "we *assign* the value 5 to variable x"
+
+Note: most programming languages use "=" instead.
+
+## Variables / containers
+
+We can store more complex data structures:
+
+`my_vector <- c(1,3,5,7)`
+
+as well as transformations (more on this later):
+
+`my_function <- function(x){2*x+1}`
+
+## How to name variables?
+
+### Requirements
+
+-   must start with a letter or a period (followed by letter)
+-   reserved words (e.g., `TRUE`, `if`, `function`) are forbidden
+-   can't contain spaces (e.g., `my variable` vs `my_variable`)
+
+### Recommendations
+
+-   only use lower case letters, digits and underscore
+-   use meaningful names
+-   clarity beats brevity
+
+## How to name variables?
+
+Exercise: Find a good name for the variable `___`?
+
+``` r        
+___ <- "John"
+
+if ( ___ == "John"){
+  print("Hi John! Nice to see you again.)
+} else {
+  print(paste("Hi", ___, ". It looks like you are new to this course. Welcome!"))
+}
+```
+
+# Practice!
+
+## Let's try swirl! {.center}
+
+**course**: R Programming Basic Building Blocks
+
+**chapter**: Basic Building Blocks
+
+
+
+
+## Working on a project
+
+- R console
+- R scripts (*.R)
+- R + quarto files (*.qmd)
+- R projects (*.Rproj)
+
+
+
+
+
+## Functions
+
+## Functions: Example 1
+
+Calculate the mean of the following values:
+
+```{r}
+#| echo: true
+
+age <- c(23, 26, 37, 45, 63, NA, 52)
+
+```
+
+Note: - getting help - argument, parameters - different functions expect different types of input - function outputs
+
+### Functions: Example 2
+
+calculate the correlation between age and weight
+
+```{r}
+#| echo: true
+age <- c(23, 26, 37, 45, 63, NA, 52)
+weight <- c(70, 64, 80, 63, 92, 102, 77)
+
+
+```
+
+## Create your own functions
+
+To create your own functions use the following template:
+
+```{r}
+#| echo: true
+#| eval: false
+#| 
+my_function_name <- function(input_1, input_2) {
+  
+  # --- write your code here --
+  # example:
+  output <- input_1 + input_2
+  
+  # return the output
+  output
+  
+}
+
+```
+
+## Functions
+
+-   Naming functions
+-   namespace (e.g., `mean()` vs `base::mean()`)
+
+## Exercise: BMI calculator (part 1)
+
+Write a function that computes the [body mass index](https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm) (in an R script!)
+
+$$ bmi = \frac{weight}{height²} $$
+
+$weight$ in kg and $height$ in m
+
+## Exercise: BMI calculator (part 2)
+
+Change your function so it prints the text:
+
+> "Your height is \_\_\_ m and your weight is \_\_\_ kg:
+
+> Your BMI is \_\_\_."
+
+## Exercise: BMI calculator (part 3)
+
+Change your function so it prints the text:
+
+> "Your height is \_\_\_ m and your weight is \_\_\_ kg:
+
+> Your BMI is \_\_\_."
+
+> Your BMI-category is \_\_\_."
+
+## "Sourcing" code

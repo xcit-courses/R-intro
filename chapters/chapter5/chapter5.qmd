@@ -1,0 +1,15 @@
+---
+title: "Chapter 5: (Project) The Monty Hall Problem"
+---
+
+In this chapter we will bring together all the programming concepts we have seen sofar. 
+
+The goal is to use simulations to answer the Monty Hall problem: should you switch doors and stay with your original choice?
+
+
+
+# Materials
+
+## Slides
+
+- [The Monty Hall problem](slides/monty_hall_problem.qmd)
