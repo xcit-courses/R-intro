@@ -1,0 +1,17 @@
+---
+title: "Chapter 7: Introduction to data analysis in R"
+---
+
+In this chapter we will bring together all the concepts we have seen sofar and perform a simple analysis of a dataset, including descriptive statistics, hypothesis testing and plotting. 
+
+
+We will then briefly see some of the modern tidyverse-related tools to perform these steps more efficiently and elegantly.  
+
+
+
+
+# Materials
+
+## Slides
+
+- [Introduction to data analysis in R](slides/intro_to_data_analysis.qmd)

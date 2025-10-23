@@ -50,7 +50,11 @@ website:
           - text: Chapter 4
             href: chapters/chapter4/chapter4.qmd
           - text: Chapter 5
-            href: chapters/chapter5/chapter5.qmd                        
+            href: chapters/chapter5/chapter5.qmd
+          - text: Chapter 6
+            href: chapters/chapter6/chapter6.qmd
+          - text: Chapter 7
+            href: chapters/chapter7/chapter7.qmd                        
       - text: Materials
         href: materials/readings.md
 
@@ -72,7 +76,9 @@ book:
         - chapters/chapter2/chapter2.qmd
         - chapters/chapter3/chapter3.qmd
         - chapters/chapter4/chapter4.qmd
-        - chapters/chapter5/chapter5.qmd                      
+        - chapters/chapter5/chapter5.qmd
+        - chapters/chapter5/chapter6.qmd
+        - chapters/chapter5/chapter7.qmd                                      
     - materials/readings.md
 
 format:

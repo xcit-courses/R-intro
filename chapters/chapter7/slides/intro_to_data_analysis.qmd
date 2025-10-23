@@ -1,0 +1,34 @@
+---
+title: "Introduction to data analysis in R"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    width: 1600
+    height: 900
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+## Demo
+
+- Let's have a look at a specific dataset and do some analysis together.
+
+-   Open `lab_analysis_intro`, available on [Github](https://github.com/xcit-courses/R-intro-labs).
+
+-   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead.
+
+-   Note however that your progress will not be saved if you use Binder!
+
+

@@ -1,0 +1,120 @@
+---
+title: "Importing data into R "
+subtitle: "+intro to data.frames"
+author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title-block-banner: true
+title-block-style: plain
+affiliation-title: "University of Luxembourg" 
+format: 
+  revealjs:
+    theme: [default, ../../../assets/revealjs_themes/teaching.scss]
+    css: ../../../assets/revealjs_themes/style.css
+    incremental: true
+    chalkboard: true
+    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    width: 1600
+    height: 900
+    pointer:
+      color: "#db0d23"
+      pointerSize: 24
+    revealjs-plugins:
+      - pointer
+editor: visual
+---
+
+# Data file formats
+
+## There are many different file formats for data...
+
+-   \*.csv
+-   \*.tsv
+-   \*.txt
+-   \*.xlsx (Excel)
+-   \*.sav (SPSS)
+-   \*.mat (MATLAB)
+-   \*.RData (R)
+-   \*.EDF (EEG data)
+-   \*.xml
+-   \*.json
+-   \*.jml
+-   ... and many, many more
+
+## and sometimes one can find data in weird places...
+
+-   \*.docx
+-   \*.pdf
+-   \*.jpeg (images)
+-   ... and many more
+
+## Where can you find data?
+
+-   https://osf.io/
+-   https://figshare.com/
+-   https://openneuro.org/ (brain imaging)
+-   https://www.kaggle.com/datasets (usability score)
+-   https://datasetsearch.research.google.com/
+-   https://huggingface.co/
+-   https://zenodo.org/
+-   https://www.nature.com/sdata/policies/repositories
+-   https://openpsychologydata.metajnl.com/
+-   https://openpsychometrics.org/\_rawdata/
+-   https://dataverse.harvard.edu/
+-   https://nimh-dsst.github.io/OpenCogData/
+
+::: notes
+https://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/
+:::
+
+## Which file format should you choose?
+
+-   use open file formats
+-   use a format that fits your use case
+
+# Importing data into R
+
+## Importing data into R
+
+-   R can import a large range of data formats,
+-   but you typically need to install a particular package for a particular file format.
+-   RStudio provides convenient support for importing data.
+
+## Importing data into R
+
+-   Complete now the `lab_import_data` exercises available on [Github](https://github.com/xcit-courses/R-intro-labs)
+
+-   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead:
+
+-   Note however that your progress will not be saved if you use Binder!
+
+# Data Frames (aka spreadsheets)
+
+## Dataframes
+
+-   Dataframes are likely the most important data structure in R.
+-   They are basically like a spreadsheet.
+-   There are a few fundamental operations that you must know how to perform on data frames.
+
+## Main operations on data.frames
+
+0.  Inspect the size and type of a data.frame
+1.  See the content of a data.frame
+2.  Select a column of a data.frame
+3.  Filter rows of a data.frame
+4.  Modify or create new columns (mutate)
+5.  Save a data.frame (e.g., as a csv file)
+
+(In all the examples I will use a data.frame called `USArrests`. You can learn more about this in-build dataset by typing `?USArrests`)
+
+## Example dataset
+
+In all the examples below I will use the `Employee satisfaction and Salary (ESS)` dataset, downloaded from [Zenodo](https://zenodo.org/records/13935313).
+
+## Exploring data.frames
+
+-   In `lab_import_data` on [Github](https://github.com/xcit-courses/R-intro-labs), open  `data_frames.qmd`
+
+-   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead:
+
+-   Note however that your progress will not be saved if you use Binder!
+
+

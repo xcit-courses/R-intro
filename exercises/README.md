@@ -6,7 +6,9 @@ Welcome to the R programming course exercises!
 
 Click the button below to launch an interactive RStudio environment in your browser:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro/main?urlpath=rstudio)
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
+
 
 **When RStudio opens, your working directory will automatically be set to the `exercises/` folder!**
 

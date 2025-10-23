@@ -1,0 +1,16 @@
+---
+title: "Chapter 6: Importing data into R"
+---
+
+In this chapter we will explore different ways of importing tabular data into R. 
+
+We will go over several examples and troubleshoot some common issues when importing data.
+
+We will also introduce "data frames", the R equivalent of a spreadsheet and various ways to inspect them. 
+
+
+# Materials
+
+## Slides
+
+- [Importing data into R](slides/import_data.qmd)

@@ -15,6 +15,7 @@ In this course we will cover the following content:
 - [Chapter 3: Getting started using R](../chapters/chapter3/chapter3.qmd)
 - [Chapter 4: Introduction to programming](../chapters/chapter4/chapter4.qmd)
 - [Chapter 5: Coding project 1: The Monty Hall problem](../chapters/chapter5/chapter5.qmd)
-
+- [Chapter 6: Importing data](../chapters/chapter6/chapter6.qmd)
+- [Chapter 7: Example analysis](../chapters/chapter7/chapter7.qmd)
 
 Each chapter contains links slides and possibly other resources.
