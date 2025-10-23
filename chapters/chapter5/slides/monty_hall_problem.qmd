@@ -34,6 +34,17 @@ https://en.wikipedia.org/wiki/Monty_Hall_problem
 
 
 
+## Challenge
+
+
+-   Open `lab_monty_hall`, available on [Github](https://github.com/xcit-courses/R-intro-labs).
+
+-   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead.
+
+-   Note however that your progress will not be saved if you use Binder!
+
+
+
 
 
 
