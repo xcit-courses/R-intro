@@ -1,55 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter5/slides/monty_hall_problem.html</loc>
-    <lastmod>2025-10-16T06:46:52.447Z</lastmod>
+    <loc>https://xcit-courses.github.io/R-intro/resources/resources.html</loc>
+    <lastmod>2025-10-23T04:57:19.421Z</lastmod>
   </url>
   <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter3/slides/getting_started_using_R.html</loc>
-    <lastmod>2025-10-15T16:50:13.633Z</lastmod>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter6/slides/import_data.html</loc>
+    <lastmod>2025-10-21T16:11:03.421Z</lastmod>
   </url>
   <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter1/slides/course_introduction.html</loc>
-    <lastmod>2025-10-15T14:00:30.944Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter4/chapter4.html</loc>
-    <lastmod>2025-10-16T06:53:28.608Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter2/chapter2.html</loc>
-    <lastmod>2025-10-15T10:22:22.830Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/about/syllabus.html</loc>
-    <lastmod>2025-10-15T10:22:22.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/about/index.html</loc>
-    <lastmod>2025-10-16T06:57:56.519Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/about/overview.html</loc>
-    <lastmod>2025-10-15T10:22:22.825Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter1/chapter1.html</loc>
-    <lastmod>2025-10-15T10:22:22.829Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter3/chapter3.html</loc>
-    <lastmod>2025-10-15T16:58:24.974Z</lastmod>
-  </url>
-  <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter5/chapter5.html</loc>
-    <lastmod>2025-10-16T06:53:42.043Z</lastmod>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter4/slides/introduction_to_programming.html</loc>
+    <lastmod>2025-10-16T06:50:44.521Z</lastmod>
   </url>
   <url>
     <loc>https://xcit-courses.github.io/R-intro/chapters/chapter2/slides/introduction_to_R.html</loc>
     <lastmod>2025-10-15T14:00:03.157Z</lastmod>
   </url>
   <url>
-    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter4/slides/introduction_to_programming.html</loc>
-    <lastmod>2025-10-16T06:50:44.521Z</lastmod>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter7/chapter7.html</loc>
+    <lastmod>2025-10-21T13:49:56.634Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter5/chapter5.html</loc>
+    <lastmod>2025-10-16T06:53:42.043Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter3/chapter3.html</loc>
+    <lastmod>2025-10-15T16:58:24.974Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter1/chapter1.html</loc>
+    <lastmod>2025-10-15T10:22:22.829Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/about/overview.html</loc>
+    <lastmod>2025-10-15T10:22:22.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/about/index.html</loc>
+    <lastmod>2025-10-21T13:43:52.668Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/about/syllabus.html</loc>
+    <lastmod>2025-10-15T10:22:22.825Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter2/chapter2.html</loc>
+    <lastmod>2025-10-15T10:22:22.830Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter4/chapter4.html</loc>
+    <lastmod>2025-10-16T06:53:28.608Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter6/chapter6.html</loc>
+    <lastmod>2025-10-21T14:01:16.056Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter1/slides/course_introduction.html</loc>
+    <lastmod>2025-10-15T14:00:30.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter3/slides/getting_started_using_R.html</loc>
+    <lastmod>2025-10-15T16:50:13.633Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter5/slides/monty_hall_problem.html</loc>
+    <lastmod>2025-10-16T06:46:52.447Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xcit-courses.github.io/R-intro/chapters/chapter7/slides/intro_to_data_analysis.html</loc>
+    <lastmod>2025-10-23T04:42:09.481Z</lastmod>
   </url>
 </urlset>
