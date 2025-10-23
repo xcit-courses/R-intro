@@ -11,7 +11,7 @@ project:
     - chapters/*/chapter*.qmd
     - chapters/*/slides/*.qmd
     - chapters/*/slides/*.Rmd
-    - materials/*
+    - resources/*
     - assets/styles.css
 website:
   title: "Course Title"  # Use mixed case
@@ -55,8 +55,8 @@ website:
             href: chapters/chapter6/chapter6.qmd
           - text: Chapter 7
             href: chapters/chapter7/chapter7.qmd                        
-      - text: Materials
-        href: materials/readings.md
+      - text: Resources
+        href: resources/resources.md
 
   page-footer:
     left: ""
@@ -79,7 +79,7 @@ book:
         - chapters/chapter5/chapter5.qmd
         - chapters/chapter5/chapter6.qmd
         - chapters/chapter5/chapter7.qmd                                      
-    - materials/readings.md
+    - resources/resources.md
 
 format:
   html:
