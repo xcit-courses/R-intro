@@ -48,3 +48,7 @@ Edit these files to customize the R environment for students:
 - `install.R` - List of R packages to pre-install
 
 After committing changes, Binder will automatically rebuild the environment on next launch.
+
+## Use of AI Tools
+
+This project uses [Claude Code](https://claude.com/claude-code), an AI coding assistant, to help prepare and maintain course materials. All content has been reviewed by a human before being committed.

@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R"
-subtitle: "MAPEA-85 2025-2026"
+subtitle: "MAPEA-85 2026-2027"
 author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain

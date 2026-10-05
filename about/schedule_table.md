@@ -1,7 +1,7 @@
 | Date           | Time         | Room   | Location                       |
 |---------------|-------------|--------|-------------------------------|
-| Thursday 16.10.2025 | 10:15-18:15 | 2.190  | Esch-sur-Alzette, Maison du Savoir |
-| Wednesday 22.10.2025 | 8:30-11:45  | 2.120  | Esch-sur-Alzette, Maison du Savoir |
-| Thursday 23.10.2025 | 10:15-18:15 | 2.190  | Esch-sur-Alzette, Maison du Savoir |
-
-
+| Tuesday 06.10.2026 | 09:00-12:15 | 2.120  | Esch-sur-Alzette, Maison du Savoir |
+| Tuesday 13.10.2026 | 09:00-12:15 | 2.200  | Esch-sur-Alzette, Maison du Savoir |
+| Thursday 15.10.2026 | 09:00-12:15 | 4.350  | Esch-sur-Alzette, Maison du Savoir |
+| Tuesday 20.10.2026 | 09:00-12:15 | 0.010  | Esch-sur-Alzette, **Maison du Nombre** |
+| Thursday 22.10.2026 | 09:00-12:15 | 2.120  | Esch-sur-Alzette, Maison du Savoir |
