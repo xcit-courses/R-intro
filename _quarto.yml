@@ -5,7 +5,6 @@ project:
     - about/index.qmd
     - about/info.qmd
     - about/overview.qmd
-    - about/syllabus.qmd
     - about/team.qmd
     - about/access.qmd
     - chapters/*/chapter*.qmd
@@ -14,7 +13,7 @@ project:
     - resources/*
     - assets/styles.css
 website:
-  title: "Course Title"  # Use mixed case
+  title: "MAPEA-85 Introduction to R"
   sidebar:
     logo: assets/images/course_logo.png
     style: "docked"
@@ -36,8 +35,8 @@ website:
         contents:
           - text: Overview
             href: about/overview.qmd
-          - text: Syllabus
-            href: about/syllabus.qmd
+          - text: Labs (GitHub)
+            href: https://github.com/xcit-courses/R-intro-labs
 
       - section: Chapters
         contents:

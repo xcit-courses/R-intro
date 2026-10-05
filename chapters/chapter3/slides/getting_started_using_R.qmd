@@ -10,7 +10,7 @@ format:
     css: ../../../assets/revealjs_themes/style.css
     incremental: true
     chalkboard: true
-    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    logo: "../../../assets/images/xcit_logo.png"
     width: 1600
     height: 900
     mainfont: "IBM Plex Sans"
@@ -28,12 +28,12 @@ There are several options:
 
 -   install R on your computer
 
--   use R+RStudio via [posit.clout](https://posit.cloud/plans)
+-   use R+RStudio via [Posit Cloud](https://posit.cloud/plans)
 
 -   use R+RStudio via [Binder](https://mybinder.org/)
 
          
-[![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
 
 
 
@@ -54,7 +54,25 @@ You can find instructions to install R on your specific OS online.
 
 ## The R console
 
-![](../images/R-console.png){fig-align="center"}
+``` {.default code-line-numbers="false"}
+R version 4.6.1 (2026-06-24) -- "Happy Hop"
+Copyright (C) 2026 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+>
+```
 
 
 
@@ -64,7 +82,19 @@ You can find instructions to install R on your specific OS online.
 
 ::::: columns
 ::: {.column width="50%"}
-![](../images/R-console.png){fig-align="center"}
+``` {.default code-line-numbers="false"}
+R version 4.6.1 (2026-06-24) -- "Happy Hop"
+...
+Type 'q()' to quit R.
+
+> 2 + 3
+[1] 5
+> 10 / 4
+[1] 2.5
+> sqrt(16)
+[1] 4
+>
+```
 :::
 
 ::: {.column width="50%"}
@@ -121,7 +151,12 @@ print(paste0("The mean age is ", round(mean_age, 1), " years."))
 
 ## Install RStudio!
 
-![https://posit.co/download/rstudio-desktop/](../images/install-RStudio.png)
+Download the free **RStudio Desktop** for your operating system (Windows, macOS or Linux):
+
+<https://posit.co/download/rstudio-desktop/>
+
+-   Install R first, then RStudio
+-   The current version is RStudio 2026.09
 
 
 ## IDE: Integrated development environments

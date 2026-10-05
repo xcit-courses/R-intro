@@ -10,7 +10,7 @@ format:
     css: ../../../assets/revealjs_themes/style.css
     incremental: true
     chalkboard: true
-    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    logo: "../../../assets/images/xcit_logo.png"
     width: 1600
     height: 900
     mainfont: "IBM Plex Sans"
@@ -150,7 +150,16 @@ We will see and do this many times during this course.
 
 ::::: columns
 ::: {.column width="50%"}
-![https://www.r-project.org/](../images/R-console.png){fig-align="center"}
+``` {.default code-line-numbers="false"}
+R version 4.6.1 (2026-06-24) -- "Happy Hop"
+Copyright (C) 2026 The R Foundation for Statistical Computing
+...
+Type 'q()' to quit R.
+
+>
+```
+
+<https://www.r-project.org/>
 :::
 
 ::: {.column width="50%"}
@@ -192,70 +201,10 @@ If you learn how to use it, you will likely never go back to anything else.
 
 ## Your needs are most likely already covered
 
-```{r}
-#| echo: false
-#| warning: false
-#| message: false
-#| fig-width: 10
-#| fig-height: 6
-#| fig-align: center
+- CRAN, the official repository of R packages, offers **25,304 packages** (October 2026)
+- Whatever analysis you need, someone has probably already written a package for it
 
-
-library(tidyverse)
-library(rvest)
-
-# Fetch real CRAN package data from the official available packages page
-packages <- read_html("https://cran.r-project.org/web/packages/available_packages_by_date.html") |>
-  html_table() |>
-  pluck(1) |>
-  # Count packages per date
-  group_by(Date) |>
-  tally() |>
-  mutate(
-    total = cumsum(n),
-    Date = as.Date(Date)
-  ) |>
-  ungroup()
-
-# Aggregate by year for cleaner visualization
-packages_yearly <- packages |>
-  mutate(year = lubridate::year(Date)) |>
-  group_by(year) |>
-  slice_max(Date, n = 1) |>  # Get last entry of each year
-  ungroup() |>
-  select(year, packages = total)
-
-# Get current info
-current_year <- lubridate::year(Sys.Date())
-current_count <- packages |> slice_max(Date, n = 1) |> pull(total)
-
-# Create the plot
-packages_yearly |>
-  ggplot(aes(x = year, y = packages)) +
-  geom_line(color = "#1da7e0", linewidth = 1.5) +
-  geom_text(
-    data = \(x) filter(x, year == current_year),
-    aes(label = scales::comma(packages)),
-    vjust = -1.5, 
-    hjust = 0.5, 
-    size = 5, 
-    fontface = "bold"
-  ) +
-  labs(
-    title = "There is an exponential growth of R packages!",
-    x = "Year",
-    y = "Number of packages on CRAN",
-    caption = "Data: CRAN (cran.r-project.org/web/packages/available_packages_by_date.html)"
-  ) +
-  scale_y_continuous(labels = scales::comma) +
-  scale_x_continuous(breaks = seq(min(packages_yearly$year), current_year, by = 2)) +
-  theme_minimal(base_size = 16) +
-  theme(
-    plot.title = element_text(face = "bold", hjust = 0.5),
-    panel.grid.minor = element_blank(),
-    plot.caption = element_text(size = 10, hjust = 1)
-  )
-```
+Source: <https://cran.r-project.org/web/packages/>
 
 ## The R ecosystem
 

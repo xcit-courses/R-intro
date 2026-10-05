@@ -10,7 +10,7 @@ format:
     css: ../../../assets/revealjs_themes/style.css
     incremental: true
     chalkboard: true
-    logo: "https://xcit.org/images/xcit/logofinaline.png"
+    logo: "../../../assets/images/xcit_logo.png"
     width: 1600
     height: 900
     pointer:

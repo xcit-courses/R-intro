@@ -5,6 +5,24 @@ title: "Introduction to Programming in R"
 
 This is the (work in progress) course website for "Introduction to programming in R". 
 
+# Before the first session
+
+Please install R and RStudio on your laptop before the first session (Tuesday 6 October):
+
+1. Install **R 4.6** from CRAN: <https://cloud.r-project.org/>. On a Mac, choose the installer that matches your processor: `arm64` for Apple silicon (M1 and later), `x86_64` for older Intel Macs.
+2. Install the free **RStudio Desktop**: <https://posit.co/download/rstudio-desktop/>.
+3. Open RStudio, type the following line in the console, and press Enter:
+
+   ```r
+   install.packages("tidyverse")
+   ```
+
+If you cannot install software on your laptop, you can use R in your browser instead, through [Binder](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) (no account needed, but your work is lost when the session ends, so download your files) or [Posit Cloud](https://posit.cloud/) (free account).
+
+# Labs
+
+The lab exercises are in a separate repository: <https://github.com/xcit-courses/R-intro-labs>. To get them, click the green **Code** button and choose **Download ZIP**.
+
 In this course we will cover the following content:
 
 
