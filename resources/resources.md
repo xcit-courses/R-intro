@@ -14,4 +14,6 @@ There are many great free resources to learn R; here are just a few of them.
 
 ## Cheatsheets
 
-- [RStudio Cheatsheets](https://rstudio.com/resources/cheatsheets/)
+- [Base R](https://rstudio.github.io/cheatsheets/base-r.pdf)
+- [RStudio IDE](https://rstudio.github.io/cheatsheets/rstudio-ide.pdf)
+- [All Posit cheatsheets](https://opensource.posit.co/resources/cheatsheets/)

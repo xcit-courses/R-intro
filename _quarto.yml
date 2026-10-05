@@ -62,24 +62,6 @@ website:
     right: "Built with [Quarto](https://quarto.org/)"
   page-navigation: true
 
-book:
-  chapters:
-    - about/index.qmd
-    - part: "Course Information"
-      chapters:
-        - about/overview.qmd
-        - about/syllabus.qmd
-    - part: "Chapters"
-      chapters:
-        - chapters/chapter1/chapter1.qmd
-        - chapters/chapter2/chapter2.qmd
-        - chapters/chapter3/chapter3.qmd
-        - chapters/chapter4/chapter4.qmd
-        - chapters/chapter5/chapter5.qmd
-        - chapters/chapter5/chapter6.qmd
-        - chapters/chapter5/chapter7.qmd                                      
-    - resources/resources.md
-
 format:
   html:
     theme:
