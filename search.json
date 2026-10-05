@@ -125,14 +125,14 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping-for-coders",
     "title": "Introduction to Programming in R",
     "section": "Touchtyping for coders",
-    "text": "Touchtyping for coders\nCoding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:\n\n\n\n\n( ) [] { } round, square and curly brackets\n” ’ double and single quote\n- _ hyphen and underscore\n&lt; &gt; smaller and greater than\n| pipe\n\n\n\n` back tick\n\\ / backward and forward slash\n$ dollar sign\n~ tilde\n# pound\n& and operator"
+    "text": "Touchtyping for coders\nCoding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:\n\n\n\n( ) [] { } round, square and curly brackets\n” ’ double and single quote\n- _ hyphen and underscore\n&lt; &gt; smaller and greater than\n| pipe\n\n\n\n` back tick\n\\ / backward and forward slash\n$ dollar sign\n~ tilde\n# pound\n& and operator"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
     "title": "Introduction to Programming in R",
     "section": "Touchtyping",
-    "text": "Touchtyping\nIt is worth learning to touch type!\nThere are many free online resources:\n\nhttps://www.typingclub.com/\nhttps://www.keybr.com/\nhttps://monkeytype.com/\nhttps://www.speedcoder.net/\nhttps://typing.io/\n\n\nTry"
+    "text": "Touchtyping\nIt is worth learning to touch type!\nThere are many free online resources:\n\nhttps://www.typingclub.com/\nhttps://www.keybr.com/\nhttps://monkeytype.com/\nhttps://www.speedcoder.net/\nhttps://typing.io/\n\nTry"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types",
@@ -153,7 +153,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,]  0.24 -1.16  1.75\n[2,] -2.62 -1.21 -0.19\n[3,]  0.40 -1.07  0.56\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,]  0.18 -0.05 -0.28\n[2,] -0.55 -0.32 -0.42\n[3,] -0.95  0.63 -1.12\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
@@ -515,7 +515,7 @@
     "href": "about/overview.html#when-and-where",
     "title": "Course Overview",
     "section": "When and where",
-    "text": "When and where\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir",
+    "text": "When and where\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nTuesday 06.10.2026\n09:00-12:15\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nTuesday 13.10.2026\n09:00-12:15\n2.200\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 15.10.2026\n09:00-12:15\n4.350\nEsch-sur-Alzette, Maison du Savoir\n\n\nTuesday 20.10.2026\n09:00-12:15\n0.010\nEsch-sur-Alzette, Maison du Nombre\n\n\nThursday 22.10.2026\n09:00-12:15\n2.120\nEsch-sur-Alzette, Maison du Savoir",
     "crumbs": [
       "Course Information",
       "Overview"
@@ -620,14 +620,14 @@
     "href": "chapters/chapter1/slides/course_introduction.html#schedule",
     "title": "Introduction to R",
     "section": "Schedule",
-    "text": "Schedule\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nThursday 16.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir\n\n\nWednesday 22.10.2025\n8:30-11:45\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 23.10.2025\n10:15-18:15\n2.190\nEsch-sur-Alzette, Maison du Savoir"
+    "text": "Schedule\n\n\n\n\n\n\n\n\n\nDate\nTime\nRoom\nLocation\n\n\n\n\nTuesday 06.10.2026\n09:00-12:15\n2.120\nEsch-sur-Alzette, Maison du Savoir\n\n\nTuesday 13.10.2026\n09:00-12:15\n2.200\nEsch-sur-Alzette, Maison du Savoir\n\n\nThursday 15.10.2026\n09:00-12:15\n4.350\nEsch-sur-Alzette, Maison du Savoir\n\n\nTuesday 20.10.2026\n09:00-12:15\n0.010\nEsch-sur-Alzette, Maison du Nombre\n\n\nThursday 22.10.2026\n09:00-12:15\n2.120\nEsch-sur-Alzette, Maison du Savoir"
   },
   {
     "objectID": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
     "href": "chapters/chapter1/slides/course_introduction.html#what-is-this-course-about",
     "title": "Introduction to R",
     "section": "What is this course about?",
-    "text": "What is this course about?\n\n\nGetting started (background and setup)\nProgramming, in R\nImporting data into R\nStatistics\nData visualization\nWorkflows & best practices\nPreparation for future courses\n\n\n\nIn 1: - install R - install packages - run script - intro to the ecosystem - getting help - useful resources (cheatsheet, online resources)"
+    "text": "What is this course about?\n\nGetting started (background and setup)\nProgramming, in R\nImporting data into R\nStatistics\nData visualization\nWorkflows & best practices\nPreparation for future courses\n\n\nIn 1: - install R - install packages - run script - intro to the ecosystem - getting help - useful resources (cheatsheet, online resources)"
   },
   {
     "objectID": "chapters/chapter1/slides/course_introduction.html#why-this-course",
