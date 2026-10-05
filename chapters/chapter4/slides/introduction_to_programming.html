@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Pedro Cardoso-Leite">
   <title>Course Title – Introduction to Programming in R</title>
@@ -20,10 +20,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -205,7 +208,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<a href="pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a> 
+<a href="pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a>
 </div>
 </div>
 </div>
@@ -350,9 +353,9 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>      [,1]  [,2]  [,3]
-[1,]  0.18 -0.05 -0.28
-[2,] -0.55 -0.32 -0.42
-[3,] -0.95  0.63 -1.12</code></pre>
+[1,] -0.38 -0.36 -0.39
+[2,]  1.60  0.40 -1.55
+[3,]  1.29 -0.28 -0.20</code></pre>
 </div>
 </div>
 <p>Example 4:</p>
@@ -399,13 +402,13 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <section id="how-to-name-variables-1" class="slide level2">
 <h2>How to name variables?</h2>
 <p>Exercise: Find a good name for the variable <code>___</code>?</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>___ <span class="ot">&lt;-</span> <span class="st">"John"</span></span>
-<span id="cb4-2"><a></a></span>
-<span id="cb4-3"><a></a><span class="cf">if</span> ( ___ <span class="sc">==</span> <span class="st">"John"</span>){</span>
-<span id="cb4-4"><a></a>  <span class="fu">print</span>(<span class="st">"Hi John! Nice to see you again.)</span></span>
-<span id="cb4-5"><a></a><span class="st">} else {</span></span>
-<span id="cb4-6"><a></a><span class="st">  print(paste("</span>Hi<span class="st">", ___, "</span>. It looks like you are new to this course. Welcome<span class="sc">!</span><span class="st">"))</span></span>
-<span id="cb4-7"><a></a><span class="st">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>___ <span class="ot">&lt;-</span> <span class="st">"John"</span></span>
+<span id="cb4-2"><a aria-label="2"></a></span>
+<span id="cb4-3"><a aria-label="3"></a><span class="cf">if</span> ( ___ <span class="sc">==</span> <span class="st">"John"</span>){</span>
+<span id="cb4-4"><a aria-label="4"></a>  <span class="fu">print</span>(<span class="st">"Hi John! Nice to see you again.)</span></span>
+<span id="cb4-5"><a aria-label="5"></a><span class="st">} else {</span></span>
+<span id="cb4-6"><a aria-label="6"></a><span class="st">  print(paste("</span>Hi<span class="st">", ___, "</span>. It looks like you are new to this course. Welcome<span class="sc">!</span><span class="st">"))</span></span>
+<span id="cb4-7"><a aria-label="7"></a><span class="st">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="practice" class="title-slide slide level1 center">
@@ -433,30 +436,30 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h2>Functions: Example 1</h2>
 <p>Calculate the mean of the following values:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Note: - getting help - argument, parameters - different functions expect different types of input - function outputs</p>
 <h3 id="functions-example-2">Functions: Example 2</h3>
 <p>calculate the correlation between age and weight</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
-<span id="cb6-2"><a></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
+<span id="cb6-2"><a aria-label="2"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="create-your-own-functions" class="slide level2">
 <h2>Create your own functions</h2>
 <p>To create your own functions use the following template:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
-<span id="cb7-2"><a></a>  </span>
-<span id="cb7-3"><a></a>  <span class="co"># --- write your code here --</span></span>
-<span id="cb7-4"><a></a>  <span class="co"># example:</span></span>
-<span id="cb7-5"><a></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
-<span id="cb7-6"><a></a>  </span>
-<span id="cb7-7"><a></a>  <span class="co"># return the output</span></span>
-<span id="cb7-8"><a></a>  output</span>
-<span id="cb7-9"><a></a>  </span>
-<span id="cb7-10"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
+<span id="cb7-2"><a aria-label="2"></a>  </span>
+<span id="cb7-3"><a aria-label="3"></a>  <span class="co"># --- write your code here --</span></span>
+<span id="cb7-4"><a aria-label="4"></a>  <span class="co"># example:</span></span>
+<span id="cb7-5"><a aria-label="5"></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
+<span id="cb7-6"><a aria-label="6"></a>  </span>
+<span id="cb7-7"><a aria-label="7"></a>  <span class="co"># return the output</span></span>
+<span id="cb7-8"><a aria-label="8"></a>  output</span>
+<span id="cb7-9"><a aria-label="9"></a>  </span>
+<span id="cb7-10"><a aria-label="10"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="functions-1" class="slide level2">
