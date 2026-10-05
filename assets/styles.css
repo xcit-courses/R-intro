@@ -36,6 +36,34 @@ code, pre {
   letter-spacing: normal !important;
 }
 
+/* Center the logo in the sidebar */
+.sidebar-logo {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+}
+
+.sidebar-logo img {
+  margin: 0 auto !important;
+  display: block !important;
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Alternative approach - target the sidebar header directly */
+.sidebar-header {
+  text-align: center !important;
+}
+
+.sidebar-header .sidebar-logo {
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+
 /* Center sidebar tools (icons) below the logo */
 .sidebar-tools-main.tools-wide {
   display: flex;
