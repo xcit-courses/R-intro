@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to Programming in R – Course Title</title>
+<title>Introduction to Programming in R – MAPEA-85 Introduction to R</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -141,8 +176,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../about/syllabus.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Syllabus</span></a>
+  <a href="https://github.com/xcit-courses/R-intro-labs" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs (GitHub)</span></a>
   </div>
 </li>
       </ul>
@@ -216,7 +251,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#before-the-first-session" id="toc-before-the-first-session" class="nav-link active" data-scroll-target="#before-the-first-session">Before the first session</a></li>
+  <li><a href="#labs" id="toc-labs" class="nav-link" data-scroll-target="#labs">Labs</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -243,7 +280,22 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>This is the (work in progress) course website for “Introduction to programming in R”.</p>
+<section id="before-the-first-session" class="level1">
+<h1>Before the first session</h1>
+<p>Please install R and RStudio on your laptop before the first session (Tuesday 6 October):</p>
+<ol type="1">
+<li><p>Install <strong>R 4.6</strong> from CRAN: <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a>. On a Mac, choose the installer that matches your processor: <code>arm64</code> for Apple silicon (M1 and later), <code>x86_64</code> for older Intel Macs.</p></li>
+<li><p>Install the free <strong>RStudio Desktop</strong>: <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>.</p></li>
+<li><p>Open RStudio, type the following line in the console, and press Enter:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<p>If you cannot install software on your laptop, you can use R in your browser instead, through <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio">Binder</a> (no account needed, but your work is lost when the session ends, so download your files) or <a href="https://posit.cloud/">Posit Cloud</a> (free account).</p>
+</section>
+<section id="labs" class="level1">
+<h1>Labs</h1>
+<p>The lab exercises are in a separate repository: <a href="https://github.com/xcit-courses/R-intro-labs" class="uri">https://github.com/xcit-courses/R-intro-labs</a>. To get them, click the green <strong>Code</strong> button and choose <strong>Download ZIP</strong>.</p>
 <p>In this course we will cover the following content:</p>
+</section>
 <section id="slides" class="level1">
 <h1>Slides</h1>
 <ul>

@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.10.18">
 
   <meta name="author" content="Pedro Cardoso-Leite">
-  <title>Course Title – Getting started using R</title>
+  <title>MAPEA-85 Introduction to R – Getting started using R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -219,12 +219,12 @@
 <p>There are several options:</p>
 <ul>
 <li class="fragment"><p>install R on your computer</p></li>
-<li class="fragment"><p>use R+RStudio via <a href="https://posit.cloud/plans">posit.clout</a></p></li>
+<li class="fragment"><p>use R+RStudio via <a href="https://posit.cloud/plans">Posit Cloud</a></p></li>
 <li class="fragment"><p>use R+RStudio via <a href="https://mybinder.org/">Binder</a></p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><a href="http://mybinder.org/v2/gh/binder-examples/r/master?urlpath=rstudio"><img data-src="http://mybinder.org/badge_logo.svg"></a></p>
+<p><a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio"><img data-src="https://mybinder.org/badge_logo.svg"></a></p>
 <figcaption>Binder</figcaption>
 </figure>
 </div>
@@ -247,24 +247,46 @@
 </section>
 <section id="the-r-console" class="slide level2">
 <h2>The R console</h2>
-
-<img data-src="../images/R-console.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a>R version 4.6.1 (2026-06-24) -- "Happy Hop"</span>
+<span id="cb1-2"><a aria-hidden="true" tabindex="-1"></a>Copyright (C) 2026 The R Foundation for Statistical Computing</span>
+<span id="cb1-3"><a aria-hidden="true" tabindex="-1"></a>Platform: x86_64-pc-linux-gnu</span>
+<span id="cb1-4"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a aria-hidden="true" tabindex="-1"></a>R is free software and comes with ABSOLUTELY NO WARRANTY.</span>
+<span id="cb1-6"><a aria-hidden="true" tabindex="-1"></a>You are welcome to redistribute it under certain conditions.</span>
+<span id="cb1-7"><a aria-hidden="true" tabindex="-1"></a>Type 'license()' or 'licence()' for distribution details.</span>
+<span id="cb1-8"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a aria-hidden="true" tabindex="-1"></a>R is a collaborative project with many contributors.</span>
+<span id="cb1-10"><a aria-hidden="true" tabindex="-1"></a>Type 'contributors()' for more information and</span>
+<span id="cb1-11"><a aria-hidden="true" tabindex="-1"></a>'citation()' on how to cite R or R packages in publications.</span>
+<span id="cb1-12"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a aria-hidden="true" tabindex="-1"></a>Type 'demo()' for some demos, 'help()' for on-line help, or</span>
+<span id="cb1-14"><a aria-hidden="true" tabindex="-1"></a>'help.start()' for an HTML browser interface to help.</span>
+<span id="cb1-15"><a aria-hidden="true" tabindex="-1"></a>Type 'q()' to quit R.</span>
+<span id="cb1-16"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a aria-hidden="true" tabindex="-1"></a>&gt;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="using-r-like-a-calculator" class="slide level2">
 <h2>Using R like a calculator</h2>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="../images/R-console.png" class="quarto-figure quarto-figure-center"></p>
-</figure>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a>R version 4.6.1 (2026-06-24) -- "Happy Hop"</span>
+<span id="cb2-2"><a aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb2-3"><a aria-hidden="true" tabindex="-1"></a>Type 'q()' to quit R.</span>
+<span id="cb2-4"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a aria-hidden="true" tabindex="-1"></a>&gt; 2 + 3</span>
+<span id="cb2-6"><a aria-hidden="true" tabindex="-1"></a>[1] 5</span>
+<span id="cb2-7"><a aria-hidden="true" tabindex="-1"></a>&gt; 10 / 4</span>
+<span id="cb2-8"><a aria-hidden="true" tabindex="-1"></a>[1] 2.5</span>
+<span id="cb2-9"><a aria-hidden="true" tabindex="-1"></a>&gt; sqrt(16)</span>
+<span id="cb2-10"><a aria-hidden="true" tabindex="-1"></a>[1] 4</span>
+<span id="cb2-11"><a aria-hidden="true" tabindex="-1"></a>&gt;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:50%;">
 <h3 id="example">Example</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-label="1"></a><span class="sc">&gt;</span>        <span class="co"># How can I help?</span></span>
-<span id="cb1-2"><a aria-label="2"></a><span class="er">&gt;</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span>  <span class="co"># Press Enter: I want to know the answer</span></span>
-<span id="cb1-3"><a aria-label="3"></a>         <span class="co"># Please evaluate this expression</span></span>
-<span id="cb1-4"><a aria-label="4"></a>[<span class="dv">1</span>] <span class="dv">3</span>    <span class="co"># Here's the result</span></span>
-<span id="cb1-5"><a aria-label="5"></a><span class="sc">&gt;</span>        <span class="co"># Anything else?</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="sc">&gt;</span>        <span class="co"># How can I help?</span></span>
+<span id="cb3-2"><a aria-label="2"></a><span class="er">&gt;</span> <span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span>  <span class="co"># Press Enter: I want to know the answer</span></span>
+<span id="cb3-3"><a aria-label="3"></a>         <span class="co"># Please evaluate this expression</span></span>
+<span id="cb3-4"><a aria-label="4"></a>[<span class="dv">1</span>] <span class="dv">3</span>    <span class="co"># Here's the result</span></span>
+<span id="cb3-5"><a aria-label="5"></a><span class="sc">&gt;</span>        <span class="co"># Anything else?</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div></div>
 </section>
 <section id="try-it-out" class="slide level2">
@@ -281,16 +303,16 @@
 <section id="key-concepts" class="slide level2">
 <h2>Key concepts</h2>
 <p>Example 1:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-label="1"></a><span class="fu">log2</span>(<span class="dv">32</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a><span class="fu">log2</span>(<span class="dv">32</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Example 2:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a aria-label="1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>What are these symbols? Are there different kinds of things?</p>
 </section>
 <section id="code-is-text" class="slide level2">
 <h2>Code is text</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">18</span>, <span class="dv">23</span>, <span class="dv">43</span>)</span>
-<span id="cb4-2"><a aria-label="2"></a>mean_age <span class="ot">&lt;-</span> <span class="fu">mean</span>(age)</span>
-<span id="cb4-3"><a aria-label="3"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"The mean age is "</span>, <span class="fu">round</span>(mean_age, <span class="dv">1</span>), <span class="st">" years."</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">18</span>, <span class="dv">23</span>, <span class="dv">43</span>)</span>
+<span id="cb6-2"><a aria-label="2"></a>mean_age <span class="ot">&lt;-</span> <span class="fu">mean</span>(age)</span>
+<span id="cb6-3"><a aria-label="3"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"The mean age is "</span>, <span class="fu">round</span>(mean_age, <span class="dv">1</span>), <span class="st">" years."</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="what-is-rstudio" class="title-slide slide level1 center">
@@ -299,8 +321,13 @@
 </section>
 <section id="install-rstudio" class="slide level2">
 <h2>Install RStudio!</h2>
-
-<img data-src="../images/install-RStudio.png" class="r-stretch quarto-figure-center"><p class="caption">https://posit.co/download/rstudio-desktop/</p></section>
+<p>Download the free <strong>RStudio Desktop</strong> for your operating system (Windows, macOS or Linux):</p>
+<p><a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a></p>
+<ul>
+<li class="fragment">Install R first, then RStudio</li>
+<li class="fragment">The current version is RStudio 2026.09</li>
+</ul>
+</section>
 <section id="ide-integrated-development-environments" class="slide level2">
 <h2>IDE: Integrated development environments</h2>
 <p>The R GUI is bare bones.</p>
@@ -349,7 +376,7 @@
 <h2>Example: installing the “swirl” package (using code)</h2>
 <h3 id="step-1">Step 1:</h3>
 <p>In the console type</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>“swirl” is the name of the package we want to download on our computer.</p>
 <p>This command will download the code from that package from CRAN and put in on your computer.</p>
 </section>
@@ -358,7 +385,7 @@
 <h3 id="step-2">Step 2:</h3>
 <p>Each time you want to use that package, you need to load it into R.</p>
 <p>In the console, type:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a><span class="fu">library</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="fu">library</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now the code from the swirl package is aviable for use.</p>
 </section></section>
 <section id="exercise-install-the-ggplot2-package" class="title-slide slide level1 center">
@@ -385,7 +412,7 @@
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="https://xcit.org/images/xcit/logofinaline.png" class="slide-logo"></p>
+<p><img src="../../../assets/images/xcit_logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
