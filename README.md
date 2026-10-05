@@ -36,6 +36,10 @@ quarto render
 
 ### Publishing to GitHub Pages
 
+The site is published automatically: every push to `main` runs the workflow in `.github/workflows/publish.yml`, which renders the site and pushes it to the `gh-pages` branch. Progress is visible in the repository's Actions tab.
+
+To publish manually instead:
+
 ```bash
 quarto publish gh-pages --no-prompt
 ```
