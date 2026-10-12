@@ -11,4 +11,4 @@ There will be several exercises to start practicing your programming skills.
 
 ## Slides
 
-- [Introduction to prorgramming](slides/introduction_to_programming.qmd)
+- [Introduction to programming](slides/introduction_to_programming.qmd)

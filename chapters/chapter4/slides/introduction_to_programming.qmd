@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Programming in R"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 
@@ -74,7 +74,7 @@ Coding (i.e., writing code) requires using characters you might not be used to t
 7.  \\ / backward and forward slash
 8.  \$ dollar sign
 9.  \~ tilde
-10. \# pound
+10. \# hash (pound sign)
 11. & and operator
 :::: 
 :::
@@ -88,11 +88,11 @@ It is worth learning to touch type!
 
 There are many free online resources:
 
- - https://www.typingclub.com/
- - https://www.keybr.com/
- - https://monkeytype.com/
- - https://www.speedcoder.net/
- - https://typing.io/
+ - <https://www.typingclub.com/>
+ - <https://www.keybr.com/>
+ - <https://monkeytype.com/>
+ - <https://www.speedcoder.net/>
+ - <https://typing.io/>
 
 ::: fragment
 Try
@@ -120,7 +120,7 @@ Exercise: find examples of values for each of these types.
 
 Atomic values can be organized into more complex data structures:
 
-| dimensions | homogenous    | heterogenous |
+| dimensions | homogeneous   | heterogeneous |
 |------------|---------------|--------------|
 | 1          | atomic vector | list         |
 | 2          | matrix        | data frame   |
@@ -138,7 +138,11 @@ head(mtcars)
 
 Example 2:
 
-`("a", 12, TRUE)`
+```{r}
+list("a", 12, TRUE)
+```
+
+## Exercise: what data structures are these?
 
 Example 3:
 
@@ -184,9 +188,10 @@ as well as transformations (more on this later):
 
 ### Requirements
 
--   must start with a letter or a period (followed by letter)
+-   must start with a letter, or with a period that is not followed by a digit
+-   may only contain letters, digits, `.` and `_` (so `my variable` and `my-variable` are not allowed)
 -   reserved words (e.g., `TRUE`, `if`, `function`) are forbidden
--   can't contain spaces (e.g., `my variable` vs `my_variable`)
+-   names are case-sensitive: `age` and `Age` are two different variables
 
 ::: fragment
 ### Recommendations
@@ -204,9 +209,9 @@ Exercise: Find a good name for the variable `___`?
 ___ <- "John"
 
 if ( ___ == "John"){
-  print("Hi John! Nice to see you again.)
+  print("Hi John! Nice to see you again.")
 } else {
-  print(paste("Hi", ___, ". It looks like you are new to this course. Welcome!"))
+  print(paste0("Hi ", ___, ". It looks like you are new to this course. Welcome!"))
 }
 ```
 
@@ -214,9 +219,9 @@ if ( ___ == "John"){
 
 ## Let's try swirl! {.center}
 
-**course**: R Programming Basic Building Blocks
+**course**: R Programming
 
-**chapter**: Basic Building Blocks
+**lesson**: Basic Building Blocks
 
 
 
@@ -232,7 +237,7 @@ if ( ___ == "John"){
 
 
 
-## Functions
+# Functions
 
 ## Functions: Example 1
 
@@ -245,9 +250,14 @@ age <- c(23, 26, 37, 45, 63, NA, 52)
 
 ```
 
-Note: - getting help - argument, parameters - different functions expect different types of input - function outputs
+::: notes
+- getting help
+- arguments, parameters
+- different functions expect different types of input
+- function outputs
+:::
 
-### Functions: Example 2
+## Functions: Example 2
 
 calculate the correlation between age and weight
 
@@ -307,8 +317,19 @@ Change your function so it prints the text:
 
 > "Your height is \_\_\_ m and your weight is \_\_\_ kg:
 
-> Your BMI is \_\_\_."
+> Your BMI is \_\_\_.
 
-> Your BMI-category is \_\_\_."
+> Your BMI category is \_\_\_."
+
+BMI categories: underweight (below 18.5), normal (18.5 to below 25), overweight (25 to below 30), obese (30 or above).
 
 ## "Sourcing" code
+
+You can run a whole R script in one go with `source()`:
+
+``` r
+source("bmi_calculator.R")
+```
+
+- every line of the script runs, from top to bottom
+- the functions the script defines (e.g., your BMI function) are then available in your session
