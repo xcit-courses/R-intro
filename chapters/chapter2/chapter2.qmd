@@ -2,7 +2,7 @@
 title: "Chapter 2: Introduction to R"
 ---
 
-In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, Rstudio and the tidyverse that you may have heard of before. 
+In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, RStudio and the tidyverse that you may have heard of before. 
 
 We will discuss why doing data analysis using code is a good idea. We will also highlight some of the key features that make R particularly interesting for data analysis. 
 

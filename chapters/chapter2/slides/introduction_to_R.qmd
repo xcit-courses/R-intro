@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 
@@ -76,19 +76,19 @@ Are there other terms you have heard before that are not listed here?
 
 When you install R, it comes with a set of core functionality.
 
-This core functionality is sometimes referred to as base R (even though there are other packages included by defaul, e.g., `stats`, `datasets`)
+This core functionality is sometimes referred to as base R (even though there are other packages included by default, e.g., `stats`, `datasets`)
 
 Note that across successive updates of R (i.e., "versions"), that core functionality changes; usually quite slowly and in a "back-compatible way"--a main goal is **stability**.
 
 *Examples:*
 
-Base R includes for example functions to compute the mean and standar deviation of a vector of numbers.
+Base R includes, for example, a function to compute the mean of a vector of numbers (`mean()`); the standard deviation (`sd()`) comes from the `stats` package, which is loaded by default.
 
 ## packages (for R)
 
 Base R is limited and highly controlled.
 
-You can however extend the cababilities of R by
+You can however extend the capabilities of R by
 
 - using code written by others
   - code snippets shared by others
@@ -112,7 +112,7 @@ This is a powerful and widely used pattern:
 
 ## How to install packages?
 
-Its super easy to install and use packages!
+It's super easy to install and use packages!
 
 **Step 1: download the package on your computer**
 
@@ -122,7 +122,7 @@ Its super easy to install and use packages!
 install.packages("package_name")
 ```
 
-**Step 2: load the package when you needed (so you can use it)r**
+**Step 2: load the package when you need it (so you can use it)**
 
 ```{r}
 #| eval: false
@@ -138,8 +138,8 @@ We will see and do this many times during this course.
 
 - R is a programming language
 - R is a piece of software that understands the R language
-- RStudio is a separate piece of software that makes it easier and nicer to user R;
-- RStudio is one of many IDE that you can use for coding
+- RStudio is a separate piece of software that makes it easier and nicer to use R;
+- RStudio is one of many IDEs that you can use for coding
 
 ## R & RStudio
 
@@ -176,7 +176,7 @@ Type 'q()' to quit R.
 
 5.  free and open
 
-6.  runs on Linux, Mac, and Window
+6.  runs on Linux, Mac, and Windows
 
 7.  active development
 
@@ -217,7 +217,7 @@ Source: <https://cran.r-project.org/web/packages/>
 
 ## Why NOT use R?
 
-There are some common arguments againts R.
+There are some common arguments against R.
 
 - R is hard to learn.
 - not sure which packages to use.
