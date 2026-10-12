@@ -5,7 +5,7 @@ title: "Course Overview"
 
 This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the [Master in Psychology--Evaluation and Assessment](https://www.uni.lu/fhse-en/study-programs/master-in-psychology-evaluation-and-assessment/programme/) program. 
 
-All course materials will be posted on this site.
+All course materials will be posted on this site; the lab exercises are in a separate repository: <https://github.com/xcit-courses/R-intro-labs>.
 
 
 

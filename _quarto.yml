@@ -3,13 +3,9 @@ project:
   output-dir: _site
   render:
     - about/index.qmd
-    - about/info.qmd
     - about/overview.qmd
-    - about/team.qmd
-    - about/access.qmd
     - chapters/*/chapter*.qmd
     - chapters/*/slides/*.qmd
-    - chapters/*/slides/*.Rmd
     - resources/*
     - assets/styles.css
 website:
@@ -24,7 +20,7 @@ website:
         text: "GitHub"
       - icon: cloud-fill
         href: https://posit.cloud/
-        text: "RStudio Cloud"
+        text: "Posit Cloud"
       - icon: person-fill
         href: https://uni.lu
         text: "UniLu"
@@ -71,4 +67,3 @@ format:
     code-copy: true
     code-overflow: wrap
     link-external-newwindow: true
-    color-scheme: auto

@@ -26,7 +26,7 @@ The lab exercises are in a separate repository: <https://github.com/xcit-courses
 In this course we will cover the following content:
 
 
-# Slides
+# Chapters
 
 - [Chapter 1: Course introduction](../chapters/chapter1/chapter1.qmd)
 - [Chapter 2: Introduction to R](../chapters/chapter2/chapter2.qmd)
@@ -36,4 +36,4 @@ In this course we will cover the following content:
 - [Chapter 6: Importing data](../chapters/chapter6/chapter6.qmd)
 - [Chapter 7: Example analysis](../chapters/chapter7/chapter7.qmd)
 
-Each chapter contains links slides and possibly other resources.
+Each chapter contains links to slides and possibly other resources.
