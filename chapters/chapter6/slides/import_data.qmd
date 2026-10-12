@@ -1,7 +1,7 @@
 ---
-title: "Importing data into R "
+title: "Importing data into R"
 subtitle: "+intro to data.frames"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 
@@ -24,7 +24,7 @@ editor: visual
 
 # Data file formats
 
-## There are many different file formats for data...
+## There are many different file formats for data... {.smaller}
 
 -   \*.csv
 -   \*.tsv
@@ -36,7 +36,7 @@ editor: visual
 -   \*.EDF (EEG data)
 -   \*.xml
 -   \*.json
--   \*.jml
+-   \*.yml / \*.yaml
 -   ... and many, many more
 
 ## and sometimes one can find data in weird places...
@@ -46,20 +46,20 @@ editor: visual
 -   \*.jpeg (images)
 -   ... and many more
 
-## Where can you find data?
+## Where can you find data? {.smaller}
 
--   https://osf.io/
--   https://figshare.com/
--   https://openneuro.org/ (brain imaging)
--   https://www.kaggle.com/datasets (usability score)
--   https://datasetsearch.research.google.com/
--   https://huggingface.co/
--   https://zenodo.org/
--   https://www.nature.com/sdata/policies/repositories
--   https://openpsychologydata.metajnl.com/
--   https://openpsychometrics.org/\_rawdata/
--   https://dataverse.harvard.edu/
--   https://nimh-dsst.github.io/OpenCogData/
+-   <https://osf.io/>
+-   <https://figshare.com/>
+-   <https://openneuro.org/> (brain imaging)
+-   <https://www.kaggle.com/datasets> (usability score)
+-   <https://datasetsearch.research.google.com/>
+-   <https://huggingface.co/>
+-   <https://zenodo.org/>
+-   <https://www.nature.com/sdata/policies/repositories>
+-   <https://openpsychologydata.metajnl.com/>
+-   <https://openpsychometrics.org/\_rawdata/>
+-   <https://dataverse.harvard.edu/>
+-   <https://nimh-dsst.github.io/OpenCogData/>
 
 ::: notes
 https://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/
