@@ -1,6 +1,6 @@
 ---
-title: "Introduction to Programming in R"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+title: "Coding project: the Monty Hall problem"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 
@@ -27,10 +27,10 @@ editor: visual
 
 ## The Monty Hall Problem
 
-https://en.wikipedia.org/wiki/Monty_Hall_problem
+<https://en.wikipedia.org/wiki/Monty_Hall_problem>
 
 
-## What would you chose? 
+## What would you choose? 
 
 
 

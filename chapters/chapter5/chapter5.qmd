@@ -2,9 +2,9 @@
 title: "Chapter 5: (Project) The Monty Hall Problem"
 ---
 
-In this chapter we will bring together all the programming concepts we have seen sofar. 
+In this chapter we will bring together all the programming concepts we have seen so far. 
 
-The goal is to use simulations to answer the Monty Hall problem: should you switch doors and stay with your original choice?
+The goal is to use simulations to answer the Monty Hall problem: should you switch doors or stay with your original choice?
 
 
 
