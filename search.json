@@ -34,7 +34,7 @@
     "href": "chapters/chapter6/slides/import_data.html#there-are-many-different-file-formats-for-data",
     "title": "Importing data into R",
     "section": "There are many different file formats for data…",
-    "text": "There are many different file formats for data…\n\n*.csv\n*.tsv\n*.txt\n*.xlsx (Excel)\n*.sav (SPSS)\n*.mat (MATLAB)\n*.RData (R)\n*.EDF (EEG data)\n*.xml\n*.json\n*.jml\n… and many, many more"
+    "text": "There are many different file formats for data…\n\n*.csv\n*.tsv\n*.txt\n*.xlsx (Excel)\n*.sav (SPSS)\n*.mat (MATLAB)\n*.RData (R)\n*.EDF (EEG data)\n*.xml\n*.json\n*.yml / *.yaml\n… and many, many more"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#and-sometimes-one-can-find-data-in-weird-places",
@@ -48,7 +48,7 @@
     "href": "chapters/chapter6/slides/import_data.html#where-can-you-find-data",
     "title": "Importing data into R",
     "section": "Where can you find data?",
-    "text": "Where can you find data?\n\nhttps://osf.io/\nhttps://figshare.com/\nhttps://openneuro.org/ (brain imaging)\nhttps://www.kaggle.com/datasets (usability score)\nhttps://datasetsearch.research.google.com/\nhttps://huggingface.co/\nhttps://zenodo.org/\nhttps://www.nature.com/sdata/policies/repositories\nhttps://openpsychologydata.metajnl.com/\nhttps://openpsychometrics.org/_rawdata/\nhttps://dataverse.harvard.edu/\nhttps://nimh-dsst.github.io/OpenCogData/\n\n\nhttps://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/"
+    "text": "Where can you find data?\n\nhttps://osf.io/\nhttps://figshare.com/\nhttps://openneuro.org/ (brain imaging)\nhttps://www.kaggle.com/datasets (usability score)\nhttps://datasetsearch.research.google.com/\nhttps://huggingface.co/\nhttps://zenodo.org/\nhttps://www.nature.com/sdata/policies/repositories\nhttps://openpsychologydata.metajnl.com/\nhttps://openpsychometrics.org/\\_rawdata/\nhttps://dataverse.harvard.edu/\nhttps://nimh-dsst.github.io/OpenCogData/\n\n\nhttps://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#which-file-format-should-you-choose",
@@ -160,7 +160,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these-1",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1] [,2]  [,3]\n[1,]  1.39 0.03  1.11\n[2,] -1.62 1.26 -0.63\n[3,]  1.48 0.24  0.20\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,] -0.53  0.32 -0.71\n[2,]  0.43 -0.14 -0.97\n[3,]  1.09  0.24  0.04\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
@@ -205,6 +205,34 @@
     "text": "Working on a project\n\nR console\nR scripts (*.R)\nR + quarto files (*.qmd)\nR projects (*.Rproj)"
   },
   {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#doing-something-only-if-a-condition-is-true",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#doing-something-only-if-a-condition-is-true",
+    "title": "Introduction to Programming in R",
+    "section": "Doing something only if a condition is true",
+    "text": "Doing something only if a condition is true\n\nage &lt;- 20\n\nif (age &gt;= 18) {\n  print(\"adult\")\n} else {\n  print(\"minor\")\n}\n\n[1] \"adult\"\n\n\n\nthe condition inside ( ) must be a single TRUE or FALSE\nthe else part is optional"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-if-else",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-if-else",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: if / else",
+    "text": "Exercise: if / else\nWrite code that prints \"positive\", \"negative\" or \"zero\" depending on the value of a number x.\nHint: you can chain conditions with else if."
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#repeating-an-operation-for-loops",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#repeating-an-operation-for-loops",
+    "title": "Introduction to Programming in R",
+    "section": "Repeating an operation: for loops",
+    "text": "Repeating an operation: for loops\n\nfor (i in 1:3) {\n  print(paste(\"Round\", i))\n}\n\n[1] \"Round 1\"\n[1] \"Round 2\"\n[1] \"Round 3\"\n\n\n\ni takes each value of 1:3 in turn\nthe code inside { } runs once for each value"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#saving-results-from-a-loop",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#saving-results-from-a-loop",
+    "title": "Introduction to Programming in R",
+    "section": "Saving results from a loop",
+    "text": "Saving results from a loop\n\nsquares &lt;- numeric(5)   # an empty vector of length 5\nfor (i in 1:5) {\n  squares[i] &lt;- i^2\n}\nsquares\n\n[1]  1  4  9 16 25\n\n\nCreate the vector that will hold the results before the loop, then fill it in."
+  },
+  {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
     "title": "Introduction to Programming in R",
@@ -216,7 +244,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-2",
     "title": "Introduction to Programming in R",
     "section": "Functions: Example 2",
-    "text": "Functions: Example 2\ncalculate the correlation between age and weight\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\nweight &lt;- c(70, 64, 80, 63, 92, 102, 77)"
+    "text": "Functions: Example 2\nCalculate the correlation between age and weight\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\nweight &lt;- c(70, 64, 80, 63, 92, 102, 77)"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#create-your-own-functions",
@@ -259,6 +287,20 @@
     "title": "Introduction to Programming in R",
     "section": "“Sourcing” code",
     "text": "“Sourcing” code\nYou can run a whole R script in one go with source():\nsource(\"bmi_calculator.R\")\n\nevery line of the script runs, from top to bottom\nthe functions the script defines (e.g., your BMI function) are then available in your session"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#challenge-simulate-coin-flips",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#challenge-simulate-coin-flips",
+    "title": "Introduction to Programming in R",
+    "section": "Challenge: simulate coin flips",
+    "text": "Challenge: simulate coin flips\nSimulate 1000 coin flips (\"heads\" or \"tails\") and compute the proportion of heads:\n\nwith a for loop\nwithout a loop, using replicate()"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#tips",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#tips",
+    "title": "Introduction to Programming in R",
+    "section": "Tips",
+    "text": "Tips\n\nfunctions that will help: sample(), set.seed() and replicate()\nfind out how they work with ?sample (or the Help pane in RStudio)"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-1",
@@ -314,14 +356,14 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#base-r",
     "title": "Introduction to R",
     "section": "base R",
-    "text": "base R\nWhen you install R, it comes with a set of core functionality.\nThis core functionality is sometimes referred to as base R (even though there are other packages included by defaul, e.g., stats, datasets)\nNote that across successive updates of R (i.e., “versions”), that core functionality changes; usually quite slowly and in a “back-compatible way”–a main goal is stability.\nExamples:\nBase R includes for example functions to compute the mean and standar deviation of a vector of numbers."
+    "text": "base R\nWhen you install R, it comes with a set of core functionality.\nThis core functionality is sometimes referred to as base R (even though there are other packages included by default, e.g., stats, datasets)\nNote that across successive updates of R (i.e., “versions”), that core functionality changes; usually quite slowly and in a “back-compatible way”–a main goal is stability.\nExamples:\nBase R includes, for example, a function to compute the mean of a vector of numbers (mean()); the standard deviation (sd()) comes from the stats package, which is loaded by default."
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#packages-for-r",
     "href": "chapters/chapter2/slides/introduction_to_R.html#packages-for-r",
     "title": "Introduction to R",
     "section": "packages (for R)",
-    "text": "packages (for R)\nBase R is limited and highly controlled.\nYou can however extend the cababilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code\n\n\nExamples:\n\n\nggplot2\ndplyr\ntidyverse"
+    "text": "packages (for R)\nBase R is limited and highly controlled.\nYou can however extend the capabilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code\n\n\nExamples:\n\n\nggplot2\ndplyr\ntidyverse"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#base-r-packages",
@@ -335,14 +377,14 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#how-to-install-packages",
     "title": "Introduction to R",
     "section": "How to install packages?",
-    "text": "How to install packages?\nIts super easy to install and use packages!\nStep 1: download the package on your computer\n\ninstall.packages(\"package_name\")\n\nStep 2: load the package when you needed (so you can use it)r\n\nlibrary(\"package_name\")\n\n\nWe will see and do this many times during this course."
+    "text": "How to install packages?\nIt’s super easy to install and use packages!\nStep 1: download the package on your computer\n\ninstall.packages(\"package_name\")\n\nStep 2: load the package when you need it (so you can use it)\n\nlibrary(\"package_name\")\n\n\nWe will see and do this many times during this course."
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio",
     "href": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio",
     "title": "Introduction to R",
     "section": "R & RStudio",
-    "text": "R & RStudio\n\nR is a programming language\nR is a piece of software that understands the R language\nRStudio is a separate piece of software that makes it easier and nicer to user R;\nRStudio is one of many IDE that you can use for coding"
+    "text": "R & RStudio\n\nR is a programming language\nR is a piece of software that understands the R language\nRStudio is a separate piece of software that makes it easier and nicer to use R;\nRStudio is one of many IDEs that you can use for coding"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio-1",
@@ -356,7 +398,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#top-10-reasons-to-use-r",
     "title": "Introduction to R",
     "section": "Top 10 reasons to use R",
-    "text": "Top 10 reasons to use R\n\nelegantly designed for modern data science (tidyverse)\nhighly effective in integrating the full data science workflow (e.g., quarto)\ncomprehensive, state-of-the-art methods (e.g., packages)\nexceptional data visualization tools (i.e., ggplot2)\nfree and open\nruns on Linux, Mac, and Window\nactive development\nstrong community\ngreat resources\ngreat value on the job market"
+    "text": "Top 10 reasons to use R\n\nelegantly designed for modern data science (tidyverse)\nhighly effective in integrating the full data science workflow (e.g., quarto)\ncomprehensive, state-of-the-art methods (e.g., packages)\nexceptional data visualization tools (i.e., ggplot2)\nfree and open\nruns on Linux, Mac, and Windows\nactive development\nstrong community\ngreat resources\ngreat value on the job market"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-tidyverse",
@@ -391,7 +433,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#why-not-use-r",
     "title": "Introduction to R",
     "section": "Why NOT use R?",
-    "text": "Why NOT use R?\nThere are some common arguments againts R.\n\nR is hard to learn.\nnot sure which packages to use.\nthe different packages are inconsistent."
+    "text": "Why NOT use R?\nThere are some common arguments against R.\n\nR is hard to learn.\nnot sure which packages to use.\nthe different packages are inconsistent."
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#should-you-learn-r",
@@ -412,7 +454,7 @@
     "href": "chapters/chapter7/chapter7.html",
     "title": "Chapter 7: Introduction to data analysis in R",
     "section": "",
-    "text": "In this chapter we will bring together all the concepts we have seen sofar and perform a simple analysis of a dataset, including descriptive statistics, hypothesis testing and plotting.\nWe will then briefly see some of the modern tidyverse-related tools to perform these steps more efficiently and elegantly.",
+    "text": "In this chapter we will bring together all the concepts we have seen so far and perform a simple analysis of a dataset, including descriptive statistics, hypothesis testing and plotting.\nWe will then briefly see some of the modern tidyverse-related tools to perform these steps more efficiently and elegantly.",
     "crumbs": [
       "Chapters",
       "Chapter 7"
@@ -434,7 +476,7 @@
     "href": "chapters/chapter5/chapter5.html",
     "title": "Chapter 5: (Project) The Monty Hall Problem",
     "section": "",
-    "text": "In this chapter we will bring together all the programming concepts we have seen sofar.\nThe goal is to use simulations to answer the Monty Hall problem: should you switch doors and stay with your original choice?",
+    "text": "In this chapter we will bring together all the programming concepts we have seen so far.\nThe goal is to use simulations to answer the Monty Hall problem: should you switch doors or stay with your original choice?",
     "crumbs": [
       "Chapters",
       "Chapter 5"
@@ -478,7 +520,7 @@
     "href": "chapters/chapter1/chapter1.html",
     "title": "Chapter 1: Introduction",
     "section": "",
-    "text": "This first chapter presents a broad overview of this course and explains why learning to program in R matters. We will cover some of logistics of the course and present key references that are useful to learn about R.",
+    "text": "This first chapter presents a broad overview of this course and explains why learning to program in R matters. We will cover some of the logistics of the course and present key references that are useful to learn about R.",
     "crumbs": [
       "Chapters",
       "Chapter 1"
@@ -500,7 +542,7 @@
     "href": "about/index.html",
     "title": "Introduction to Programming in R",
     "section": "",
-    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\n\nBefore the first session\nPlease install R and RStudio on your laptop before the first session (Tuesday 6 October):\n\nInstall R 4.6 from CRAN: https://cloud.r-project.org/. On a Mac, choose the installer that matches your processor: arm64 for Apple silicon (M1 and later), x86_64 for older Intel Macs.\nInstall the free RStudio Desktop: https://posit.co/download/rstudio-desktop/.\nOpen RStudio, type the following line in the console, and press Enter:\ninstall.packages(\"tidyverse\")\n\nIf you cannot install software on your laptop, you can use R in your browser instead, through Binder (no account needed, but your work is lost when the session ends, so download your files) or Posit Cloud (free account).\n\n\nLabs\nThe lab exercises are in a separate repository: https://github.com/xcit-courses/R-intro-labs. To get them, click the green Code button and choose Download ZIP.\nIn this course we will cover the following content:\n\n\nSlides\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\nChapter 3: Getting started using R\nChapter 4: Introduction to programming\nChapter 5: Coding project 1: The Monty Hall problem\nChapter 6: Importing data\nChapter 7: Example analysis\n\nEach chapter contains links slides and possibly other resources.",
+    "text": "This is the (work in progress) course website for “Introduction to programming in R”.\n\nBefore the first session\nPlease install R and RStudio on your laptop before the first session (Tuesday 6 October):\n\nInstall R 4.6 from CRAN: https://cloud.r-project.org/. On a Mac, choose the installer that matches your processor: arm64 for Apple silicon (M1 and later), x86_64 for older Intel Macs.\nInstall the free RStudio Desktop: https://posit.co/download/rstudio-desktop/.\nOpen RStudio, type the following line in the console, and press Enter:\ninstall.packages(\"tidyverse\")\n\nIf you cannot install software on your laptop, you can use R in your browser instead, through Binder (no account needed, but your work is lost when the session ends, so download your files) or Posit Cloud (free account).\n\n\nLabs\nThe lab exercises are in a separate repository: https://github.com/xcit-courses/R-intro-labs. To get them, click the green Code button and choose Download ZIP.\nIn this course we will cover the following content:\n\n\nChapters\n\nChapter 1: Course introduction\nChapter 2: Introduction to R\nChapter 3: Getting started using R\nChapter 4: Introduction to programming\nChapter 5: Coding project 1: The Monty Hall problem\nChapter 6: Importing data\nChapter 7: Example analysis\n\nEach chapter contains links to slides and possibly other resources.",
     "crumbs": [
       "Home"
     ]
@@ -510,7 +552,7 @@
     "href": "about/overview.html",
     "title": "Course Overview",
     "section": "",
-    "text": "This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the Master in Psychology–Evaluation and Assessment program.\nAll course materials will be posted on this site.",
+    "text": "This is the homepage for MAPEA-85: Introduction to R taught by Prof. Pedro Cardoso-Leite at the University of Luxembourg within the Master in Psychology–Evaluation and Assessment program.\nAll course materials will be posted on this site; the lab exercises are in a separate repository: https://github.com/xcit-courses/R-intro-labs.",
     "crumbs": [
       "Course Information",
       "Overview"
@@ -543,7 +585,7 @@
     "href": "chapters/chapter2/chapter2.html",
     "title": "Chapter 2: Introduction to R",
     "section": "",
-    "text": "In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, Rstudio and the tidyverse that you may have heard of before.\nWe will discuss why doing data analysis using code is a good idea. We will also highlight some of the key features that make R particularly interesting for data analysis.",
+    "text": "In this chapter we will cover some key elements that compose the R universe. We will see what programming means, what R is and how it relates to related terms like packages, RStudio and the tidyverse that you may have heard of before.\nWe will discuss why doing data analysis using code is a good idea. We will also highlight some of the key features that make R particularly interesting for data analysis.",
     "crumbs": [
       "Chapters",
       "Chapter 2"
@@ -789,21 +831,21 @@
   {
     "objectID": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
     "href": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
-    "title": "Introduction to Programming in R",
+    "title": "Coding project: the Monty Hall problem",
     "section": "The Monty Hall Problem",
     "text": "The Monty Hall Problem\nhttps://en.wikipedia.org/wiki/Monty_Hall_problem"
   },
   {
-    "objectID": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-chose",
-    "href": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-chose",
-    "title": "Introduction to Programming in R",
-    "section": "What would you chose?",
-    "text": "What would you chose?"
+    "objectID": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-choose",
+    "href": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-choose",
+    "title": "Coding project: the Monty Hall problem",
+    "section": "What would you choose?",
+    "text": "What would you choose?"
   },
   {
     "objectID": "chapters/chapter5/slides/monty_hall_problem.html#challenge",
     "href": "chapters/chapter5/slides/monty_hall_problem.html#challenge",
-    "title": "Introduction to Programming in R",
+    "title": "Coding project: the Monty Hall problem",
     "section": "Challenge",
     "text": "Challenge\n\nOpen lab_monty_hall, available on Github.\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead.\nNote however that your progress will not be saved if you use Binder!"
   },

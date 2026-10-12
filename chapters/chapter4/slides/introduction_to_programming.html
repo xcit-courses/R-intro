@@ -370,10 +370,10 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <p>Example 3:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>      [,1] [,2]  [,3]
-[1,]  1.39 0.03  1.11
-[2,] -1.62 1.26 -0.63
-[3,]  1.48 0.24  0.20</code></pre>
+<pre><code>      [,1]  [,2]  [,3]
+[1,] -0.53  0.32 -0.71
+[2,]  0.43 -0.14 -0.97
+[3,]  1.09  0.24  0.04</code></pre>
 </div>
 </div>
 <p>Example 4:</p>
@@ -453,6 +453,71 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 </ul>
 </section></section>
 <section>
+<section id="control-flow-if-else" class="title-slide slide level1 center">
+<h1>Control flow: <code>if</code> / <code>else</code></h1>
+
+</section>
+<section id="doing-something-only-if-a-condition-is-true" class="slide level2">
+<h2>Doing something only if a condition is true</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="dv">20</span></span>
+<span id="cb6-2"><a aria-label="2"></a></span>
+<span id="cb6-3"><a aria-label="3"></a><span class="cf">if</span> (age <span class="sc">&gt;=</span> <span class="dv">18</span>) {</span>
+<span id="cb6-4"><a aria-label="4"></a>  <span class="fu">print</span>(<span class="st">"adult"</span>)</span>
+<span id="cb6-5"><a aria-label="5"></a>} <span class="cf">else</span> {</span>
+<span id="cb6-6"><a aria-label="6"></a>  <span class="fu">print</span>(<span class="st">"minor"</span>)</span>
+<span id="cb6-7"><a aria-label="7"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "adult"</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment">the condition inside <code>( )</code> must be a single <code>TRUE</code> or <code>FALSE</code></li>
+<li class="fragment">the <code>else</code> part is optional</li>
+</ul>
+</section>
+<section id="exercise-if-else" class="slide level2">
+<h2>Exercise: if / else</h2>
+<p>Write code that prints <code>"positive"</code>, <code>"negative"</code> or <code>"zero"</code> depending on the value of a number <code>x</code>.</p>
+<p>Hint: you can chain conditions with <code>else if</code>.</p>
+</section></section>
+<section>
+<section id="loops" class="title-slide slide level1 center">
+<h1>Loops</h1>
+
+</section>
+<section id="repeating-an-operation-for-loops" class="slide level2">
+<h2>Repeating an operation: <code>for</code> loops</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>) {</span>
+<span id="cb8-2"><a aria-label="2"></a>  <span class="fu">print</span>(<span class="fu">paste</span>(<span class="st">"Round"</span>, i))</span>
+<span id="cb8-3"><a aria-label="3"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Round 1"
+[1] "Round 2"
+[1] "Round 3"</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><code>i</code> takes each value of <code>1:3</code> in turn</li>
+<li class="fragment">the code inside <code>{ }</code> runs once for each value</li>
+</ul>
+</section>
+<section id="saving-results-from-a-loop" class="slide level2">
+<h2>Saving results from a loop</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a aria-label="1"></a>squares <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="dv">5</span>)   <span class="co"># an empty vector of length 5</span></span>
+<span id="cb10-2"><a aria-label="2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>) {</span>
+<span id="cb10-3"><a aria-label="3"></a>  squares[i] <span class="ot">&lt;-</span> i<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb10-4"><a aria-label="4"></a>}</span>
+<span id="cb10-5"><a aria-label="5"></a>squares</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  1  4  9 16 25</code></pre>
+</div>
+</div>
+<p>Create the vector that will hold the results before the loop, then fill it in.</p>
+</section></section>
+<section>
 <section id="functions" class="title-slide slide level1 center">
 <h1>Functions</h1>
 
@@ -461,7 +526,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h2>Functions: Example 1</h2>
 <p>Calculate the mean of the following values:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <aside class="notes">
 <ul>
@@ -484,26 +549,26 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 </section>
 <section id="functions-example-2" class="slide level2">
 <h2>Functions: Example 2</h2>
-<p>calculate the correlation between age and weight</p>
+<p>Calculate the correlation between age and weight</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
-<span id="cb7-2"><a aria-label="2"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
+<span id="cb13-2"><a aria-label="2"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="create-your-own-functions" class="slide level2">
 <h2>Create your own functions</h2>
 <p>To create your own functions use the following template:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
-<span id="cb8-2"><a aria-label="2"></a>  </span>
-<span id="cb8-3"><a aria-label="3"></a>  <span class="co"># --- write your code here --</span></span>
-<span id="cb8-4"><a aria-label="4"></a>  <span class="co"># example:</span></span>
-<span id="cb8-5"><a aria-label="5"></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
-<span id="cb8-6"><a aria-label="6"></a>  </span>
-<span id="cb8-7"><a aria-label="7"></a>  <span class="co"># return the output</span></span>
-<span id="cb8-8"><a aria-label="8"></a>  output</span>
-<span id="cb8-9"><a aria-label="9"></a>  </span>
-<span id="cb8-10"><a aria-label="10"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a aria-label="1"></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
+<span id="cb14-2"><a aria-label="2"></a>  </span>
+<span id="cb14-3"><a aria-label="3"></a>  <span class="co"># --- write your code here --</span></span>
+<span id="cb14-4"><a aria-label="4"></a>  <span class="co"># example:</span></span>
+<span id="cb14-5"><a aria-label="5"></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
+<span id="cb14-6"><a aria-label="6"></a>  </span>
+<span id="cb14-7"><a aria-label="7"></a>  <span class="co"># return the output</span></span>
+<span id="cb14-8"><a aria-label="8"></a>  output</span>
+<span id="cb14-9"><a aria-label="9"></a>  </span>
+<span id="cb14-10"><a aria-label="10"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="functions-1" class="slide level2">
@@ -546,10 +611,30 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <section id="sourcing-code" class="slide level2">
 <h2>“Sourcing” code</h2>
 <p>You can run a whole R script in one go with <code>source()</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="fu">source</span>(<span class="st">"bmi_calculator.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a aria-label="1"></a><span class="fu">source</span>(<span class="st">"bmi_calculator.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li class="fragment">every line of the script runs, from top to bottom</li>
 <li class="fragment">the functions the script defines (e.g., your BMI function) are then available in your session</li>
+</ul>
+</section></section>
+<section>
+<section id="challenge-homework" class="title-slide slide level1 center">
+<h1>Challenge (homework)</h1>
+
+</section>
+<section id="challenge-simulate-coin-flips" class="slide level2">
+<h2>Challenge: simulate coin flips</h2>
+<p>Simulate 1000 coin flips (<code>"heads"</code> or <code>"tails"</code>) and compute the proportion of heads:</p>
+<ol type="1">
+<li class="fragment">with a <code>for</code> loop</li>
+<li class="fragment">without a loop, using <code>replicate()</code></li>
+</ol>
+</section>
+<section id="tips" class="slide level2">
+<h2>Tips</h2>
+<ul>
+<li class="fragment">functions that will help: <code>sample()</code>, <code>set.seed()</code> and <code>replicate()</code></li>
+<li class="fragment">find out how they work with <code>?sample</code> (or the Help pane in RStudio)</li>
 </ul>
 
 
