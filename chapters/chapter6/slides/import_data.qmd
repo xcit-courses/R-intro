@@ -51,7 +51,7 @@ editor: visual
 -   <https://osf.io/>
 -   <https://figshare.com/>
 -   <https://openneuro.org/> (brain imaging)
--   <https://www.kaggle.com/datasets> (usability score)
+-   <https://www.kaggle.com/datasets> (check each dataset's *usability* rating)
 -   <https://datasetsearch.research.google.com/>
 -   <https://huggingface.co/>
 -   <https://zenodo.org/>
@@ -75,41 +75,56 @@ https://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.l
 ## Importing data into R
 
 -   R can import a large range of data formats,
--   but you typically need to install a particular package for a particular file format.
--   RStudio provides convenient support for importing data.
+-   but you typically need a particular package for a particular file format: `readr` (CSV, TSV), `readxl` (Excel), `haven` (SPSS, Stata, SAS)
+-   all three are installed with the tidyverse, but `library(tidyverse)` loads only `readr`: load the others with `library(readxl)` and `library(haven)`
+-   RStudio also offers a point-and-click import: *File → Import Dataset*
+
+## Where does R look for files?
+
+-   R reads and writes files relative to its **working directory**; see it with `getwd()`
+-   open the lab's project file (`lab_import_data.Rproj`): RStudio sets the working directory to the lab folder
+-   code chunks in a `.qmd` file run in the folder of that file: for the lab files, that is the lab folder too
+-   so `"datasets/booksales.csv"` means "the file `booksales.csv` in the `datasets` folder of the lab"
+
+## Relative vs absolute paths
+
+-   relative: `read_csv("datasets/booksales.csv")` works on any computer that has the lab folder
+-   absolute: `read_csv("C:/Users/anna/Downloads/R-intro-labs/lab_import_data/datasets/booksales.csv")` works only on Anna's computer
+-   tip: inside the quotes, press **Tab** and RStudio completes file and folder names for you
 
 ## Importing data into R
 
--   Complete now the `lab_import_data` exercises available on [Github](https://github.com/xcit-courses/R-intro-labs)
+-   Complete now the [`lab_import_data`](https://github.com/xcit-courses/R-intro-labs/tree/main/lab_import_data) exercises (open `import_data.qmd`)
 
 -   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead:
 
 -   Note however that your progress will not be saved if you use Binder!
 
-# Data Frames (aka spreadsheets)
+# Data frames (aka spreadsheets)
 
-## Dataframes
+## Data frames
 
--   Dataframes are likely the most important data structure in R.
+-   Data frames are likely the most important data structure in R.
 -   They are basically like a spreadsheet.
+-   `read_csv()` returns a *tibble*: the tidyverse's version of a data frame (you will see "A tibble: 14,999 × 10")
 -   There are a few fundamental operations that you must know how to perform on data frames.
 
-## Main operations on data.frames
+## Main operations on data frames
 
-0.  Inspect the size and type of a data.frame
-1.  See the content of a data.frame
-2.  Select a column of a data.frame
-3.  Filter rows of a data.frame
+0.  Inspect the size and type of a data frame
+1.  See the content of a data frame
+2.  Select a column of a data frame
+3.  Filter rows of a data frame
 4.  Modify or create new columns (mutate)
-5.  Save a data.frame (e.g., as a csv file)
+5.  Save a data frame (e.g., as a csv file)
 
 ## Example dataset
 
-In all the examples below I will use the `Employee satisfaction and Salary (ESS)` dataset, downloaded from [Zenodo](https://zenodo.org/records/13935313).
+The `data_frames.qmd` exercises use the `Employee satisfaction and Salary (ESS)` dataset, downloaded from [Zenodo](https://zenodo.org/records/13935313).
 
-## Exploring data.frames
+## Exploring data frames
 
--   In `lab_import_data` on [Github](https://github.com/xcit-courses/R-intro-labs), open  `data_frames.qmd`
+-   In [`lab_import_data`](https://github.com/xcit-courses/R-intro-labs/tree/main/lab_import_data), open `data_frames.qmd`
 
 -   If you don't have R and RStudio running locally, you can use the following [Binder link](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio) instead:
 

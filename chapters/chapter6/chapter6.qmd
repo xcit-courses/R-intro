@@ -14,3 +14,7 @@ We will also introduce "data frames", the R equivalent of a spreadsheet and vari
 ## Slides
 
 - [Importing data into R](slides/import_data.qmd)
+
+## Lab
+
+- [`lab_import_data`](https://github.com/xcit-courses/R-intro-labs/tree/main/lab_import_data) (in the course labs on GitHub): `import_data.qmd`, then `data_frames.qmd`
