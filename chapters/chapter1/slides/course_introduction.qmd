@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R"
 subtitle: "MAPEA-85 2026-2027"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 

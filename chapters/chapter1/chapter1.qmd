@@ -4,7 +4,7 @@ title: "Chapter 1: Introduction"
 
 
 This first chapter presents a broad overview of this course and explains why learning to program in R matters. 
-We will cover some of logistics of the course and present key references that are useful to learn about R.
+We will cover some of the logistics of the course and present key references that are useful to learn about R.
 
 
 
