@@ -186,7 +186,7 @@
 <li class="fragment"><a href="https://osf.io/" class="uri">https://osf.io/</a></li>
 <li class="fragment"><a href="https://figshare.com/" class="uri">https://figshare.com/</a></li>
 <li class="fragment"><a href="https://openneuro.org/" class="uri">https://openneuro.org/</a> (brain imaging)</li>
-<li class="fragment"><a href="https://www.kaggle.com/datasets" class="uri">https://www.kaggle.com/datasets</a> (usability score)</li>
+<li class="fragment"><a href="https://www.kaggle.com/datasets" class="uri">https://www.kaggle.com/datasets</a> (check each dataset’s <em>usability</em> rating)</li>
 <li class="fragment"><a href="https://datasetsearch.research.google.com/" class="uri">https://datasetsearch.research.google.com/</a></li>
 <li class="fragment"><a href="https://huggingface.co/" class="uri">https://huggingface.co/</a></li>
 <li class="fragment"><a href="https://zenodo.org/" class="uri">https://zenodo.org/</a></li>
@@ -226,50 +226,69 @@
 <h2>Importing data into R</h2>
 <ul>
 <li class="fragment">R can import a large range of data formats,</li>
-<li class="fragment">but you typically need to install a particular package for a particular file format.</li>
-<li class="fragment">RStudio provides convenient support for importing data.</li>
+<li class="fragment">but you typically need a particular package for a particular file format: <code>readr</code> (CSV, TSV), <code>readxl</code> (Excel), <code>haven</code> (SPSS, Stata, SAS)</li>
+<li class="fragment">all three are installed with the tidyverse, but <code>library(tidyverse)</code> loads only <code>readr</code>: load the others with <code>library(readxl)</code> and <code>library(haven)</code></li>
+<li class="fragment">RStudio also offers a point-and-click import: <em>File → Import Dataset</em></li>
+</ul>
+</section>
+<section id="where-does-r-look-for-files" class="slide level2">
+<h2>Where does R look for files?</h2>
+<ul>
+<li class="fragment">R reads and writes files relative to its <strong>working directory</strong>; see it with <code>getwd()</code></li>
+<li class="fragment">open the lab’s project file (<code>lab_import_data.Rproj</code>): RStudio sets the working directory to the lab folder</li>
+<li class="fragment">code chunks in a <code>.qmd</code> file run in the folder of that file: for the lab files, that is the lab folder too</li>
+<li class="fragment">so <code>"datasets/booksales.csv"</code> means “the file <code>booksales.csv</code> in the <code>datasets</code> folder of the lab”</li>
+</ul>
+</section>
+<section id="relative-vs-absolute-paths" class="slide level2">
+<h2>Relative vs absolute paths</h2>
+<ul>
+<li class="fragment">relative: <code>read_csv("datasets/booksales.csv")</code> works on any computer that has the lab folder</li>
+<li class="fragment">absolute: <code>read_csv("C:/Users/anna/Downloads/R-intro-labs/lab_import_data/datasets/booksales.csv")</code> works only on Anna’s computer</li>
+<li class="fragment">tip: inside the quotes, press <strong>Tab</strong> and RStudio completes file and folder names for you</li>
 </ul>
 </section>
 <section id="importing-data-into-r-2" class="slide level2">
 <h2>Importing data into R</h2>
 <ul>
-<li class="fragment"><p>Complete now the <code>lab_import_data</code> exercises available on <a href="https://github.com/xcit-courses/R-intro-labs">Github</a></p></li>
+<li class="fragment"><p>Complete now the <a href="https://github.com/xcit-courses/R-intro-labs/tree/main/lab_import_data"><code>lab_import_data</code></a> exercises (open <code>import_data.qmd</code>)</p></li>
 <li class="fragment"><p>If you don’t have R and RStudio running locally, you can use the following <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio">Binder link</a> instead:</p></li>
 <li class="fragment"><p>Note however that your progress will not be saved if you use Binder!</p></li>
 </ul>
 </section></section>
 <section>
 <section id="data-frames-aka-spreadsheets" class="title-slide slide level1 center">
-<h1>Data Frames (aka spreadsheets)</h1>
+<h1>Data frames (aka spreadsheets)</h1>
 
 </section>
-<section id="dataframes" class="slide level2">
-<h2>Dataframes</h2>
+<section id="data-frames" class="slide level2">
+<h2>Data frames</h2>
 <ul>
-<li class="fragment">Dataframes are likely the most important data structure in R.</li>
+<li class="fragment">Data frames are likely the most important data structure in R.</li>
 <li class="fragment">They are basically like a spreadsheet.</li>
+<li class="fragment"><code>read_csv()</code> returns a <em>tibble</em>: the tidyverse’s version of a data frame (you will see “A tibble: 14,999 × 10”)</li>
 <li class="fragment">There are a few fundamental operations that you must know how to perform on data frames.</li>
 </ul>
 </section>
-<section id="main-operations-on-data.frames" class="slide level2">
-<h2>Main operations on data.frames</h2>
+<section id="main-operations-on-data-frames" class="slide level2">
+<h2>Main operations on data frames</h2>
 <ol start="0" type="1">
-<li class="fragment">Inspect the size and type of a data.frame</li>
-<li class="fragment">See the content of a data.frame</li>
-<li class="fragment">Select a column of a data.frame</li>
-<li class="fragment">Filter rows of a data.frame</li>
+<li class="fragment">Inspect the size and type of a data frame</li>
+<li class="fragment">See the content of a data frame</li>
+<li class="fragment">Select a column of a data frame</li>
+<li class="fragment">Filter rows of a data frame</li>
 <li class="fragment">Modify or create new columns (mutate)</li>
-<li class="fragment">Save a data.frame (e.g., as a csv file)</li>
+<li class="fragment">Save a data frame (e.g., as a csv file)</li>
 </ol>
 </section>
 <section id="example-dataset" class="slide level2">
 <h2>Example dataset</h2>
-<p>In all the examples below I will use the <code>Employee satisfaction and Salary (ESS)</code> dataset, downloaded from <a href="https://zenodo.org/records/13935313">Zenodo</a>.</p>
+<p>The <code>data_frames.qmd</code> exercises use the <code>Employee satisfaction and Salary (ESS)</code> dataset, downloaded from <a href="https://zenodo.org/records/13935313">Zenodo</a>.</p>
 </section>
-<section id="exploring-data.frames" class="slide level2">
-<h2>Exploring data.frames</h2>
+<section id="exploring-data-frames" class="slide level2">
+<h2>Exploring data frames</h2>
 <ul>
-<li class="fragment"><p>In <code>lab_import_data</code> on <a href="https://github.com/xcit-courses/R-intro-labs">Github</a>, open <code>data_frames.qmd</code></p></li>
+<li class="fragment"><p>In <a href="https://github.com/xcit-courses/R-intro-labs/tree/main/lab_import_data"><code>lab_import_data</code></a>, open <code>data_frames.qmd</code></p></li>
 <li class="fragment"><p>If you don’t have R and RStudio running locally, you can use the following <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio">Binder link</a> instead:</p></li>
 <li class="fragment"><p>Note however that your progress will not be saved if you use Binder!</p></li>
 </ul>

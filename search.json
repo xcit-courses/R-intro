@@ -48,7 +48,7 @@
     "href": "chapters/chapter6/slides/import_data.html#where-can-you-find-data",
     "title": "Importing data into R",
     "section": "Where can you find data?",
-    "text": "Where can you find data?\n\nhttps://osf.io/\nhttps://figshare.com/\nhttps://openneuro.org/ (brain imaging)\nhttps://www.kaggle.com/datasets (usability score)\nhttps://datasetsearch.research.google.com/\nhttps://huggingface.co/\nhttps://zenodo.org/\nhttps://www.nature.com/sdata/policies/repositories\nhttps://openpsychologydata.metajnl.com/\nhttps://openpsychometrics.org/\\_rawdata/\nhttps://dataverse.harvard.edu/\nhttps://nimh-dsst.github.io/OpenCogData/\n\n\nhttps://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/"
+    "text": "Where can you find data?\n\nhttps://osf.io/\nhttps://figshare.com/\nhttps://openneuro.org/ (brain imaging)\nhttps://www.kaggle.com/datasets (check each dataset’s usability rating)\nhttps://datasetsearch.research.google.com/\nhttps://huggingface.co/\nhttps://zenodo.org/\nhttps://www.nature.com/sdata/policies/repositories\nhttps://openpsychologydata.metajnl.com/\nhttps://openpsychometrics.org/\\_rawdata/\nhttps://dataverse.harvard.edu/\nhttps://nimh-dsst.github.io/OpenCogData/\n\n\nhttps://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.library.ucla.edu/psychology/data https://datatools.samhsa.gov/ https://github.com/awesomedata/awesome-public-datasets https://github.com/awesomedata/awesome-public-datasets?tab=readme-ov-file#neuroscience https://datahypothesis.com/free-public-datasets-data-analyst-must-know/"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#which-file-format-should-you-choose",
@@ -62,42 +62,56 @@
     "href": "chapters/chapter6/slides/import_data.html#importing-data-into-r-1",
     "title": "Importing data into R",
     "section": "Importing data into R",
-    "text": "Importing data into R\n\nR can import a large range of data formats,\nbut you typically need to install a particular package for a particular file format.\nRStudio provides convenient support for importing data."
+    "text": "Importing data into R\n\nR can import a large range of data formats,\nbut you typically need a particular package for a particular file format: readr (CSV, TSV), readxl (Excel), haven (SPSS, Stata, SAS)\nall three are installed with the tidyverse, but library(tidyverse) loads only readr: load the others with library(readxl) and library(haven)\nRStudio also offers a point-and-click import: File → Import Dataset"
+  },
+  {
+    "objectID": "chapters/chapter6/slides/import_data.html#where-does-r-look-for-files",
+    "href": "chapters/chapter6/slides/import_data.html#where-does-r-look-for-files",
+    "title": "Importing data into R",
+    "section": "Where does R look for files?",
+    "text": "Where does R look for files?\n\nR reads and writes files relative to its working directory; see it with getwd()\nopen the lab’s project file (lab_import_data.Rproj): RStudio sets the working directory to the lab folder\ncode chunks in a .qmd file run in the folder of that file: for the lab files, that is the lab folder too\nso \"datasets/booksales.csv\" means “the file booksales.csv in the datasets folder of the lab”"
+  },
+  {
+    "objectID": "chapters/chapter6/slides/import_data.html#relative-vs-absolute-paths",
+    "href": "chapters/chapter6/slides/import_data.html#relative-vs-absolute-paths",
+    "title": "Importing data into R",
+    "section": "Relative vs absolute paths",
+    "text": "Relative vs absolute paths\n\nrelative: read_csv(\"datasets/booksales.csv\") works on any computer that has the lab folder\nabsolute: read_csv(\"C:/Users/anna/Downloads/R-intro-labs/lab_import_data/datasets/booksales.csv\") works only on Anna’s computer\ntip: inside the quotes, press Tab and RStudio completes file and folder names for you"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#importing-data-into-r-2",
     "href": "chapters/chapter6/slides/import_data.html#importing-data-into-r-2",
     "title": "Importing data into R",
     "section": "Importing data into R",
-    "text": "Importing data into R\n\nComplete now the lab_import_data exercises available on Github\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead:\nNote however that your progress will not be saved if you use Binder!"
+    "text": "Importing data into R\n\nComplete now the lab_import_data exercises (open import_data.qmd)\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead:\nNote however that your progress will not be saved if you use Binder!"
   },
   {
-    "objectID": "chapters/chapter6/slides/import_data.html#dataframes",
-    "href": "chapters/chapter6/slides/import_data.html#dataframes",
+    "objectID": "chapters/chapter6/slides/import_data.html#data-frames",
+    "href": "chapters/chapter6/slides/import_data.html#data-frames",
     "title": "Importing data into R",
-    "section": "Dataframes",
-    "text": "Dataframes\n\nDataframes are likely the most important data structure in R.\nThey are basically like a spreadsheet.\nThere are a few fundamental operations that you must know how to perform on data frames."
+    "section": "Data frames",
+    "text": "Data frames\n\nData frames are likely the most important data structure in R.\nThey are basically like a spreadsheet.\nread_csv() returns a tibble: the tidyverse’s version of a data frame (you will see “A tibble: 14,999 × 10”)\nThere are a few fundamental operations that you must know how to perform on data frames."
   },
   {
-    "objectID": "chapters/chapter6/slides/import_data.html#main-operations-on-data.frames",
-    "href": "chapters/chapter6/slides/import_data.html#main-operations-on-data.frames",
+    "objectID": "chapters/chapter6/slides/import_data.html#main-operations-on-data-frames",
+    "href": "chapters/chapter6/slides/import_data.html#main-operations-on-data-frames",
     "title": "Importing data into R",
-    "section": "Main operations on data.frames",
-    "text": "Main operations on data.frames\n\nInspect the size and type of a data.frame\nSee the content of a data.frame\nSelect a column of a data.frame\nFilter rows of a data.frame\nModify or create new columns (mutate)\nSave a data.frame (e.g., as a csv file)"
+    "section": "Main operations on data frames",
+    "text": "Main operations on data frames\n\nInspect the size and type of a data frame\nSee the content of a data frame\nSelect a column of a data frame\nFilter rows of a data frame\nModify or create new columns (mutate)\nSave a data frame (e.g., as a csv file)"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#example-dataset",
     "href": "chapters/chapter6/slides/import_data.html#example-dataset",
     "title": "Importing data into R",
     "section": "Example dataset",
-    "text": "Example dataset\nIn all the examples below I will use the Employee satisfaction and Salary (ESS) dataset, downloaded from Zenodo."
+    "text": "Example dataset\nThe data_frames.qmd exercises use the Employee satisfaction and Salary (ESS) dataset, downloaded from Zenodo."
   },
   {
-    "objectID": "chapters/chapter6/slides/import_data.html#exploring-data.frames",
-    "href": "chapters/chapter6/slides/import_data.html#exploring-data.frames",
+    "objectID": "chapters/chapter6/slides/import_data.html#exploring-data-frames",
+    "href": "chapters/chapter6/slides/import_data.html#exploring-data-frames",
     "title": "Importing data into R",
-    "section": "Exploring data.frames",
-    "text": "Exploring data.frames\n\nIn lab_import_data on Github, open data_frames.qmd\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead:\nNote however that your progress will not be saved if you use Binder!"
+    "section": "Exploring data frames",
+    "text": "Exploring data frames\n\nIn lab_import_data, open data_frames.qmd\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead:\nNote however that your progress will not be saved if you use Binder!"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#abc-vs-writing-a-book",
@@ -160,7 +174,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these-1",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,]  0.29  0.34  1.59\n[2,] -0.35 -1.28 -0.79\n[3,]  1.27  2.03 -0.10\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,] -1.74  0.89 -1.46\n[2,]  0.38 -1.69  0.17\n[3,]  1.23  0.44 -1.01\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
@@ -652,6 +666,17 @@
     "title": "Chapter 6: Importing data into R",
     "section": "Slides",
     "text": "Slides\n\nImporting data into R",
+    "crumbs": [
+      "Chapters",
+      "Chapter 6"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter6/chapter6.html#lab",
+    "href": "chapters/chapter6/chapter6.html#lab",
+    "title": "Chapter 6: Importing data into R",
+    "section": "Lab",
+    "text": "Lab\n\nlab_import_data (in the course labs on GitHub): import_data.qmd, then data_frames.qmd",
     "crumbs": [
       "Chapters",
       "Chapter 6"
