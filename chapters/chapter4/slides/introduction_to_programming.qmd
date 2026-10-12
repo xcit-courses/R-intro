@@ -237,6 +237,57 @@ if ( ___ == "John"){
 
 
 
+# Control flow: `if` / `else`
+
+## Doing something only if a condition is true
+
+```{r}
+#| echo: true
+age <- 20
+
+if (age >= 18) {
+  print("adult")
+} else {
+  print("minor")
+}
+```
+
+- the condition inside `( )` must be a single `TRUE` or `FALSE`
+- the `else` part is optional
+
+## Exercise: if / else
+
+Write code that prints `"positive"`, `"negative"` or `"zero"` depending on the value of a number `x`.
+
+Hint: you can chain conditions with `else if`.
+
+# Loops
+
+## Repeating an operation: `for` loops
+
+```{r}
+#| echo: true
+for (i in 1:3) {
+  print(paste("Round", i))
+}
+```
+
+- `i` takes each value of `1:3` in turn
+- the code inside `{ }` runs once for each value
+
+## Saving results from a loop
+
+```{r}
+#| echo: true
+squares <- numeric(5)   # an empty vector of length 5
+for (i in 1:5) {
+  squares[i] <- i^2
+}
+squares
+```
+
+Create the vector that will hold the results before the loop, then fill it in.
+
 # Functions
 
 ## Functions: Example 1
@@ -259,7 +310,7 @@ age <- c(23, 26, 37, 45, 63, NA, 52)
 
 ## Functions: Example 2
 
-calculate the correlation between age and weight
+Calculate the correlation between age and weight
 
 ```{r}
 #| echo: true
@@ -333,3 +384,17 @@ source("bmi_calculator.R")
 
 - every line of the script runs, from top to bottom
 - the functions the script defines (e.g., your BMI function) are then available in your session
+
+# Challenge (homework)
+
+## Challenge: simulate coin flips
+
+Simulate 1000 coin flips (`"heads"` or `"tails"`) and compute the proportion of heads:
+
+1.  with a `for` loop
+2.  without a loop, using `replicate()`
+
+## Tips
+
+- functions that will help: `sample()`, `set.seed()` and `replicate()`
+- find out how they work with `?sample` (or the Help pane in RStudio)
