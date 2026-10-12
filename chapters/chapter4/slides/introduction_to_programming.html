@@ -208,7 +208,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<a href="pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a>
+<a href="mailto:pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a>
 </div>
 </div>
 </div>
@@ -271,7 +271,7 @@
 <li class="fragment">\ / backward and forward slash</li>
 <li class="fragment">$ dollar sign</li>
 <li class="fragment">~ tilde</li>
-<li class="fragment"># pound</li>
+<li class="fragment"># hash (pound sign)</li>
 <li class="fragment">&amp; and operator</li>
 </ol>
 </div></div>
@@ -281,13 +281,15 @@
 <p>It is worth learning to touch type!</p>
 <p>There are many free online resources:</p>
 <ul>
-<li class="fragment">https://www.typingclub.com/</li>
-<li class="fragment">https://www.keybr.com/</li>
-<li class="fragment">https://monkeytype.com/</li>
-<li class="fragment">https://www.speedcoder.net/</li>
-<li class="fragment">https://typing.io/</li>
+<li class="fragment"><a href="https://www.typingclub.com/" class="uri">https://www.typingclub.com/</a></li>
+<li class="fragment"><a href="https://www.keybr.com/" class="uri">https://www.keybr.com/</a></li>
+<li class="fragment"><a href="https://monkeytype.com/" class="uri">https://monkeytype.com/</a></li>
+<li class="fragment"><a href="https://www.speedcoder.net/" class="uri">https://www.speedcoder.net/</a></li>
+<li class="fragment"><a href="https://typing.io/" class="uri">https://typing.io/</a></li>
 </ul>
+<div class="fragment">
 <p>Try</p>
+</div>
 </section>
 <section id="values-data-types" class="slide level2">
 <h2>Values / data types</h2>
@@ -299,7 +301,9 @@
 <li class="fragment">Character / String</li>
 <li class="fragment">…</li>
 </ul>
+<div class="fragment">
 <p>Exercise: find examples of values for each of these types.</p>
+</div>
 </section>
 <section id="values-data-types-1" class="slide level2">
 <h2>Values / data types</h2>
@@ -310,8 +314,8 @@
 <thead>
 <tr class="header">
 <th>dimensions</th>
-<th>homogenous</th>
-<th>heterogenous</th>
+<th>homogeneous</th>
+<th>heterogeneous</th>
 </tr>
 </thead>
 <tbody>
@@ -348,14 +352,28 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 </div>
 </div>
 <p>Example 2:</p>
-<p><code>("a", 12, TRUE)</code></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] "a"
+
+[[2]]
+[1] 12
+
+[[3]]
+[1] TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="exercise-what-data-structures-are-these-1" class="slide level2">
+<h2>Exercise: what data structures are these?</h2>
 <p>Example 3:</p>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
-<pre><code>      [,1]  [,2] [,3]
-[1,]  1.36 -0.78 0.86
-[2,]  0.41 -1.01 0.93
-[3,] -0.82  1.69 0.65</code></pre>
+<pre><code>      [,1] [,2]  [,3]
+[1,]  1.39 0.03  1.11
+[2,] -1.62 1.26 -0.63
+[3,]  1.48 0.24  0.20</code></pre>
 </div>
 </div>
 <p>Example 4:</p>
@@ -375,7 +393,9 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <li class="fragment">“x gets 5”</li>
 <li class="fragment">“we <em>assign</em> the value 5 to variable x”</li>
 </ul>
+<div class="fragment">
 <p>Note: most programming languages use “=” instead.</p>
+</div>
 </section>
 <section id="variables-containers-1" class="slide level2">
 <h2>Variables / containers</h2>
@@ -388,11 +408,14 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h2>How to name variables?</h2>
 <h3 id="requirements">Requirements</h3>
 <ul>
-<li class="fragment">must start with a letter or a period (followed by letter)</li>
+<li class="fragment">must start with a letter, or with a period that is not followed by a digit</li>
+<li class="fragment">may only contain letters, digits, <code>.</code> and <code>_</code> (so <code>my variable</code> and <code>my-variable</code> are not allowed)</li>
 <li class="fragment">reserved words (e.g., <code>TRUE</code>, <code>if</code>, <code>function</code>) are forbidden</li>
-<li class="fragment">can’t contain spaces (e.g., <code>my variable</code> vs <code>my_variable</code>)</li>
+<li class="fragment">names are case-sensitive: <code>age</code> and <code>Age</code> are two different variables</li>
 </ul>
+<div class="fragment">
 <h3 id="recommendations">Recommendations</h3>
+</div>
 <ul>
 <li class="fragment">only use lower case letters, digits and underscore</li>
 <li class="fragment">use meaningful names</li>
@@ -402,13 +425,13 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <section id="how-to-name-variables-1" class="slide level2">
 <h2>How to name variables?</h2>
 <p>Exercise: Find a good name for the variable <code>___</code>?</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-label="1"></a>___ <span class="ot">&lt;-</span> <span class="st">"John"</span></span>
-<span id="cb4-2"><a aria-label="2"></a></span>
-<span id="cb4-3"><a aria-label="3"></a><span class="cf">if</span> ( ___ <span class="sc">==</span> <span class="st">"John"</span>){</span>
-<span id="cb4-4"><a aria-label="4"></a>  <span class="fu">print</span>(<span class="st">"Hi John! Nice to see you again.)</span></span>
-<span id="cb4-5"><a aria-label="5"></a><span class="st">} else {</span></span>
-<span id="cb4-6"><a aria-label="6"></a><span class="st">  print(paste("</span>Hi<span class="st">", ___, "</span>. It looks like you are new to this course. Welcome<span class="sc">!</span><span class="st">"))</span></span>
-<span id="cb4-7"><a aria-label="7"></a><span class="st">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a>___ <span class="ot">&lt;-</span> <span class="st">"John"</span></span>
+<span id="cb5-2"><a aria-label="2"></a></span>
+<span id="cb5-3"><a aria-label="3"></a><span class="cf">if</span> ( ___ <span class="sc">==</span> <span class="st">"John"</span>){</span>
+<span id="cb5-4"><a aria-label="4"></a>  <span class="fu">print</span>(<span class="st">"Hi John! Nice to see you again."</span>)</span>
+<span id="cb5-5"><a aria-label="5"></a>} <span class="cf">else</span> {</span>
+<span id="cb5-6"><a aria-label="6"></a>  <span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Hi "</span>, ___, <span class="st">". It looks like you are new to this course. Welcome!"</span>))</span>
+<span id="cb5-7"><a aria-label="7"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section></section>
 <section>
 <section id="practice" class="title-slide slide level1 center">
@@ -417,8 +440,8 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 </section>
 <section id="lets-try-swirl" class="slide level2 center">
 <h2>Let’s try swirl!</h2>
-<p><strong>course</strong>: R Programming Basic Building Blocks</p>
-<p><strong>chapter</strong>: Basic Building Blocks</p>
+<p><strong>course</strong>: R Programming</p>
+<p><strong>lesson</strong>: Basic Building Blocks</p>
 </section>
 <section id="working-on-a-project" class="slide level2">
 <h2>Working on a project</h2>
@@ -428,38 +451,59 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <li class="fragment">R + quarto files (*.qmd)</li>
 <li class="fragment">R projects (*.Rproj)</li>
 </ul>
-</section>
-<section id="functions" class="slide level2">
-<h2>Functions</h2>
+</section></section>
+<section>
+<section id="functions" class="title-slide slide level1 center">
+<h1>Functions</h1>
+
 </section>
 <section id="functions-example-1" class="slide level2">
 <h2>Functions: Example 1</h2>
 <p>Calculate the mean of the following values:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<p>Note: - getting help - argument, parameters - different functions expect different types of input - function outputs</p>
-<h3 id="functions-example-2">Functions: Example 2</h3>
+<aside class="notes">
+<ul>
+<li>getting help</li>
+<li>arguments, parameters</li>
+<li>different functions expect different types of input</li>
+<li>function outputs</li>
+</ul>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="functions-example-2" class="slide level2">
+<h2>Functions: Example 2</h2>
 <p>calculate the correlation between age and weight</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
-<span id="cb6-2"><a aria-label="2"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a>age <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">23</span>, <span class="dv">26</span>, <span class="dv">37</span>, <span class="dv">45</span>, <span class="dv">63</span>, <span class="cn">NA</span>, <span class="dv">52</span>)</span>
+<span id="cb7-2"><a aria-label="2"></a>weight <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">64</span>, <span class="dv">80</span>, <span class="dv">63</span>, <span class="dv">92</span>, <span class="dv">102</span>, <span class="dv">77</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="create-your-own-functions" class="slide level2">
 <h2>Create your own functions</h2>
 <p>To create your own functions use the following template:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
-<span id="cb7-2"><a aria-label="2"></a>  </span>
-<span id="cb7-3"><a aria-label="3"></a>  <span class="co"># --- write your code here --</span></span>
-<span id="cb7-4"><a aria-label="4"></a>  <span class="co"># example:</span></span>
-<span id="cb7-5"><a aria-label="5"></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
-<span id="cb7-6"><a aria-label="6"></a>  </span>
-<span id="cb7-7"><a aria-label="7"></a>  <span class="co"># return the output</span></span>
-<span id="cb7-8"><a aria-label="8"></a>  output</span>
-<span id="cb7-9"><a aria-label="9"></a>  </span>
-<span id="cb7-10"><a aria-label="10"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a>my_function_name <span class="ot">&lt;-</span> <span class="cf">function</span>(input_1, input_2) {</span>
+<span id="cb8-2"><a aria-label="2"></a>  </span>
+<span id="cb8-3"><a aria-label="3"></a>  <span class="co"># --- write your code here --</span></span>
+<span id="cb8-4"><a aria-label="4"></a>  <span class="co"># example:</span></span>
+<span id="cb8-5"><a aria-label="5"></a>  output <span class="ot">&lt;-</span> input_1 <span class="sc">+</span> input_2</span>
+<span id="cb8-6"><a aria-label="6"></a>  </span>
+<span id="cb8-7"><a aria-label="7"></a>  <span class="co"># return the output</span></span>
+<span id="cb8-8"><a aria-label="8"></a>  output</span>
+<span id="cb8-9"><a aria-label="9"></a>  </span>
+<span id="cb8-10"><a aria-label="10"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="functions-1" class="slide level2">
@@ -492,14 +536,21 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <p>“Your height is ___ m and your weight is ___ kg:</p>
 </blockquote>
 <blockquote>
-<p>Your BMI is ___.”</p>
+<p>Your BMI is ___.</p>
 </blockquote>
 <blockquote>
-<p>Your BMI-category is ___.”</p>
+<p>Your BMI category is ___.”</p>
 </blockquote>
+<p>BMI categories: underweight (below 18.5), normal (18.5 to below 25), overweight (25 to below 30), obese (30 or above).</p>
 </section>
 <section id="sourcing-code" class="slide level2">
 <h2>“Sourcing” code</h2>
+<p>You can run a whole R script in one go with <code>source()</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a aria-label="1"></a><span class="fu">source</span>(<span class="st">"bmi_calculator.R"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul>
+<li class="fragment">every line of the script runs, from top to bottom</li>
+<li class="fragment">the functions the script defines (e.g., your BMI function) are then available in your session</li>
+</ul>
 
 
 </section></section>

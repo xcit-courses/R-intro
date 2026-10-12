@@ -83,7 +83,7 @@
     "href": "chapters/chapter6/slides/import_data.html#main-operations-on-data.frames",
     "title": "Importing data into R",
     "section": "Main operations on data.frames",
-    "text": "Main operations on data.frames\n\nInspect the size and type of a data.frame\nSee the content of a data.frame\nSelect a column of a data.frame\nFilter rows of a data.frame\nModify or create new columns (mutate)\nSave a data.frame (e.g., as a csv file)\n\n(In all the examples I will use a data.frame called USArrests. You can learn more about this in-build dataset by typing ?USArrests)"
+    "text": "Main operations on data.frames\n\nInspect the size and type of a data.frame\nSee the content of a data.frame\nSelect a column of a data.frame\nFilter rows of a data.frame\nModify or create new columns (mutate)\nSave a data.frame (e.g., as a csv file)"
   },
   {
     "objectID": "chapters/chapter6/slides/import_data.html#example-dataset",
@@ -125,42 +125,49 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping-for-coders",
     "title": "Introduction to Programming in R",
     "section": "Touchtyping for coders",
-    "text": "Touchtyping for coders\nCoding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:\n\n\n\n( ) [] { } round, square and curly brackets\n” ’ double and single quote\n- _ hyphen and underscore\n&lt; &gt; smaller and greater than\n| pipe\n\n\n\n` back tick\n\\ / backward and forward slash\n$ dollar sign\n~ tilde\n# pound\n& and operator"
+    "text": "Touchtyping for coders\nCoding (i.e., writing code) requires using characters you might not be used to typing. Take a couple of minutes to figure out how to type the following characters on your keyboard:\n\n\n\n( ) [] { } round, square and curly brackets\n” ’ double and single quote\n- _ hyphen and underscore\n&lt; &gt; smaller and greater than\n| pipe\n\n\n\n` back tick\n\\ / backward and forward slash\n$ dollar sign\n~ tilde\n# hash (pound sign)\n& and operator"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#touchtyping",
     "title": "Introduction to Programming in R",
     "section": "Touchtyping",
-    "text": "Touchtyping\nIt is worth learning to touch type!\nThere are many free online resources:\n\nhttps://www.typingclub.com/\nhttps://www.keybr.com/\nhttps://monkeytype.com/\nhttps://www.speedcoder.net/\nhttps://typing.io/\n\nTry"
+    "text": "Touchtyping\nIt is worth learning to touch type!\nThere are many free online resources:\n\nhttps://www.typingclub.com/\nhttps://www.keybr.com/\nhttps://monkeytype.com/\nhttps://www.speedcoder.net/\nhttps://typing.io/\n\n\nTry"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types",
     "title": "Introduction to Programming in R",
     "section": "Values / data types",
-    "text": "Values / data types\nAtomic values\n\nLogical (boolean)\nInteger\nNumeric (double)\nCharacter / String\n…\n\nExercise: find examples of values for each of these types."
+    "text": "Values / data types\nAtomic values\n\nLogical (boolean)\nInteger\nNumeric (double)\nCharacter / String\n…\n\n\nExercise: find examples of values for each of these types."
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types-1",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#values-data-types-1",
     "title": "Introduction to Programming in R",
     "section": "Values / data types",
-    "text": "Values / data types\nData structures\nAtomic values can be organized into more complex data structures:\n\nData structures\n\n\ndimensions\nhomogenous\nheterogenous\n\n\n\n\n1\natomic vector\nlist\n\n\n2\nmatrix\ndata frame\n\n\nn\narray"
+    "text": "Values / data types\nData structures\nAtomic values can be organized into more complex data structures:\n\nData structures\n\n\ndimensions\nhomogeneous\nheterogeneous\n\n\n\n\n1\natomic vector\nlist\n\n\n2\nmatrix\ndata frame\n\n\nn\narray"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n      [,1]  [,2] [,3]\n[1,]  1.36 -0.78 0.86\n[2,]  0.41 -1.01 0.93\n[3,] -0.82  1.69 0.65\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n\n\n[[1]]\n[1] \"a\"\n\n[[2]]\n[1] 12\n\n[[3]]\n[1] TRUE"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these-1",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these-1",
+    "title": "Introduction to Programming in R",
+    "section": "Exercise: what data structures are these?",
+    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1] [,2]  [,3]\n[1,]  1.39 0.03  1.11\n[2,] -1.62 1.26 -0.63\n[3,]  1.48 0.24  0.20\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
     "title": "Introduction to Programming in R",
     "section": "Variables / containers",
-    "text": "Variables / containers\nWe can store values (and functions and other stuff) in labeled containers called variables!\nExample:\nx &lt;- 5\nThis is read as:\n\n“x gets 5”\n“we assign the value 5 to variable x”\n\nNote: most programming languages use “=” instead."
+    "text": "Variables / containers\nWe can store values (and functions and other stuff) in labeled containers called variables!\nExample:\nx &lt;- 5\nThis is read as:\n\n“x gets 5”\n“we assign the value 5 to variable x”\n\n\nNote: most programming languages use “=” instead."
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers-1",
@@ -174,21 +181,21 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables",
     "title": "Introduction to Programming in R",
     "section": "How to name variables?",
-    "text": "How to name variables?\nRequirements\n\nmust start with a letter or a period (followed by letter)\nreserved words (e.g., TRUE, if, function) are forbidden\ncan’t contain spaces (e.g., my variable vs my_variable)\n\nRecommendations\n\nonly use lower case letters, digits and underscore\nuse meaningful names\nclarity beats brevity"
+    "text": "How to name variables?\nRequirements\n\nmust start with a letter, or with a period that is not followed by a digit\nmay only contain letters, digits, . and _ (so my variable and my-variable are not allowed)\nreserved words (e.g., TRUE, if, function) are forbidden\nnames are case-sensitive: age and Age are two different variables\n\n\nRecommendations\n\n\nonly use lower case letters, digits and underscore\nuse meaningful names\nclarity beats brevity"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables-1",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#how-to-name-variables-1",
     "title": "Introduction to Programming in R",
     "section": "How to name variables?",
-    "text": "How to name variables?\nExercise: Find a good name for the variable ___?\n___ &lt;- \"John\"\n\nif ( ___ == \"John\"){\n  print(\"Hi John! Nice to see you again.)\n} else {\n  print(paste(\"Hi\", ___, \". It looks like you are new to this course. Welcome!\"))\n}"
+    "text": "How to name variables?\nExercise: Find a good name for the variable ___?\n___ &lt;- \"John\"\n\nif ( ___ == \"John\"){\n  print(\"Hi John! Nice to see you again.\")\n} else {\n  print(paste0(\"Hi \", ___, \". It looks like you are new to this course. Welcome!\"))\n}"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#lets-try-swirl",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#lets-try-swirl",
     "title": "Introduction to Programming in R",
     "section": "Let’s try swirl!",
-    "text": "Let’s try swirl!\ncourse: R Programming Basic Building Blocks\nchapter: Basic Building Blocks"
+    "text": "Let’s try swirl!\ncourse: R Programming\nlesson: Basic Building Blocks"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#working-on-a-project",
@@ -198,18 +205,18 @@
     "text": "Working on a project\n\nR console\nR scripts (*.R)\nR + quarto files (*.qmd)\nR projects (*.Rproj)"
   },
   {
-    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions",
-    "href": "chapters/chapter4/slides/introduction_to_programming.html#functions",
-    "title": "Introduction to Programming in R",
-    "section": "Functions",
-    "text": "Functions"
-  },
-  {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-1",
     "title": "Introduction to Programming in R",
     "section": "Functions: Example 1",
-    "text": "Functions: Example 1\nCalculate the mean of the following values:\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\n\nNote: - getting help - argument, parameters - different functions expect different types of input - function outputs\nFunctions: Example 2\ncalculate the correlation between age and weight\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\nweight &lt;- c(70, 64, 80, 63, 92, 102, 77)"
+    "text": "Functions: Example 1\nCalculate the mean of the following values:\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\n\n\n\ngetting help\narguments, parameters\ndifferent functions expect different types of input\nfunction outputs"
+  },
+  {
+    "objectID": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-2",
+    "href": "chapters/chapter4/slides/introduction_to_programming.html#functions-example-2",
+    "title": "Introduction to Programming in R",
+    "section": "Functions: Example 2",
+    "text": "Functions: Example 2\ncalculate the correlation between age and weight\n\nage &lt;- c(23, 26, 37, 45, 63, NA, 52)\nweight &lt;- c(70, 64, 80, 63, 92, 102, 77)"
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#create-your-own-functions",
@@ -244,14 +251,14 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-bmi-calculator-part-3",
     "title": "Introduction to Programming in R",
     "section": "Exercise: BMI calculator (part 3)",
-    "text": "Exercise: BMI calculator (part 3)\nChange your function so it prints the text:\n\n“Your height is ___ m and your weight is ___ kg:\n\n\nYour BMI is ___.”\n\n\nYour BMI-category is ___.”"
+    "text": "Exercise: BMI calculator (part 3)\nChange your function so it prints the text:\n\n“Your height is ___ m and your weight is ___ kg:\n\n\nYour BMI is ___.\n\n\nYour BMI category is ___.”\n\nBMI categories: underweight (below 18.5), normal (18.5 to below 25), overweight (25 to below 30), obese (30 or above)."
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#sourcing-code",
     "href": "chapters/chapter4/slides/introduction_to_programming.html#sourcing-code",
     "title": "Introduction to Programming in R",
     "section": "“Sourcing” code",
-    "text": "“Sourcing” code"
+    "text": "“Sourcing” code\nYou can run a whole R script in one go with source():\nsource(\"bmi_calculator.R\")\n\nevery line of the script runs, from top to bottom\nthe functions the script defines (e.g., your BMI function) are then available in your session"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#what-is-r-1",
@@ -279,7 +286,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#the-r-language",
     "title": "Introduction to R",
     "section": "The R language",
-    "text": "The R language\n\nBase R Cheatsheet\n\nCheatsheets are a great way to learn about specific topics/packages; we will use them quite a bit!"
+    "text": "The R language\n\nBase R Cheatsheet\n\n\nCheatsheets are a great way to learn about specific topics/packages; we will use them quite a bit!"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#history-of-r",
@@ -314,7 +321,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#packages-for-r",
     "title": "Introduction to R",
     "section": "packages (for R)",
-    "text": "packages (for R)\nBase R is limited and highly controlled.\nYou can however extend the cababilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code\n\nExamples:\n\nggplot2\ndplyr\ntidyverse"
+    "text": "packages (for R)\nBase R is limited and highly controlled.\nYou can however extend the cababilities of R by\n\nusing code written by others\n\ncode snippets shared by others\npackages that you can download and install\n\nwrite your own code\n\n\nExamples:\n\n\nggplot2\ndplyr\ntidyverse"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#base-r-packages",
@@ -363,7 +370,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#your-needs-are-most-likely-already-covered",
     "title": "Introduction to R",
     "section": "Your needs are most likely already covered",
-    "text": "Your needs are most likely already covered\n\nCRAN, the official repository of R packages, offers 25,304 packages (October 2026)\nWhatever analysis you need, someone has probably already written a package for it\n\nSource: https://cran.r-project.org/web/packages/"
+    "text": "Your needs are most likely already covered\n\nCRAN, the official repository of R packages, offers 25,304 packages (October 2026)\nWhatever analysis you need, someone has probably already written a package for it\n\n\nSource: https://cran.r-project.org/web/packages/"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#the-r-ecosystem",
@@ -569,7 +576,7 @@
     "href": "chapters/chapter4/chapter4.html#slides",
     "title": "Chapter 4: Introduction to programming",
     "section": "Slides",
-    "text": "Slides\n\nIntroduction to prorgramming",
+    "text": "Slides\n\nIntroduction to programming",
     "crumbs": [
       "Chapters",
       "Chapter 4"
@@ -658,7 +665,7 @@
     "href": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
     "title": "Getting started using R",
     "section": "How to use R?",
-    "text": "How to use R?\nThere are several options:\n\ninstall R on your computer\nuse R+RStudio via Posit Cloud\nuse R+RStudio via Binder: \n\nBinder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop."
+    "text": "How to use R?\nThere are several options:\n\ninstall R on your computer\nuse R+RStudio via Posit Cloud\nuse R+RStudio via Binder: \n\n\nBinder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-r",
@@ -735,7 +742,7 @@
     "href": "chapters/chapter3/slides/getting_started_using_R.html#recommended-rstudio-settings",
     "title": "Getting started using R",
     "section": "Recommended RStudio settings",
-    "text": "Recommended RStudio settings\nIn RStudio, go to Tools → Global Options → General:\n\nuntick Restore .RData into workspace at startup\nset Save workspace to .RData on exit to Never\n\nEvery session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session."
+    "text": "Recommended RStudio settings\nIn RStudio, go to Tools → Global Options → General:\n\nuntick Restore .RData into workspace at startup\nset Save workspace to .RData on exit to Never\n\n\nEvery session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-packages",
