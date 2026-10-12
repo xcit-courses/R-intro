@@ -34,30 +34,21 @@ editor: visual
 
 ## What is "R"?
 
--   what is a language?
+- what is a language?
 
--   what is a programming language?
+- what is a programming language?
 
--   what is a statistical programming language?
-
+- what is a statistical programming language?
 
 ## The R language
 
- - [Base R Cheatsheet](https://rstudio.github.io/cheatsheets/base-r.pdf)
-
-
+- [Base R Cheatsheet](https://rstudio.github.io/cheatsheets/base-r.pdf)
 
 [Cheatsheets](https://posit.co/resources/cheatsheets/) are a great way to learn about specific topics/packages; we will use them quite a bit!
- 
-
-
-
-
-
 
 ## History of R
 
--   [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))
+- [Wikipedia](https://en.wikipedia.org/wiki/R_(programming_language))
 
 ## Why use programming for data analysis?
 
@@ -68,12 +59,12 @@ editor: visual
 
 ## R-Related terms
 
--   base R
--   packages, CRAN, GitHub
--   scripts
--   RStudio
--   tidyverse
--   other?
+- base R
+- packages, CRAN, GitHub
+- scripts
+- RStudio
+- tidyverse
+- other?
 
 ::: notes
 Are there other terms you have heard before that are not listed here?
@@ -97,23 +88,23 @@ Base R is limited and highly controlled.
 
 You can however extend the cababilities of R by
 
--   using code written by others
-    -   code snippets shared by others
-    -   packages that you can download and install
--   write your own code
+- using code written by others
+  - code snippets shared by others
+  - packages that you can download and install
+- write your own code
 
 *Examples:*
 
--   ggplot2
--   dplyr
--   tidyverse
+- ggplot2
+- dplyr
+- tidyverse
 
 ## base R + packages
 
 This is a powerful and widely used pattern:
 
--   have the core be very stable and reliable
--   encourage creativity and diversity
+- have the core be very stable and reliable
+- encourage creativity and diversity
 
 ## How to install packages?
 
@@ -141,10 +132,10 @@ We will see and do this many times during this course.
 
 ## R & RStudio
 
--   R is a programming language
--   R is a piece of software that understands the R language
--   RStudio is a separate piece of software that makes it easier and nicer to user R;
--   RStudio is one of many IDE that you can use for coding
+- R is a programming language
+- R is a piece of software that understands the R language
+- RStudio is a separate piece of software that makes it easier and nicer to user R;
+- RStudio is one of many IDE that you can use for coding
 
 ## R & RStudio
 
@@ -212,20 +203,19 @@ Source: <https://cran.r-project.org/web/packages/>
 
 ## The R ecosystem
 
--   [quarto](https://quarto.org/) (websites, presentations, books, articles)
+- [quarto](https://quarto.org/) (websites, presentations, books, articles)
 
--   [shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/) (interactive web applications)
+- [shiny](https://shiny.posit.co/r/getstarted/shiny-basics/lesson1/) (interactive web applications)
 
--   and much more.
+- and much more.
 
 ## Why NOT use R?
 
-There are some common arguments againts R. 
+There are some common arguments againts R.
 
- - R is hard to learn.
- - not sure which packages to use.
- - the different packages are inconsistent.
-
+- R is hard to learn.
+- not sure which packages to use.
+- the different packages are inconsistent.
 
 ## Should you learn R?
 
@@ -233,13 +223,10 @@ There are some common arguments againts R.
 
 - [Overview](https://www.guru99.com/r-programming-introduction-basics.html)
 
-
-
-
 ## Programming brings great power...
 
 ...with great power comes great precision:
 
- - Computers will do everything you ask them to do!
+- Computers will do everything you ask them to do!
 
- - But you must tell them very precisely what you want.
+- But you must tell them very precisely what you want.

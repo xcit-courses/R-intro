@@ -26,16 +26,13 @@ editor: visual
 
 There are several options:
 
--   install R on your computer
+- install R on your computer
 
--   use R+RStudio via [Posit Cloud](https://posit.cloud/plans)
+- use R+RStudio via [Posit Cloud](https://posit.cloud/plans)
 
--   use R+RStudio via [Binder](https://mybinder.org/)
+- use R+RStudio via [Binder](https://mybinder.org/)
 
-         
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
-
-
 
 # Installing R
 
@@ -47,10 +44,7 @@ You can find instructions to install R on your specific OS online.
 
 [Here](https://www.geeksforgeeks.org/r-language/how-to-install-r-studio-on-windows-and-linux/) for example.
 
-
 # Install R now!
-
-
 
 ## The R console
 
@@ -74,10 +68,6 @@ Type 'q()' to quit R.
 >
 ```
 
-
-
-
-
 ## Using R like a calculator
 
 ::::: columns
@@ -100,7 +90,7 @@ Type 'q()' to quit R.
 ::: {.column width="50%"}
 ### Example
 
-``` r        
+``` r
 >        # How can I help?
 > 1 + 2  # Press Enter: I want to know the answer
          # Please evaluate this expression
@@ -112,24 +102,24 @@ Type 'q()' to quit R.
 
 ## Try it out!
 
--   12 / 5.5
--   2 \> 1
--   (5-2) \<= (8 %% 3)
--   2\^5
--   sqrt(9)
--   log2(32)
+- 12 / 5.5
+- 2 \> 1
+- (5-2) \<= (8 %% 3)
+- 2\^5
+- sqrt(9)
+- log2(32)
 
 ## Key concepts
 
 Example 1:
 
-``` r        
+``` r
 log2(32)
 ```
 
 Example 2:
 
-``` r        
+``` r
 1 + 2
 ```
 
@@ -137,15 +127,11 @@ What are these symbols? Are there different kinds of things?
 
 ## Code is text
 
-
-
 ``` r
 age <- c(18, 23, 43)
 mean_age <- mean(age)
 print(paste0("The mean age is ", round(mean_age, 1), " years."))
 ```
-
-
 
 # What is RStudio?
 
@@ -155,9 +141,8 @@ Download the free **RStudio Desktop** for your operating system (Windows, macOS 
 
 <https://posit.co/download/rstudio-desktop/>
 
--   Install R first, then RStudio
--   The current version is RStudio 2026.09
-
+- Install R first, then RStudio
+- The current version is RStudio 2026.09
 
 ## IDE: Integrated development environments
 
@@ -167,12 +152,9 @@ Programmers use IDEs to work effectively.
 
 IDEs provide tons of features that make programming easier and more fun.
 
-
 ## RStudio
 
 ![https://docs.posit.co/ide/user/ide/guide/ui/images/rstudio-panes-labeled.jpeg](../images/rstudio-panes-labeled.jpeg){fig-align="center"}
-
-
 
 ## Some key benefits of RStudio
 
@@ -185,48 +167,36 @@ IDEs provide tons of features that make programming easier and more fun.
 - data import wizzard
 - ...and much more.
 
-
-
-
-
 # Packages
-
-
 
 ## Install packages
 
 Packages offer you additional functionality (functions, code, data not included in base R).
 
-You will almost always use additional packages, but depending on your specific needs you might use different ones. 
-
+You will almost always use additional packages, but depending on your specific needs you might use different ones.
 
 ## To use a package involves two simple steps:
 
 ### Step 1: download the package
 
-This is done only once (but you may need to redownload if there is a newer version of package). 
+This is done only once (but you may need to redownload if there is a newer version of package).
 
 To download a package, you need to "install" the package (e.g., using `install.packages("package_name")`)
 
-
 ### Step 2: load the package
-A package is not automatically available; you need to activate it before you can use it. 
 
-To activate a package, first you must have installed it. Second you need to call `library("package_name")`. 
+A package is not automatically available; you need to activate it before you can use it.
 
+To activate a package, first you must have installed it. Second you need to call `library("package_name")`.
 
-
-<br>
-Beginners often mix this up this two steps. 
+<br> Beginners often mix this up this two steps.
 
 You can do those steps either using code (e.g., typed in the console) or by using RStudio package panel.
-
-
-
 
 ## Example: installing the "swirl" package (using code)
 
 ### Step 1:
+
 In the console type
 
 ``` r
@@ -237,14 +207,9 @@ install.packages("swirl")
 
 This command will download the code from that package from CRAN and put in on your computer.
 
-
-
-
-
 ## Example: installing the "swirl" package (using code)
 
 ### Step 2:
-
 
 Each time you want to use that package, you need to load it into R.
 
@@ -254,17 +219,11 @@ In the console, type:
 library("swirl")
 ```
 
-Now the code from the swirl package is aviable for use. 
-
-
-
+Now the code from the swirl package is aviable for use.
 
 # Exercise: Install the `ggplot2` package
 
-
 # Exercise: Install the `tidyverse` package
-
-
 
 ## Tidyvserse
 
@@ -272,11 +231,8 @@ Tidyverse is a set of well-designed packaged that work very well together to eff
 
 ![](../images/tidyverse_workflow_packages.png){fig-align="center"}
 
-
-
-
 ## Conclusion
 
 We've installed R and RStudio and we've seen how to install packages.
 
-We are now ready to start programming. 
+We are now ready to start programming.
