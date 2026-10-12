@@ -154,19 +154,47 @@
 
 </section>
 <section id="the-monty-hall-problem" class="slide level2">
-<h2>The Monty Hall Problem</h2>
-<p><a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" class="uri">https://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
+<h2>The Monty Hall problem</h2>
+<div class="columns">
+<div class="column" style="width:45%;">
+<p><img data-src="../images/three_doors.svg" alt="Three closed doors labelled A, B and C"></p>
+</div><div class="column" style="width:55%;">
+<ol type="1">
+<li class="fragment">Behind one door is a car; behind the other two are goats</li>
+<li class="fragment">You pick a door, say A</li>
+<li class="fragment">The host, who knows where the car is, opens another door with a goat behind it, say C</li>
+<li class="fragment">You may stay with A or switch to B</li>
+</ol>
+</div></div>
+<div class="fragment">
+<p>Should you stay or switch?</p>
+</div>
 </section>
 <section id="what-would-you-choose" class="slide level2">
 <h2>What would you choose?</h2>
+<ul>
+<li class="fragment">Stay or switch? Vote!</li>
+<li class="fragment">Write down your reasoning: you will check it against your own simulation</li>
+</ul>
 </section>
 <section id="challenge" class="slide level2">
 <h2>Challenge</h2>
 <ul>
-<li class="fragment"><p>Open <code>lab_monty_hall</code>, available on <a href="https://github.com/xcit-courses/R-intro-labs">Github</a>.</p></li>
-<li class="fragment"><p>If you don’t have R and RStudio running locally, you can use the following <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio">Binder link</a> instead.</p></li>
-<li class="fragment"><p>Note however that your progress will not be saved if you use Binder!</p></li>
+<li class="fragment">Open the <a href="https://github.com/xcit-courses/R-intro-labs/tree/main/lab_monty_hall"><code>lab_monty_hall</code></a> lab from the course labs on GitHub</li>
+<li class="fragment">If you don’t have R and RStudio running locally, you can use the following <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio">Binder link</a> instead</li>
+<li class="fragment">Note however that your progress will not be saved if you use Binder!</li>
 </ul>
+</section>
+<section id="debrief-stay-or-switch" class="slide level2">
+<h2>Debrief: stay or switch?</h2>
+<ul>
+<li class="fragment">In the simulations, switching wins about 2 games out of 3</li>
+<li class="fragment">Why? Your first pick is right only 1 time in 3</li>
+<li class="fragment">The host never opens your door or the car’s door: so when your first pick is wrong (2 times in 3), the other closed door hides the car</li>
+</ul>
+<div class="fragment">
+<p>More: <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem" class="uri">https://en.wikipedia.org/wiki/Monty_Hall_problem</a></p>
+</div>
 
 
 </section></section>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" role="img" aria-label="Three closed doors labelled A, B and C">
+  <title>Three closed doors labelled A, B and C</title>
+  <style>
+    .door { fill: #8a5a35; stroke: #4a2f1a; stroke-width: 4; }
+    .panel { fill: none; stroke: #4a2f1a; stroke-width: 3; opacity: 0.6; }
+    .knob { fill: #e8c25a; stroke: #4a2f1a; stroke-width: 2; }
+    .label { font-family: Barlow, Arial, sans-serif; font-size: 64px; font-weight: 600; fill: #ffffff; text-anchor: middle; }
+    .floor { stroke: #333333; stroke-width: 4; }
+  </style>
+  <g>
+    <rect class="door" x="40" y="40" width="140" height="260" rx="8"/>
+    <rect class="panel" x="62" y="62" width="96" height="90" rx="4"/>
+    <rect class="panel" x="62" y="172" width="96" height="106" rx="4"/>
+    <circle class="knob" cx="160" cy="175" r="8"/>
+    <text class="label" x="110" y="130">A</text>
+  </g>
+  <g>
+    <rect class="door" x="230" y="40" width="140" height="260" rx="8"/>
+    <rect class="panel" x="252" y="62" width="96" height="90" rx="4"/>
+    <rect class="panel" x="252" y="172" width="96" height="106" rx="4"/>
+    <circle class="knob" cx="350" cy="175" r="8"/>
+    <text class="label" x="300" y="130">B</text>
+  </g>
+  <g>
+    <rect class="door" x="420" y="40" width="140" height="260" rx="8"/>
+    <rect class="panel" x="442" y="62" width="96" height="90" rx="4"/>
+    <rect class="panel" x="442" y="172" width="96" height="106" rx="4"/>
+    <circle class="knob" cx="540" cy="175" r="8"/>
+    <text class="label" x="490" y="130">C</text>
+  </g>
+  <line class="floor" x1="10" y1="302" x2="590" y2="302"/>
+</svg>

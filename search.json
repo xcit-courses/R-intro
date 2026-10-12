@@ -160,7 +160,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these-1",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,] -0.53  0.32 -0.71\n[2,]  0.43 -0.14 -0.97\n[3,]  1.09  0.24  0.04\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,]  0.29  0.34  1.59\n[2,] -0.35 -1.28 -0.79\n[3,]  1.27  2.03 -0.10\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
@@ -391,7 +391,7 @@
     "href": "chapters/chapter2/slides/introduction_to_R.html#r-rstudio-1",
     "title": "Introduction to R",
     "section": "R & RStudio",
-    "text": "R & RStudio\n\n\nR version 4.6.1 (2026-06-24) -- \"Happy Hop\"\nCopyright (C) 2026 The R Foundation for Statistical Computing\n...\nType 'q()' to quit R.\n\n&gt;\nhttps://www.r-project.org/\n\n\n\n\nhttps://posit.co/downloads/"
+    "text": "R & RStudio\n\n\nR version 4.6.1 (2026-06-24) -- \"Happy Hop\"\n...\nType 'q()' to quit R.\n\n&gt;\nhttps://www.r-project.org/\n\n\n\n\nhttps://posit.co/downloads/"
   },
   {
     "objectID": "chapters/chapter2/slides/introduction_to_R.html#top-10-reasons-to-use-r",
@@ -488,6 +488,17 @@
     "title": "Chapter 5: (Project) The Monty Hall Problem",
     "section": "Slides",
     "text": "Slides\n\nThe Monty Hall problem",
+    "crumbs": [
+      "Chapters",
+      "Chapter 5"
+    ]
+  },
+  {
+    "objectID": "chapters/chapter5/chapter5.html#lab",
+    "href": "chapters/chapter5/chapter5.html#lab",
+    "title": "Chapter 5: (Project) The Monty Hall Problem",
+    "section": "Lab",
+    "text": "Lab\n\nlab_monty_hall (in the course labs on GitHub)",
     "crumbs": [
       "Chapters",
       "Chapter 5"
@@ -832,22 +843,29 @@
     "objectID": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
     "href": "chapters/chapter5/slides/monty_hall_problem.html#the-monty-hall-problem",
     "title": "Coding project: the Monty Hall problem",
-    "section": "The Monty Hall Problem",
-    "text": "The Monty Hall Problem\nhttps://en.wikipedia.org/wiki/Monty_Hall_problem"
+    "section": "The Monty Hall problem",
+    "text": "The Monty Hall problem\n\n\n\n\n\nBehind one door is a car; behind the other two are goats\nYou pick a door, say A\nThe host, who knows where the car is, opens another door with a goat behind it, say C\nYou may stay with A or switch to B\n\n\n\nShould you stay or switch?"
   },
   {
     "objectID": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-choose",
     "href": "chapters/chapter5/slides/monty_hall_problem.html#what-would-you-choose",
     "title": "Coding project: the Monty Hall problem",
     "section": "What would you choose?",
-    "text": "What would you choose?"
+    "text": "What would you choose?\n\nStay or switch? Vote!\nWrite down your reasoning: you will check it against your own simulation"
   },
   {
     "objectID": "chapters/chapter5/slides/monty_hall_problem.html#challenge",
     "href": "chapters/chapter5/slides/monty_hall_problem.html#challenge",
     "title": "Coding project: the Monty Hall problem",
     "section": "Challenge",
-    "text": "Challenge\n\nOpen lab_monty_hall, available on Github.\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead.\nNote however that your progress will not be saved if you use Binder!"
+    "text": "Challenge\n\nOpen the lab_monty_hall lab from the course labs on GitHub\nIf you don’t have R and RStudio running locally, you can use the following Binder link instead\nNote however that your progress will not be saved if you use Binder!"
+  },
+  {
+    "objectID": "chapters/chapter5/slides/monty_hall_problem.html#debrief-stay-or-switch",
+    "href": "chapters/chapter5/slides/monty_hall_problem.html#debrief-stay-or-switch",
+    "title": "Coding project: the Monty Hall problem",
+    "section": "Debrief: stay or switch?",
+    "text": "Debrief: stay or switch?\n\nIn the simulations, switching wins about 2 games out of 3\nWhy? Your first pick is right only 1 time in 3\nThe host never opens your door or the car’s door: so when your first pick is wrong (2 times in 3), the other closed door hides the car\n\n\nMore: https://en.wikipedia.org/wiki/Monty_Hall_problem"
   },
   {
     "objectID": "chapters/chapter7/slides/intro_to_data_analysis.html#demo",
