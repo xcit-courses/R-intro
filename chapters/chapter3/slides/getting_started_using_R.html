@@ -6,8 +6,8 @@
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <meta name="author" content="Pedro Cardoso-Leite">
   <title>MAPEA-85 Introduction to R – Getting started using R</title>
@@ -208,7 +208,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-<a href="pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a>
+<a href="mailto:pedro.cardosoleite@uni.lu">Pedro Cardoso-Leite</a>
 </div>
 </div>
 </div>
@@ -220,14 +220,9 @@
 <ul>
 <li class="fragment"><p>install R on your computer</p></li>
 <li class="fragment"><p>use R+RStudio via <a href="https://posit.cloud/plans">Posit Cloud</a></p></li>
-<li class="fragment"><p>use R+RStudio via <a href="https://mybinder.org/">Binder</a></p></li>
+<li class="fragment"><p>use R+RStudio via Binder: <a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio"><img data-src="https://mybinder.org/badge_logo.svg" alt="launch binder"></a></p></li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><a href="https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio"><img data-src="https://mybinder.org/badge_logo.svg"></a></p>
-<figcaption>Binder</figcaption>
-</figure>
-</div>
+<p>Binder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop.</p>
 </section>
 <section>
 <section id="installing-r" class="title-slide slide level1 center">
@@ -237,8 +232,11 @@
 <section id="install-r" class="slide level2">
 <h2>Install R</h2>
 <p>Visit <a href="https://cloud.r-project.org/" class="uri">https://cloud.r-project.org/</a></p>
-<p>You can find instructions to install R on your specific OS online.</p>
-<p><a href="https://www.geeksforgeeks.org/r-language/how-to-install-r-studio-on-windows-and-linux/">Here</a> for example.</p>
+<p>Choose the installer for your operating system (Windows, macOS or Linux).</p>
+<ul>
+<li class="fragment">On a Mac, pick <code>arm64</code> for Apple silicon (M1 and later) or <code>x86_64</code> for older Intel Macs</li>
+<li class="fragment">Step-by-step instructions: <a href="https://rstudio-education.github.io/hopr/starting.html">Installing R and RStudio</a> (Hands-On Programming with R)</li>
+</ul>
 </section></section>
 <section>
 <section id="install-r-now" class="title-slide slide level1 center">
@@ -347,9 +345,18 @@
 <li class="fragment">code completion, syntax highlighting</li>
 <li class="fragment">help</li>
 <li class="fragment">package management</li>
-<li class="fragment">data import wizzard</li>
+<li class="fragment">data import wizard</li>
 <li class="fragment">…and much more.</li>
 </ul>
+</section>
+<section id="recommended-rstudio-settings" class="slide level2">
+<h2>Recommended RStudio settings</h2>
+<p>In RStudio, go to <strong>Tools → Global Options → General</strong>:</p>
+<ul>
+<li class="fragment">untick <strong>Restore .RData into workspace at startup</strong></li>
+<li class="fragment">set <strong>Save workspace to .RData on exit</strong> to <strong>Never</strong></li>
+</ul>
+<p>Every session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session.</p>
 </section></section>
 <section>
 <section id="packages" class="title-slide slide level1 center">
@@ -364,12 +371,12 @@
 <section id="to-use-a-package-involves-two-simple-steps" class="slide level2">
 <h2>To use a package involves two simple steps:</h2>
 <h3 id="step-1-download-the-package">Step 1: download the package</h3>
-<p>This is done only once (but you may need to redownload if there is a newer version of package).</p>
+<p>This is done only once (but you need to reinstall a package to get a newer version of it, and reinstall your packages after upgrading R to a new minor version, e.g.&nbsp;from 4.5 to 4.6).</p>
 <p>To download a package, you need to “install” the package (e.g., using <code>install.packages("package_name")</code>)</p>
 <h3 id="step-2-load-the-package">Step 2: load the package</h3>
 <p>A package is not automatically available; you need to activate it before you can use it.</p>
 <p>To activate a package, first you must have installed it. Second you need to call <code>library("package_name")</code>.</p>
-<p><br> Beginners often mix this up this two steps.</p>
+<p><br> Beginners often mix up these two steps.</p>
 <p>You can do those steps either using code (e.g., typed in the console) or by using RStudio package panel.</p>
 </section>
 <section id="example-installing-the-swirl-package-using-code" class="slide level2">
@@ -378,7 +385,7 @@
 <p>In the console type</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-label="1"></a><span class="fu">install.packages</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>“swirl” is the name of the package we want to download on our computer.</p>
-<p>This command will download the code from that package from CRAN and put in on your computer.</p>
+<p>This command will download the code from that package from CRAN and put it on your computer.</p>
 </section>
 <section id="example-installing-the-swirl-package-using-code-1" class="slide level2">
 <h2>Example: installing the “swirl” package (using code)</h2>
@@ -386,7 +393,7 @@
 <p>Each time you want to use that package, you need to load it into R.</p>
 <p>In the console, type:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a aria-label="1"></a><span class="fu">library</span>(<span class="st">"swirl"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Now the code from the swirl package is aviable for use.</p>
+<p>Now the code from the swirl package is available for use.</p>
 </section></section>
 <section id="exercise-install-the-ggplot2-package" class="title-slide slide level1 center">
 <h1>Exercise: Install the <code>ggplot2</code> package</h1>
@@ -398,9 +405,9 @@
 <h1>Exercise: Install the <code>tidyverse</code> package</h1>
 
 </section>
-<section id="tidyvserse" class="slide level2">
-<h2>Tidyvserse</h2>
-<p>Tidyverse is a set of well-designed packaged that work very well together to effectively accomplish 90% of the data science tasks.</p>
+<section id="tidyverse" class="slide level2">
+<h2>Tidyverse</h2>
+<p>The tidyverse is a set of well-designed packages that work very well together and cover most everyday data science tasks.</p>
 
 <img data-src="../images/tidyverse_workflow_packages.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="conclusion" class="slide level2">

@@ -4,7 +4,7 @@
     "href": "resources/resources.html",
     "title": "Resources",
     "section": "",
-    "text": "There are many great free resources to learn R; here are just a few of them.\n\n\n\nHands On Programming with R\nR for Data Science (2e)\nLearning Statistics with R\n\n\n\n\n\nRStudio Cheatsheets",
+    "text": "There are many great free resources to learn R; here are just a few of them.\n\n\n\nHands On Programming with R\nR for Data Science (2e)\nLearning Statistics with R\n\n\n\n\n\nBase R\nRStudio IDE\nAll Posit cheatsheets",
     "crumbs": [
       "Resources"
     ]
@@ -24,7 +24,7 @@
     "href": "resources/resources.html#cheatsheets",
     "title": "Resources",
     "section": "",
-    "text": "RStudio Cheatsheets",
+    "text": "Base R\nRStudio IDE\nAll Posit cheatsheets",
     "crumbs": [
       "Resources"
     ]
@@ -153,7 +153,7 @@
     "href": "chapters/chapter4/slides/introduction_to_programming.html#exercise-what-data-structures-are-these",
     "title": "Introduction to Programming in R",
     "section": "Exercise: what data structures are these?",
-    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n      [,1]  [,2]  [,3]\n[1,]  1.35 -0.63 -0.23\n[2,]  0.12 -0.06 -0.99\n[3,] -1.55 -1.57  0.51\n\n\nExample 4:\n\n\n[1] \"hello world!\""
+    "text": "Exercise: what data structures are these?\nExample 1:\n\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1\n\n\nExample 2:\n(\"a\", 12, TRUE)\nExample 3:\n\n\n      [,1]  [,2] [,3]\n[1,]  1.36 -0.78 0.86\n[2,]  0.41 -1.01 0.93\n[3,] -0.82  1.69 0.65\n\n\nExample 4:\n\n\n[1] \"hello world!\""
   },
   {
     "objectID": "chapters/chapter4/slides/introduction_to_programming.html#variables-containers",
@@ -460,7 +460,7 @@
     "href": "chapters/chapter3/chapter3.html#slides",
     "title": "Chapter 3: Getting started using R",
     "section": "Slides",
-    "text": "Slides\n\nGettning sarted using R",
+    "text": "Slides\n\nGetting started using R",
     "crumbs": [
       "Chapters",
       "Chapter 3"
@@ -658,14 +658,14 @@
     "href": "chapters/chapter3/slides/getting_started_using_R.html#how-to-use-r",
     "title": "Getting started using R",
     "section": "How to use R?",
-    "text": "How to use R?\nThere are several options:\n\ninstall R on your computer\nuse R+RStudio via Posit Cloud\nuse R+RStudio via Binder\n\n\n\n\nBinder"
+    "text": "How to use R?\nThere are several options:\n\ninstall R on your computer\nuse R+RStudio via Posit Cloud\nuse R+RStudio via Binder: \n\nBinder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-r",
     "href": "chapters/chapter3/slides/getting_started_using_R.html#install-r",
     "title": "Getting started using R",
     "section": "Install R",
-    "text": "Install R\nVisit https://cloud.r-project.org/\nYou can find instructions to install R on your specific OS online.\nHere for example."
+    "text": "Install R\nVisit https://cloud.r-project.org/\nChoose the installer for your operating system (Windows, macOS or Linux).\n\nOn a Mac, pick arm64 for Apple silicon (M1 and later) or x86_64 for older Intel Macs\nStep-by-step instructions: Installing R and RStudio (Hands-On Programming with R)"
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#the-r-console",
@@ -728,7 +728,14 @@
     "href": "chapters/chapter3/slides/getting_started_using_R.html#some-key-benefits-of-rstudio",
     "title": "Getting started using R",
     "section": "Some key benefits of RStudio",
-    "text": "Some key benefits of RStudio\n\nsee and work on more files at the same time\nsee the current state of your environment\ninspect data\ncode completion, syntax highlighting\nhelp\npackage management\ndata import wizzard\n…and much more."
+    "text": "Some key benefits of RStudio\n\nsee and work on more files at the same time\nsee the current state of your environment\ninspect data\ncode completion, syntax highlighting\nhelp\npackage management\ndata import wizard\n…and much more."
+  },
+  {
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#recommended-rstudio-settings",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#recommended-rstudio-settings",
+    "title": "Getting started using R",
+    "section": "Recommended RStudio settings",
+    "text": "Recommended RStudio settings\nIn RStudio, go to Tools → Global Options → General:\n\nuntick Restore .RData into workspace at startup\nset Save workspace to .RData on exit to Never\n\nEvery session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#install-packages",
@@ -742,28 +749,28 @@
     "href": "chapters/chapter3/slides/getting_started_using_R.html#to-use-a-package-involves-two-simple-steps",
     "title": "Getting started using R",
     "section": "To use a package involves two simple steps:",
-    "text": "To use a package involves two simple steps:\nStep 1: download the package\nThis is done only once (but you may need to redownload if there is a newer version of package).\nTo download a package, you need to “install” the package (e.g., using install.packages(\"package_name\"))\nStep 2: load the package\nA package is not automatically available; you need to activate it before you can use it.\nTo activate a package, first you must have installed it. Second you need to call library(\"package_name\").\n Beginners often mix this up this two steps.\nYou can do those steps either using code (e.g., typed in the console) or by using RStudio package panel."
+    "text": "To use a package involves two simple steps:\nStep 1: download the package\nThis is done only once (but you need to reinstall a package to get a newer version of it, and reinstall your packages after upgrading R to a new minor version, e.g. from 4.5 to 4.6).\nTo download a package, you need to “install” the package (e.g., using install.packages(\"package_name\"))\nStep 2: load the package\nA package is not automatically available; you need to activate it before you can use it.\nTo activate a package, first you must have installed it. Second you need to call library(\"package_name\").\n Beginners often mix up these two steps.\nYou can do those steps either using code (e.g., typed in the console) or by using RStudio package panel."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code",
     "href": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code",
     "title": "Getting started using R",
     "section": "Example: installing the “swirl” package (using code)",
-    "text": "Example: installing the “swirl” package (using code)\nStep 1:\nIn the console type\ninstall.packages(\"swirl\")\n“swirl” is the name of the package we want to download on our computer.\nThis command will download the code from that package from CRAN and put in on your computer."
+    "text": "Example: installing the “swirl” package (using code)\nStep 1:\nIn the console type\ninstall.packages(\"swirl\")\n“swirl” is the name of the package we want to download on our computer.\nThis command will download the code from that package from CRAN and put it on your computer."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code-1",
     "href": "chapters/chapter3/slides/getting_started_using_R.html#example-installing-the-swirl-package-using-code-1",
     "title": "Getting started using R",
     "section": "Example: installing the “swirl” package (using code)",
-    "text": "Example: installing the “swirl” package (using code)\nStep 2:\nEach time you want to use that package, you need to load it into R.\nIn the console, type:\nlibrary(\"swirl\")\nNow the code from the swirl package is aviable for use."
+    "text": "Example: installing the “swirl” package (using code)\nStep 2:\nEach time you want to use that package, you need to load it into R.\nIn the console, type:\nlibrary(\"swirl\")\nNow the code from the swirl package is available for use."
   },
   {
-    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#tidyvserse",
-    "href": "chapters/chapter3/slides/getting_started_using_R.html#tidyvserse",
+    "objectID": "chapters/chapter3/slides/getting_started_using_R.html#tidyverse",
+    "href": "chapters/chapter3/slides/getting_started_using_R.html#tidyverse",
     "title": "Getting started using R",
-    "section": "Tidyvserse",
-    "text": "Tidyvserse\nTidyverse is a set of well-designed packaged that work very well together to effectively accomplish 90% of the data science tasks."
+    "section": "Tidyverse",
+    "text": "Tidyverse\nThe tidyverse is a set of well-designed packages that work very well together and cover most everyday data science tasks."
   },
   {
     "objectID": "chapters/chapter3/slides/getting_started_using_R.html#conclusion",
