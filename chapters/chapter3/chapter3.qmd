@@ -12,4 +12,4 @@ We will set up our computers to start programming in R.
 
 ## Slides
 
-- [Gettning sarted using R](slides/getting_started_using_R.qmd)
+- [Getting started using R](slides/getting_started_using_R.qmd)

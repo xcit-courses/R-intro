@@ -1,6 +1,6 @@
 ---
 title: "Getting started using R"
-author: "[Pedro Cardoso-Leite](pedro.cardosoleite@uni.lu)"
+author: "[Pedro Cardoso-Leite](mailto:pedro.cardosoleite@uni.lu)"
 title-block-banner: true
 title-block-style: plain
 affiliation-title: "University of Luxembourg" 
@@ -30,9 +30,9 @@ There are several options:
 
 - use R+RStudio via [Posit Cloud](https://posit.cloud/plans)
 
-- use R+RStudio via [Binder](https://mybinder.org/)
+- use R+RStudio via Binder: [![launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
+Binder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop.
 
 # Installing R
 
@@ -40,9 +40,10 @@ There are several options:
 
 Visit <https://cloud.r-project.org/>
 
-You can find instructions to install R on your specific OS online.
+Choose the installer for your operating system (Windows, macOS or Linux).
 
-[Here](https://www.geeksforgeeks.org/r-language/how-to-install-r-studio-on-windows-and-linux/) for example.
+- On a Mac, pick `arm64` for Apple silicon (M1 and later) or `x86_64` for older Intel Macs
+- Step-by-step instructions: [Installing R and RStudio](https://rstudio-education.github.io/hopr/starting.html) (Hands-On Programming with R)
 
 # Install R now!
 
@@ -164,8 +165,17 @@ IDEs provide tons of features that make programming easier and more fun.
 - code completion, syntax highlighting
 - help
 - package management
-- data import wizzard
+- data import wizard
 - ...and much more.
+
+## Recommended RStudio settings
+
+In RStudio, go to **Tools → Global Options → General**:
+
+- untick **Restore .RData into workspace at startup**
+- set **Save workspace to .RData on exit** to **Never**
+
+Every session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session.
 
 # Packages
 
@@ -179,7 +189,7 @@ You will almost always use additional packages, but depending on your specific n
 
 ### Step 1: download the package
 
-This is done only once (but you may need to redownload if there is a newer version of package).
+This is done only once (but you need to reinstall a package to get a newer version of it, and reinstall your packages after upgrading R to a new minor version, e.g. from 4.5 to 4.6).
 
 To download a package, you need to "install" the package (e.g., using `install.packages("package_name")`)
 
@@ -189,7 +199,7 @@ A package is not automatically available; you need to activate it before you can
 
 To activate a package, first you must have installed it. Second you need to call `library("package_name")`.
 
-<br> Beginners often mix this up this two steps.
+<br> Beginners often mix up these two steps.
 
 You can do those steps either using code (e.g., typed in the console) or by using RStudio package panel.
 
@@ -205,7 +215,7 @@ install.packages("swirl")
 
 "swirl" is the name of the package we want to download on our computer.
 
-This command will download the code from that package from CRAN and put in on your computer.
+This command will download the code from that package from CRAN and put it on your computer.
 
 ## Example: installing the "swirl" package (using code)
 
@@ -219,15 +229,15 @@ In the console, type:
 library("swirl")
 ```
 
-Now the code from the swirl package is aviable for use.
+Now the code from the swirl package is available for use.
 
 # Exercise: Install the `ggplot2` package
 
 # Exercise: Install the `tidyverse` package
 
-## Tidyvserse
+## Tidyverse
 
-Tidyverse is a set of well-designed packaged that work very well together to effectively accomplish 90% of the data science tasks.
+The tidyverse is a set of well-designed packages that work very well together and cover most everyday data science tasks.
 
 ![](../images/tidyverse_workflow_packages.png){fig-align="center"}
 
