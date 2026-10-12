@@ -13,3 +13,7 @@ The goal is to use simulations to answer the Monty Hall problem: should you swit
 ## Slides
 
 - [The Monty Hall problem](slides/monty_hall_problem.qmd)
+
+## Lab
+
+- [`lab_monty_hall`](https://github.com/xcit-courses/R-intro-labs/tree/main/lab_monty_hall) (in the course labs on GitHub)
