@@ -103,7 +103,9 @@ https://guides.library.cmu.edu/artificial-intelligence/datasets https://guides.l
 4.  Modify or create new columns (mutate)
 5.  Save a data.frame (e.g., as a csv file)
 
+::: fragment
 (In all the examples I will use a data.frame called `USArrests`. You can learn more about this in-build dataset by typing `?USArrests`)
+:::
 
 ## Example dataset
 

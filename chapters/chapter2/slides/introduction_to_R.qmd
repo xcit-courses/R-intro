@@ -44,7 +44,9 @@ editor: visual
 
 - [Base R Cheatsheet](https://rstudio.github.io/cheatsheets/base-r.pdf)
 
+::: fragment
 [Cheatsheets](https://posit.co/resources/cheatsheets/) are a great way to learn about specific topics/packages; we will use them quite a bit!
+:::
 
 ## History of R
 
@@ -93,7 +95,9 @@ You can however extend the cababilities of R by
   - packages that you can download and install
 - write your own code
 
+::: fragment
 *Examples:*
+:::
 
 - ggplot2
 - dplyr
@@ -195,7 +199,9 @@ If you learn how to use it, you will likely never go back to anything else.
 - CRAN, the official repository of R packages, offers **25,304 packages** (October 2026)
 - Whatever analysis you need, someone has probably already written a package for it
 
+::: fragment
 Source: <https://cran.r-project.org/web/packages/>
+:::
 
 ## The R ecosystem
 

@@ -32,7 +32,9 @@ There are several options:
 
 - use R+RStudio via Binder: [![launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/xcit-courses/R-intro-labs/HEAD?urlpath=rstudio)
 
+::: fragment
 Binder sessions close after about 10 minutes of inactivity and your work is lost: download your files before you stop.
+:::
 
 # Installing R
 
@@ -175,7 +177,9 @@ In RStudio, go to **Tools → Global Options → General**:
 - untick **Restore .RData into workspace at startup**
 - set **Save workspace to .RData on exit** to **Never**
 
+::: fragment
 Every session then starts empty, so your results come only from the code you wrote, not from objects left over from an earlier session.
+:::
 
 # Packages
 

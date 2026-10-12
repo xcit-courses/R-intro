@@ -94,7 +94,7 @@ There are many free online resources:
  - https://www.speedcoder.net/
  - https://typing.io/
 
-::: incremental
+::: fragment
 Try
 :::
 
@@ -110,7 +110,9 @@ Try
 -   Character / String
 -   ...
 
+::: fragment
 Exercise: find examples of values for each of these types.
+:::
 
 ## Values / data types
 
@@ -164,7 +166,9 @@ This is read as:
 -   "x gets 5"
 -   "we *assign* the value 5 to variable x"
 
+::: fragment
 Note: most programming languages use "=" instead.
+:::
 
 ## Variables / containers
 
@@ -184,7 +188,9 @@ as well as transformations (more on this later):
 -   reserved words (e.g., `TRUE`, `if`, `function`) are forbidden
 -   can't contain spaces (e.g., `my variable` vs `my_variable`)
 
+::: fragment
 ### Recommendations
+:::
 
 -   only use lower case letters, digits and underscore
 -   use meaningful names
