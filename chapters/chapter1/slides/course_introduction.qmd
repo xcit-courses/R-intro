@@ -46,7 +46,7 @@ In 1: - install R - install packages - run script - intro to the ecosystem - get
 
 ## Why this course?
 
-[![Wikipedia](/chapters/chapter1/images/the_scientific_method.png){fig-alt="https://en.wikipedia.org/wiki/Scientific_method" fig-align="center" width="600"}](https://en.wikipedia.org/wiki/Scientific_method)
+[![Wikipedia](/chapters/chapter1/images/the_scientific_method.png){fig-alt="https://en.wikipedia.org/wiki/Scientific_method" fig-align="center" width="480"}](https://en.wikipedia.org/wiki/Scientific_method)
 
 Students are often not well prepared to integrate all the steps of this loop. They lack practical skills to implement the data analysis and reporting efficiently and in a way that can be reproduced.
 

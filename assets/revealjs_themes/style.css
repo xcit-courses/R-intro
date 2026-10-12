@@ -6,3 +6,9 @@
   align-items: center;
   height: 90%;
 }
+
+/* Never hide content: a slide taller than the screen gets a scrollbar
+   instead of cutting off its last lines. */
+.reveal .slides section.slide {
+  overflow-y: auto;
+}
